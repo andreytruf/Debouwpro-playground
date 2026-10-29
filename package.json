@@ -1,0 +1,24 @@
+{
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.64.1",
+    "prettier": "^3.9.10",
+    "wrangler": "^4.155.0"
+  },
+  "name": "debouwpro-playground",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "npm run build && wrangler dev --ip 127.0.0.1 --port 8787",
+    "test": "playwright test",
+    "check": "npm run build && wrangler deploy --dry-run",
+    "deploy": "npm run build && wrangler deploy",
+    "preview:capture": "node scripts/preview.mjs",
+    "format": "prettier --write index.html 404.html assets/*.css assets/*.js scripts/*.mjs tests/*.mjs playwright.config.mjs package.json wrangler.jsonc"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "viewport": "desktop",
+    "cls": 0,
+    "lcp": 472,
+    "resources": [
+      {
+        "name": "styles.css",
+        "bytes": 4366
+      },
+      {
+        "name": "site.js",
+        "bytes": 1124
+      },
+      {
+        "name": "living-1280.webp",
+        "bytes": 192746
+      },
+      {
+        "name": "kitchen-640.webp",
+        "bytes": 46820
+      },
+      {
+        "name": "favicon.svg",
+        "bytes": 506
+      }
+    ]
+  },
+  {
+    "viewport": "mobile",
+    "cls": 0,
+    "lcp": 356,
+    "resources": [
+      {
+        "name": "styles.css",
+        "bytes": 4366
+      },
+      {
+        "name": "site.js",
+        "bytes": 1124
+      },
+      {
+        "name": "living-640.webp",
+        "bytes": 55498
+      },
+      {
+        "name": "favicon.svg",
+        "bytes": 506
+      }
+    ]
+  }
+]
