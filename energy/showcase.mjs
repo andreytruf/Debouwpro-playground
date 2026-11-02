@@ -11,7 +11,7 @@ const notes = {
   peblar: "Fabrikantfoto · © Peblar · geen DE BOUW PRO-installatie",
   samsung:
     "AI-architectuurconcept · getoonde unit is geen Samsung-productweergave",
-  whspr: "AI-architectuurconcept · getoonde unit is geen Whspr-productweergave",
+  whspr: "Productrender uit Whspr-brochure · © Whspr · geen eigen installatie",
 };
 const alt = {
   tesla: "AI-concept van een moderne villa met witte Model Y bij avondlicht",
@@ -22,10 +22,20 @@ const alt = {
   samsung:
     "AI-architectuurconcept van een woning met generieke buitenunit, geen Samsung-model",
   whspr:
-    "AI-architectuurconcept bij een Nederlandse rijwoning, geen Whspr-productfoto",
+    "Whspr hybride warmtepomp met verticale lamellen en open onderstel; productrender van de fabrikant",
 };
-export const photo = (slug, priority = false, cls = "") =>
-  `<img class="${cls}" src="/assets/energy/photo/${slug}-1600.webp" srcset="/assets/energy/photo/${slug}-720.webp 720w, /assets/energy/photo/${slug}-1600.webp 1600w" sizes="(max-width:760px) 100vw, 100vw" width="1600" height="${slug === "peblar" ? 1067 : 900}" ${priority ? 'fetchpriority="high"' : 'loading="lazy" decoding="async"'} alt="${alt[slug]}">`;
+export const socialPhoto = (slug) =>
+  slug === "whspr"
+    ? "/assets/energy/photo/whspr-product-640.webp"
+    : `/assets/energy/photo/${slug}-1600.webp`;
+export const photo = (slug, priority = false, cls = "") => {
+  const whspr = slug === "whspr";
+  const small = whspr ? 480 : 720;
+  const large = whspr ? 640 : 1600;
+  const base = whspr ? "whspr-product" : slug;
+  const height = whspr ? 640 : slug === "peblar" ? 1067 : 900;
+  return `<img class="${cls}" src="${socialPhoto(slug)}" srcset="/assets/energy/photo/${base}-${small}.webp ${small}w, /assets/energy/photo/${base}-${large}.webp ${large}w" sizes="${whspr ? "(max-width:760px) calc(100vw - 40px), 45vw" : "100vw"}" width="${large}" height="${height}" ${priority ? 'fetchpriority="high"' : 'loading="lazy" decoding="async"'} alt="${alt[slug]}">`;
+};
 export const photoNote = (slug) => notes[slug];
 const actions = () =>
   `<div class="energy-actions"><a class="button button-dark" href="#contact">Vraag advies aan <span>${arrow}</span></a><a class="button energy-outline" href="#mogelijkheden">Ontdek de mogelijkheden <span>${arrow}</span></a></div>`;
@@ -140,24 +150,46 @@ function samsung(b) {
 
 function whspr(b) {
   return `
-<section class="whspr-hero showcase-hero" aria-labelledby="brand-title"><figure>${photo("whspr", true)}${caption("whspr")}</figure><div class="shell whspr-hero-copy">${label("PRO ENERGY / Whspr")}<h1 id="brand-title">Rust in de tuin.<br>Comfort <em>in huis.</em></h1><p>Een compacte hybride stap, onderzocht voor de Nederlandse rijwoning. Met je bestaande cv-ketel als onderdeel van het plan.</p>${actions()}</div></section>
-<section class="section shell whspr-size" id="mogelijkheden"><div class="dimension-editorial"><span>60 × 60 × 90</span><small>centimeter · gepubliceerde fabrikantmaat</small><p>De benodigde vrije ruimte, leidingroutes en onderhoudstoegang komen daar nog bij.</p></div><div>${label("01 / Compact is pas het begin")}<h2>Niet alleen klein.<br>Goed <em>geplaatst.</em></h2><p class="design-lead">Hoe een warmtepomp in een rijwoning past, gaat verder dan zijn buitenmaten.</p><p>We kijken naar de bestaande cv-ketel, de ligging van de tuin, aangrenzende woningen en de plek van de leidingen. Een rustig ontwerp moet ook in het dagelijks gebruik praktisch blijven.</p>${link("Originele Whspr-productbeelden", b.sources[0][1])}</div></section>
-<section class="section whspr-quiet"><div class="shell quiet-layout"><div>${label("02 / Hybride samenspel")}<h2>Een doordachte stap.<br>Met wat er <em>al is.</em></h2></div><div>${steps(
+<section class="whspr-hero whspr-brochure-hero showcase-hero" aria-labelledby="brand-title"><figure>${photo("whspr", true)}${caption("whspr")}</figure><div class="shell whspr-hero-copy">${label("PRO ENERGY / Whspr")}<h1 id="brand-title">Compact buiten.<br>Comfort <em>binnen.</em></h1><p>Hybride warmte voor je rijwoning. Een compacte buitenunit, een eigen thermostaat en je bestaande cv-ketel.</p>${actions()}</div></section>
+${proof([
+  ["4 kW", "Gepubliceerd warmtevermogen"],
+  ["1,7 kW", "Maximaal elektrisch vermogen"],
+  ["Hybride", "Met je bestaande cv-ketel"],
+])}
+<section class="section shell whspr-size" id="mogelijkheden"><div class="dimension-editorial whspr-measurements"><p class="eyebrow">Het formaat / zonder opstelruimte</p><div class="whspr-dimensions"><div><strong>59,2</strong><span>cm breed</span></div><div><strong>59,2</strong><span>cm diep</span></div><div><strong>82,3</strong><span>cm hoog</span></div></div><p>Inclusief BigFoot-opstelvoeten:<br><strong>59,2 × 60,0 × 92,2 cm.</strong><br>Vrije lucht, onderhoud en veiligheidsruimte komen daar nog bij.</p></div><div>${label("01 / Klein is pas het begin")}<h2>Ruimte voor warmte.<br>Ruimte om te <em>wonen.</em></h2><p class="design-lead">Een compacte buitenunit maakt een zorgvuldig gekozen plek mogelijk. De woning bepaalt of het geheel past.</p><p>We bekijken de tuin, leidingroute, radiatoren of vloerverwarming en de bestaande ketel. Whspr is bedoeld voor ruimteverwarming; warm tapwater blijft bij de cv-ketel.</p><p class="design-caption">Afmetingen volgens brochure 24 september 2026 en installatiehandleiding v1.2 (voor review). Exacte uitvoering en actuele voorschriften bevestigen we bij het voorstel.</p>${link("Bekijk Whspr bij de fabrikant", b.sources[0][1])}</div></section>
+<section class="section whspr-quiet"><div class="shell whspr-acoustic-layout"><figure><img src="/assets/energy/photo/whspr-detail-725.webp" srcset="/assets/energy/photo/whspr-detail-480.webp 480w, /assets/energy/photo/whspr-detail-725.webp 725w" sizes="(max-width:760px) calc(100vw - 40px), 35vw" width="725" height="1088" loading="lazy" decoding="async" alt="Detail van de bovenzijde en verticale lamellen van Whspr uit de fabrikantbrochure"><figcaption>Detailbeeld uit Whspr-brochure · © Whspr</figcaption></figure><div>${label("02 / Geluid verdient aandacht")}<h2>Ontworpen voor rust.<br>Beoordeeld op de <em>plek.</em></h2><p class="design-lead">Stille werking is een ontwerpfocus. Wat je hoort in jouw tuin hangt ook af van de plaatsing en omgeving.</p>${steps(
     [
       [
-        "Bestaande cv meenemen",
-        "De beschreven Whspr is hybride. Ketel en warmtepomp worden samen beoordeeld.",
+        "Vermogen is geen perceelmeting",
+        "De handleiding noemt een maximaal geluidsvermogen van 51 dB(A). Dit is een bronwaarde, geen geluidsdruk bij de buren.",
       ],
       [
-        "Geluid in de echte omgeving",
-        "Geen algemeen oordeel op basis van één decibelgetal. Opstelplek, instellingen en buren tellen mee.",
+        "Nachtmodus heeft een eigen werking",
+        "De handleiding vermeldt 45 dB(A) maximaal geluidsvermogen en 2 kW thermisch vermogen in nachtmodus. De geschikte instelling volgt uit je warmtebehoefte.",
       ],
       [
-        "Praktische uitvoering",
-        "De fabrikant richt het monoblock-concept op eenvoudige plaatsing; de benodigde werkzaamheden en actuele beschikbaarheid bevestigen we apart.",
+        "De opstelplek telt mee",
+        "Wanden, hoeken, ramen en de situatie bij de buren nemen we mee. We beloven geen algemene plaatsing direct aan iedere erfgrens.",
       ],
     ],
-  )}</div></div></section>`;
+  )}</div></div></section>
+<section class="section shell whspr-controls"><div>${label("03 / Een eigen thermostaat")}<h2>De temperatuur kiezen.<br>De regeling doet <em>mee.</em></h2><p class="design-lead">Whspr wordt aangestuurd met de bijgeleverde thermostaat. Die verbindt de warmtepomp met je bestaande cv-ketel.</p><p>De beschreven regeling kiest tussen warmtepomp en ketel op basis van de situatie. Een OpenTherm- of aan/uit-koppeling wordt volgens de ketel en de actuele Whspr-instructie ingericht.</p><ol class="whspr-control-flow" aria-label="Principe van de hybride regeling"><li>Thermostaat</li><li>Whspr óf cv-ketel</li><li>Warmte in huis</li></ol><p class="design-caption">Principeschema, geen installatie-instructie. Warm tapwater via de cv-ketel; ketelcompatibiliteit vooraf controleren.</p></div><figure><img src="/assets/energy/photo/whspr-thermostat-1280.webp" srcset="/assets/energy/photo/whspr-thermostat-640.webp 640w, /assets/energy/photo/whspr-thermostat-1280.webp 1280w" sizes="(max-width:760px) calc(100vw - 40px), 45vw" width="1280" height="720" loading="lazy" decoding="async" alt="Whspr-thermostaat, met voorbeeldtemperaturen op het scherm; fabrikantbeeld"><figcaption>Thermostaat uit Whspr-brochure · © Whspr · schermwaarden zijn voorbeelden</figcaption></figure></section>
+<section class="section whspr-in-context"><div class="shell whspr-context-grid"><figure><img src="/assets/energy/photo/whspr-garden-800.webp" srcset="/assets/energy/photo/whspr-garden-480.webp 480w, /assets/energy/photo/whspr-garden-800.webp 800w" sizes="(max-width:760px) calc(100vw - 40px), 42vw" width="800" height="1200" loading="lazy" decoding="async" alt="Whspr bij een bakstenen tuinmuur, voorbeeld uit de fabrikantbrochure"><figcaption>Voorbeeld uit Whspr-brochure · © Whspr · geen DE BOUW PRO-project</figcaption></figure><div>${label("04 / Van afbeelding naar jouw woning")}<h2>Een passende plek.<br>Een compleet <em>plan.</em></h2><p class="design-lead">Een brochure laat het product zien. Een opname laat zien wat jouw woning nodig heeft.</p>${steps(
+    [
+      [
+        "De warmtebehoefte",
+        "We beoordelen het afgiftesysteem en de rol van de cv-ketel. Een compact apparaat is geen automatische match voor iedere woning.",
+      ],
+      [
+        "Lucht en veiligheid",
+        "We controleren vrije luchtstroom, onderhoudstoegang en de R290-veiligheidszone rond openingen, afvoeren en ontstekingsbronnen volgens de actuele voorschriften.",
+      ],
+      [
+        "Elektra en waterzijdige aansluiting",
+        "Aansluiting, beveiliging, vorstbescherming en leidingroute horen bij het ontwerp. De plaatsingstijd en eventuele aanpassingen leggen we vooraf vast.",
+      ],
+    ],
+  )}<a class="button button-dark" href="#contact">Bespreek Whspr voor jouw woning <span aria-hidden="true">${arrow}</span></a></div></div></section>`;
 }
 
 const designs = { tesla, ecoflow, goodwe, peblar, samsung, whspr };

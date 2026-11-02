@@ -85,3 +85,8 @@ With the local server running, `node scripts/preview-energy-v3.mjs` captures all
 The Peblar page now uses manufacturer-supplied lifestyle photography in place of its former AI scene and includes Home, Business and Dual model cards. Images are local WebP derivatives from the owner's `/De Bouw Pro/B2B info/Peblar` Dropbox media packs. Existing product-view and charging-mode controls remain intact. Two owner-supplied, presentation-edited renovation photos appear in a clearly separate renovation section on `/energy` and `/energy/peblar`; they do not depict Energy installations. The corporate homepage is unchanged.
 
 Run `node scripts/preview-peblar.mjs` with the local dev server running to capture desktop/mobile previews in `docs/peblar-update/previews`. Source and verification details: [Peblar update](docs/peblar-update/README.md). Full manufacturer archives, private certificates and contracts are not deployed or redistributed.
+
+
+## Whspr brochure imagery
+
+The Whspr Energy card, hero and social preview now use the actual manufacturer's product render extracted from the owner-supplied September 2026 brochure. The dedicated page also includes extracted hardware detail, garden example and thermostat imagery, precise body/support dimensions, source-attributed sound information and a clearer hybrid heating explanation. No new AI image was needed; the former generic-unit AI image is no longer referenced. All brochure examples are distinguished from company projects. See [Whspr sources and verification](docs/whspr-update/README.md). Capture previews with `node scripts/preview-whspr.mjs` against the running local dev server.

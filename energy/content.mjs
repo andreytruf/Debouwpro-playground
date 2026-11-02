@@ -396,7 +396,7 @@ export const brands = [
       "Voor een rijwoning telt elke meter. We onderzoeken hoe een compacte hybride warmtepomp naast je bestaande cv-ketel past, met aandacht voor de buren, leidingroutes en dagelijks comfort.",
     card: "Compacte hybride warmte, ontworpen voor de rijwoning.",
     benefits: [
-      ["Hybride aanpak", "Whspr werkt samen met een bestaande cv-ketel."],
+      ["Hybride aanpak", "Whspr-regeling kiest tussen warmtepomp en cv-ketel."],
       ["Compact ontwerp", "Een monoblock voor de Nederlandse rijwoning."],
       [
         "Aandacht voor geluid",
@@ -404,14 +404,29 @@ export const brands = [
       ],
     ],
     specs: [
-      ["Opbouw", "Hybride monoblock met R290 volgens de fabrikant."],
       [
-        "Afmetingen",
-        "60 × 60 × 90 cm volgens de gepubliceerde fabrikantgegevens; benodigde vrije ruimte komt daar nog bij.",
+        "Systeem",
+        "Hybride lucht-watermonoblock met R290, voor ruimteverwarming. Warm tapwater via de cv-ketel.",
+      ],
+      [
+        "Warmtevermogen",
+        "4 kW volgens de fabrikant. COP 4,81 bij A7/W35; prestaties zijn afhankelijk van bedrijfscondities en installatie.",
+      ],
+      [
+        "Afmetingen buitenunit",
+        "592 × 592 × 823 mm. Inclusief BigFoot-opstelvoeten: 592 × 600 × 922 mm. Vrije opstel- en veiligheidsruimte komen daar nog bij.",
       ],
       [
         "Elektrische aansluiting",
-        "230 V volgens de fabrikant. De geschiktheid van groep, beveiliging en bekabeling wordt bij de opname gecontroleerd.",
+        "230 V; maximaal elektrisch vermogen 1,7 kW. Groep, beveiliging en aansluiting beoordelen we voor jouw situatie.",
+      ],
+      [
+        "Geluid",
+        "Maximaal geluidsvermogen 51 dB(A); in nachtmodus 45 dB(A) bij 2 kW thermisch vermogen volgens handleiding v1.2. Dit zijn geen geluidsdrukwaarden op de erfgrens.",
+      ],
+      [
+        "Regeling",
+        "Bijgeleverde Whspr-thermostaat; ketelaansturing via OpenTherm of aan/uit volgens de juiste configuratie.",
       ],
     ],
     installation:
@@ -432,16 +447,28 @@ export const brands = [
     ],
     faq: [
       [
-        "Is de Whspr een volledig elektrische vervanger voor mijn ketel?",
-        "De hier beschreven Whspr is een hybride oplossing die met de cv-ketel samenwerkt. Ga dus niet uit van een woning zonder gas op basis van dit product alleen.",
+        "Kan mijn cv-ketel weg?",
+        "De beschreven Whspr is een hybride oplossing. De regeling kiest tussen warmtepomp en cv-ketel; de ketel blijft onderdeel van het systeem en verzorgt warm tapwater.",
       ],
       [
-        "Mag hij direct naast de erfgrens?",
-        "Dat kunnen we niet algemeen toezeggen. Geluid, omgeving en plaatsingsvoorschriften moeten voor de concrete locatie worden beoordeeld.",
+        "Past Whspr direct tegen de schutting?",
+        "Niet zonder beoordeling. De aangeleverde handleiding noemt 30 cm vrije ruimte rondom voor luchtstroom en aparte R290-veiligheidsafstanden. Ook hoeken, openingen en de buren tellen mee. We controleren de actuele voorschriften voor jouw plek.",
       ],
       [
-        "Kunnen jullie hem direct leveren?",
-        "We doen geen voorraad- of levertijdbelofte. De fabrikant communiceert over de eerste serie; actuele beschikbaarheid, levering en uitvoeringsvoorwaarden bevestigen we in het adviestraject.",
+        "Heb ik een andere thermostaat nodig?",
+        "De beschreven uitvoering gebruikt de bijgeleverde Whspr-thermostaat. Of en hoe de cv-ketel aangesloten kan worden, controleren we vooraf.",
+      ],
+      [
+        "Is er een app nodig?",
+        "De brochure beschrijft bediening via de eigen thermostaat, zonder benodigde gebruikersapp. De unit heeft volgens de fabrikant een eSIM voor monitoring via het installateursportaal. Beschikbare functies en serviceafspraken bevestigen we in het voorstel.",
+      ],
+      [
+        "Hoeveel bespaar ik?",
+        "Dat hangt af van warmtebehoefte, energietarieven, ketel, afgiftesysteem en regeling. We doen geen vaste besparingsbelofte op basis van een brochuregetal.",
+      ],
+      [
+        "Is de installatie altijd in één dag klaar?",
+        "Dat hangt af van de woning en benodigde aanpassingen. Leidingroutes, elektra, ketelcompatibiliteit en opstelplek beoordelen we eerst. Beschikbaarheid, planning en scope leggen we vast in het voorstel.",
       ],
     ],
     sources: [

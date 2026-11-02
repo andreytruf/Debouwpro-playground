@@ -1553,3 +1553,202 @@
     gap: 2px;
   }
 }
+
+/* Whspr: genuine brochure imagery, with source context and exact dimensions. */
+.whspr-brochure-hero {
+  background: #ebece5;
+  grid-template-columns: 1fr 1fr;
+}
+.whspr-brochure-hero > figure {
+  background: #fff;
+  padding: 55px 20px 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.whspr-brochure-hero > figure img {
+  height: 560px;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.whspr-brochure-hero .photo-credit {
+  position: static;
+  background: transparent;
+  color: #555a5b;
+  text-align: center;
+  padding: 20px;
+  font-size: 10px;
+}
+
+.energy-card.theme-whspr .card-visual {
+  background: #fff;
+}
+.energy-card.theme-whspr img {
+  object-fit: contain;
+  object-position: center;
+  padding: 8px;
+}
+.whspr-measurements {
+  padding: 50px 30px;
+  min-height: 350px;
+}
+.whspr-measurements .eyebrow {
+  font-size: 10px;
+  margin: 0 0 35px;
+  color: #42593e;
+}
+.whspr-dimensions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.whspr-dimensions > div {
+  min-width: 0;
+}
+.whspr-dimensions strong {
+  font-family: Georgia, serif;
+  font-size: clamp(30px, 3.5vw, 53px);
+  letter-spacing: -0.06em;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #3f5c43;
+}
+.whspr-dimensions span {
+  display: block;
+  margin-top: 13px;
+  font-size: 11px;
+  color: #42593e;
+}
+.whspr-measurements > p:last-child {
+  margin-top: 35px;
+}
+.whspr-acoustic-layout {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 10%;
+  align-items: center;
+}
+.whspr-acoustic-layout img {
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+}
+.whspr-acoustic-layout figcaption {
+  color: #d6dfd1;
+  font-size: 10px;
+  padding-top: 14px;
+}
+.whspr-acoustic-layout .design-lead {
+  color: #d6dfd1;
+}
+.whspr-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8%;
+  align-items: center;
+}
+.whspr-controls > div > p:not(.eyebrow):not(.design-lead):not(.design-caption) {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.whspr-controls img {
+  width: 100%;
+  height: auto;
+}
+.whspr-controls figcaption,
+.whspr-context-grid figcaption {
+  padding-top: 15px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.7;
+}
+.whspr-control-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 30px 0 0;
+}
+.whspr-control-flow li {
+  border: 1px solid #b9c3b2;
+  padding: 12px 16px;
+  color: #3f5c43;
+  font-size: 11px;
+}
+.whspr-in-context {
+  background: #e9e8e0;
+}
+.whspr-context-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1fr;
+  gap: 10%;
+  align-items: center;
+}
+.whspr-context-grid figure img {
+  width: 100%;
+  max-height: 720px;
+  object-fit: cover;
+}
+.whspr-context-grid .button {
+  max-width: 100%;
+  font-size: 11px;
+  gap: 15px;
+}
+@media (max-width: 1000px) {
+  .whspr-brochure-hero .whspr-hero-copy {
+    padding: 45px 30px;
+  }
+  .whspr-acoustic-layout,
+  .whspr-context-grid {
+    gap: 6%;
+  }
+  .whspr-acoustic-layout img {
+    height: 580px;
+  }
+}
+@media (max-width: 760px) {
+  .whspr-brochure-hero,
+  .whspr-acoustic-layout,
+  .whspr-controls,
+  .whspr-context-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .whspr-brochure-hero {
+    gap: 0;
+  }
+  .whspr-brochure-hero .whspr-hero-copy {
+    padding: 40px 20px;
+  }
+  .whspr-brochure-hero > figure {
+    padding: 20px 10px 0;
+  }
+  .whspr-brochure-hero > figure img {
+    height: auto;
+    max-height: 440px;
+  }
+  .whspr-brochure-hero .photo-credit {
+    padding: 16px 10px;
+  }
+  .whspr-measurements {
+    padding: 35px 20px;
+    min-height: 280px;
+  }
+  .whspr-dimensions {
+    gap: 12px;
+  }
+  .whspr-dimensions strong {
+    font-size: clamp(31px, 9vw, 52px);
+  }
+  .whspr-acoustic-layout img {
+    height: 420px;
+    object-position: center 35%;
+  }
+  .whspr-context-grid figure img {
+    max-height: 560px;
+  }
+}

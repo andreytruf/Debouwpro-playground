@@ -45,3 +45,8 @@ These missing rights are not hidden by fabricated branded equipment. Replace the
 ## Subsequent owner-supplied Peblar / portfolio update
 
 The Peblar AI architectural pair has now been replaced with authentic manufacturer photography from the owner's media pack. The original AI image remains only as a historic source in the generation workspace and in older archived screenshots. See [the current Peblar asset register](../peblar-update/README.md) for exact source files and derivative treatments. Two edited photographs of the owner's actual renovation projects are now presented separately from Energy installations. Other manufacturers' outstanding image permissions above remain unchanged.
+
+
+## Subsequent owner-authorised Whspr brochure extraction
+
+The old generic Whspr AI scene is no longer used by current HTML. The owner supplied the Whspr brochure and explicitly requested selected product images to be extracted for the Whspr section. Exact images, copyright context, attribution and source limitations are recorded in [the Whspr update register](../whspr-update/README.md). Manufacturer product renders and examples are now used on the Whspr page, landing card and social metadata; no general open image licence or official partnership is claimed. Earlier outstanding-rights notes above describe the earlier research state, not a claim that these newly supplied files are openly licensed.
