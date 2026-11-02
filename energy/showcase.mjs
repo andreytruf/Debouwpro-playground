@@ -1,4 +1,5 @@
 // Distinct editorial compositions; shared specifications and contact remain in templates.mjs.
+import { renovations } from "./renovations.mjs";
 const arrow =
   '<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>';
 export const aiNote =
@@ -7,7 +8,7 @@ const notes = {
   tesla: "AI-architectuurconcept met Model Y · geen eigen installatie",
   ecoflow: aiNote,
   goodwe: aiNote,
-  peblar: aiNote,
+  peblar: "Fabrikantfoto · © Peblar · geen DE BOUW PRO-installatie",
   samsung:
     "AI-architectuurconcept · getoonde unit is geen Samsung-productweergave",
   whspr: "AI-architectuurconcept · getoonde unit is geen Whspr-productweergave",
@@ -16,14 +17,15 @@ const alt = {
   tesla: "AI-concept van een moderne villa met witte Model Y bij avondlicht",
   ecoflow: "AI-sfeerbeeld van een lichte technische ruimte met eiken afwerking",
   goodwe: "AI-sfeerbeeld van een moderne woning met zonnepanelen",
-  peblar: "AI-concept van een houten carport met elektrische auto",
+  peblar:
+    "Peblar-laadpunt aan een lichte bakstenen gevel naast een elektrische auto; fabrikantfoto",
   samsung:
     "AI-architectuurconcept van een woning met generieke buitenunit, geen Samsung-model",
   whspr:
     "AI-architectuurconcept bij een Nederlandse rijwoning, geen Whspr-productfoto",
 };
 export const photo = (slug, priority = false, cls = "") =>
-  `<img class="${cls}" src="/assets/energy/photo/${slug}-1600.webp" srcset="/assets/energy/photo/${slug}-720.webp 720w, /assets/energy/photo/${slug}-1600.webp 1600w" sizes="(max-width:760px) 100vw, 100vw" width="1600" height="900" ${priority ? 'fetchpriority="high"' : 'loading="lazy" decoding="async"'} alt="${alt[slug]}">`;
+  `<img class="${cls}" src="/assets/energy/photo/${slug}-1600.webp" srcset="/assets/energy/photo/${slug}-720.webp 720w, /assets/energy/photo/${slug}-1600.webp 1600w" sizes="(max-width:760px) 100vw, 100vw" width="1600" height="${slug === "peblar" ? 1067 : 900}" ${priority ? 'fetchpriority="high"' : 'loading="lazy" decoding="async"'} alt="${alt[slug]}">`;
 export const photoNote = (slug) => notes[slug];
 const actions = () =>
   `<div class="energy-actions"><a class="button button-dark" href="#contact">Vraag advies aan <span>${arrow}</span></a><a class="button energy-outline" href="#mogelijkheden">Ontdek de mogelijkheden <span>${arrow}</span></a></div>`;
@@ -82,7 +84,7 @@ function goodwe(b) {
 
 function peblar(b) {
   return `
-<section class="peblar-hero showcase-hero shell" aria-labelledby="brand-title"><figure>${photo("peblar", true)}${caption("peblar")}</figure><div>${label("PRO ENERGY / Peblar Home")}<h1 id="brand-title">Een vaste plek.<br>Een slimme <em>routine.</em></h1><p>Thuiskomen en aansluiten. Een laadpunt dat past bij je parkeerplek én de capaciteit van je woning.</p>${actions()}</div></section>
+<section class="peblar-hero showcase-hero shell" aria-labelledby="brand-title"><figure>${photo("peblar", true)}${caption("peblar")}</figure><div>${label("PRO ENERGY / Peblar")}<h1 id="brand-title">Een vaste plek.<br>Een slimme <em>routine.</em></h1><p>Thuiskomen en aansluiten. Een laadpunt dat past bij je parkeerplek én de capaciteit van je woning.</p>${actions()}<p class="peblar-training">Peblar Certified Installer-training afgerond · mei 2026</p></div></section>
 <section class="section peblar-product" id="mogelijkheden"><div class="shell peb-product-layout"><div>${label("01 / Peblar Home")}<h2>Alle aandacht<br>voor het <em>dagelijkse.</em></h2><p class="design-lead">Een vaste Type 2-kabel, een heldere status en bediening op je eigen netwerk.</p>${proof(
     [
       ["Tot 11 kW", "Home · drie fasen"],
@@ -90,7 +92,28 @@ function peblar(b) {
       ["Wifi / LAN", "Lokale webinterface"],
     ],
   )}<p>Op één fase noemt de huidige Home-productpagina 3,7 kW. Het werkelijke laadvermogen volgt uit de auto, netaansluiting en instellingen.</p></div><figure class="peblar-hardware"><img src="/assets/energy/photo/peblar-front.webp" width="1100" height="1100" loading="lazy" decoding="async" alt="Officiële Peblar Home productrender met vaste laadkabel" data-product-image><div class="hardware-angle-buttons" role="group" aria-label="Productaanzicht"><button type="button" data-product-view="front" aria-pressed="true">Vooraanzicht</button><button type="button" data-product-view="side" aria-pressed="false">Zijaanzicht</button></div><figcaption>Peblar Home · © Peblar · <a href="https://peblar.com/downloads" target="_blank" rel="noopener noreferrer">officieel media pack</a>.</figcaption></figure></div></section>
-<section class="section shell charging-modes">${label("02 / Slim laden begint bij meten")}<h2>Eén laadpunt.<br>Verschillende <em>ritmes.</em></h2><div class="mode-picker" data-mode-picker><div role="group" aria-label="Bekijk laadstrategie"><button type="button" data-mode="normaal" aria-pressed="true">Dagelijks laden</button><button type="button" data-mode="zon" aria-pressed="false">Laden op zon</button><button type="button" data-mode="balans" aria-pressed="false">Load balancing</button></div><div class="mode-copy"><article data-mode-panel="normaal"><h3>Klaar voor de volgende rit.</h3><p>Stel laadmomenten en stroomlimieten in binnen de mogelijkheden van je laadpunt. De beschikbare capaciteit en je auto bepalen het resultaat.</p></article><article data-mode-panel="zon"><h3>Je eigen opwek benutten.</h3><p>De ondersteunde solar-modus kan laden afstemmen op gemeten zonne-overschot. Dat vraagt geschikte meting, firmware en correcte configuratie.</p></article><article data-mode-panel="balans"><h3>Ruimte laten voor de woning.</h3><p>Een ondersteunde P1-, CT- of Modbus-koppeling meet het huisverbruik. De regeling past de laadstroom daarop aan binnen de ingestelde aansluitgrenzen.</p></article></div></div>${link("Actuele Peblar-functies en documentatie", b.sources[0][1])}</section>`;
+<section class="section shell peblar-range" aria-labelledby="peblar-range-title"><div class="section-heading"><div>${label("02 / Kies de uitvoering")}<h2 id="peblar-range-title">Eén ontwerpgedachte.<br>Drie <em>toepassingen.</em></h2></div><p>Je parkeerplek, laadgedrag en eventuele verrekening bepalen welk model past. Het beschikbare vermogen volgt altijd uit de netaansluiting, de auto en de ingestelde limieten.</p></div><div class="peblar-range-grid">
+<article><div class="peblar-range-visual"><img src="/assets/energy/photo/peblar-front.webp" width="1100" height="1100" loading="lazy" decoding="async" alt="Peblar Home met vaste Type 2-kabel"></div><p class="eyebrow">01 / Thuis</p><h3>Peblar Home</h3><p>Voor je eigen oprit of carport. Een vaste kabel die je direct kunt pakken.</p><ul><li>3,7 kW op één fase; tot 11 kW op drie fasen</li><li>Type 2-kabel van 5 of 7,5 meter</li><li>Lokale webinterface via wifi of ethernet</li></ul><a class="text-link" href="#contact">Advies over Home <span aria-hidden="true">${arrow}</span></a></article>
+<article><div class="peblar-range-visual"><img src="/assets/energy/photo/peblar-business.webp" width="900" height="900" loading="lazy" decoding="async" alt="Peblar Business in socket-uitvoering; officiële productrender"></div><p class="eyebrow">02 / Thuis &amp; zakelijk</p><h3>Peblar Business</h3><p>Wanneer laadregistratie en zakelijke verrekening meewegen in de keuze.</p><ul><li>Tot 7,4 kW op één fase; tot 22 kW op drie fasen</li><li>Socket, shutter of vaste kabel, per uitvoering</li><li>MID-meter; backoffice en kosten apart afstemmen</li></ul><a class="text-link" href="#contact">Advies over Business <span aria-hidden="true">${arrow}</span></a></article>
+<article><div class="peblar-range-visual peblar-range-scene"><img src="/assets/energy/photo/peblar-dual.webp" width="721" height="900" loading="lazy" decoding="async" alt="Peblar Dual met twee sockets op een zuil; fabrikantbeeld"></div><p class="eyebrow">03 / Twee laadplekken</p><h3>Peblar Dual</h3><p>Twee aansluitpunten in één laadstation voor een gedeelde of zakelijke parkeerplek.</p><ul><li>Twee Type 2-sockets, uitvoeringafhankelijk met shutter</li><li>Vermogensverdeling tussen beide aansluitpunten</li><li>MID- of Eichrecht-variant volgens model</li></ul><a class="text-link" href="#contact">Advies over Dual <span aria-hidden="true">${arrow}</span></a></article>
+</div><p class="design-caption">Productbeelden © Peblar, uit de aangeleverde fabrikantpakketten. Geen eigen installaties. Modelgegevens: Nederlandse Peblar-brochure en Dual-specificatieblad 6004-2601-9602. Beschikbaarheid, accessoires en firmwarefuncties worden per voorstel bevestigd.</p></section>
+<section class="section peblar-install-story"><div class="shell peblar-install-grid"><figure><img src="/assets/energy/photo/peblar-detail-1200.webp" srcset="/assets/energy/photo/peblar-detail-640.webp 640w, /assets/energy/photo/peblar-detail-1200.webp 1200w" sizes="(max-width:760px) calc(100vw - 40px), 42vw" width="1200" height="1800" loading="lazy" decoding="async" alt="Detail van een Peblar-laadpunt met opgerolde kabel aan een houten gevel"><figcaption>Fabrikantfoto · © Peblar · geen eigen installatie</figcaption></figure><div>${label("03 / Meer dan een laadpunt")}<h2>Ook de route<br>moet <em>kloppen.</em></h2><p class="design-lead">Van meterkast tot parkeerplek. Met aandacht voor wat je ziet én wat erachter zit.</p>${steps(
+    [
+      [
+        "Eerst de woning",
+        "We bekijken aansluiting, dagelijks verbruik en de gewenste plek. Zo begint het plan bij jouw situatie.",
+      ],
+      [
+        "Dan de verbinding",
+        "Kabelroute, beveiliging en meetkoppeling worden samen ontworpen. Voor zonne-laden en load balancing controleren we de vereiste accessoires.",
+      ],
+      [
+        "Tot aan de afwerking",
+        "We stemmen doorvoeren en bevestiging af op gevel en interieur. Na installatie nemen we instellingen en bediening met je door.",
+      ],
+    ],
+  )}</div></div></section>
+<section class="section shell charging-modes">${label("04 / Slim laden begint bij meten")}<h2>Eén laadpunt.<br>Verschillende <em>ritmes.</em></h2><div class="mode-picker" data-mode-picker><div role="group" aria-label="Bekijk laadstrategie"><button type="button" data-mode="normaal" aria-pressed="true">Dagelijks laden</button><button type="button" data-mode="zon" aria-pressed="false">Laden op zon</button><button type="button" data-mode="balans" aria-pressed="false">Load balancing</button></div><div class="mode-copy"><article data-mode-panel="normaal"><h3>Klaar voor de volgende rit.</h3><p>Stel laadmomenten en stroomlimieten in binnen de mogelijkheden van je laadpunt. De beschikbare capaciteit en je auto bepalen het resultaat.</p></article><article data-mode-panel="zon"><h3>Je eigen opwek benutten.</h3><p>De ondersteunde solar-modus kan laden afstemmen op gemeten zonne-overschot. Dat vraagt geschikte meting, firmware en correcte configuratie.</p></article><article data-mode-panel="balans"><h3>Ruimte laten voor de woning.</h3><p>Een ondersteunde P1-, CT- of Modbus-koppeling meet het huisverbruik. De regeling past de laadstroom daarop aan binnen de ingestelde aansluitgrenzen.</p></article></div></div>${link("Actuele Peblar-functies en documentatie", b.sources[0][1])}</section>${renovations()}`;
 }
 
 function samsung(b) {

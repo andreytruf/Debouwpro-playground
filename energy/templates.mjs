@@ -1,4 +1,5 @@
 import { renderShowcase, photo, photoNote } from "./showcase.mjs";
+import { renovations } from "./renovations.mjs";
 import { brands, landingFAQ } from "./content.mjs";
 const arrow =
   '<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>';
@@ -11,15 +12,13 @@ const line = (text) => text.split("\n").map(esc).join("<br>");
 const button = (text, href = "#contact", secondary = false) =>
   `<a class="button ${secondary ? "energy-outline" : "button-dark"}" href="${href}">${text}<span aria-hidden="true">${arrow}</span></a>`;
 const image = (brand, priority = false) => photo(brand.slug, priority);
-const caption =
-  '<figcaption class="visual-disclaimer">AI-sfeerbeeld · geen eigen project of exacte productweergave</figcaption>';
 const head = (eyebrow, title, text = "") =>
   `<div class="section-heading"><div><p class="eyebrow">${eyebrow}</p><h2>${title}</h2></div>${text ? `<p>${text}</p>` : ""}</div>`;
 const faqs = (items, title = "Goed om<br>te weten.") =>
   `<section class="section shell faq" aria-labelledby="faq-title"><div><p class="eyebrow">Jouw vragen, helder beantwoord</p><h2 id="faq-title">${title}</h2></div><div class="faq-list">${items.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div></section>`;
 
 function card(b) {
-  return `<article class="energy-card theme-${b.slug}" data-category="${b.filter.join(" ")}"><a href="/energy/${b.slug}" aria-label="Ontdek ${esc(b.name)} — ${esc(b.kicker)}"><figure><div class="card-visual">${image(b)}</div>${caption}</figure><div class="card-body"><p class="eyebrow">${esc(b.category)}</p><div class="card-title"><h3>${b.name}</h3><span aria-hidden="true">${arrow}</span></div><p class="card-products">${esc(b.kicker)}</p><p>${esc(b.card)}</p><span class="card-link">Ontdek ${b.name} <span aria-hidden="true">↗</span></span></div></a></article>`;
+  return `<article class="energy-card theme-${b.slug}" data-category="${b.filter.join(" ")}"><a href="/energy/${b.slug}" aria-label="Ontdek ${esc(b.name)} — ${esc(b.kicker)}"><figure><div class="card-visual">${image(b)}</div><figcaption class="visual-disclaimer">${photoNote(b.slug)}</figcaption></figure><div class="card-body"><p class="eyebrow">${esc(b.category)}</p><div class="card-title"><h3>${b.name}</h3><span aria-hidden="true">${arrow}</span></div><p class="card-products">${esc(b.kicker)}</p><p>${esc(b.card)}</p><span class="card-link">Ontdek ${b.name} <span aria-hidden="true">↗</span></span></div></a></article>`;
 }
 
 function contact(brand) {
@@ -60,7 +59,7 @@ function shell(home, { title, description, body, brand }) {
     /(<a class="text-link" href=")\/#home/,
     "$1#energy-top",
   );
-  return `<!doctype html><html lang="nl-NL"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#F2F0EC"><meta name="robots" content="noindex, nofollow"><title>${esc(title)}</title><meta name="description" content="${esc(description)}"><meta property="og:type" content="website"><meta property="og:locale" content="nl_NL"><meta property="og:site_name" content="DE BOUW PRO Energy"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:image" content="https://debouwpro-playground.andrey-57c.workers.dev${brand ? `/assets/energy/photo/${brand.slug}-1600.webp` : `/assets/images/living-1280.webp`}"><meta property="og:image:alt" content="${brand ? "AI-sfeerbeeld; geen eigen project of exacte productweergave" : "Architectuurreferentie; geen DE BOUW PRO project"}"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/styles.css"><link rel="stylesheet" href="/assets/energy.css"><link rel="stylesheet" href="/assets/showcase.css"><script src="/assets/site.js" defer></script><script src="/assets/energy.js" defer></script></head><body class="energy-page ${brand ? "brand-page theme-" + brand.slug : "energy-landing"}"><a class="skip-link" href="#main">Ga naar inhoud</a>${header}<main id="main">${body}</main>${footerWithTop}<div class="mobile-contact" aria-label="Snel contact"><a href="tel:+31612350850">Bel ons <span aria-hidden="true">${arrow}</span></a><a href="#contact">Vraag advies aan <span aria-hidden="true">${arrow}</span></a></div></body></html>`;
+  return `<!doctype html><html lang="nl-NL"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#F2F0EC"><meta name="robots" content="noindex, nofollow"><title>${esc(title)}</title><meta name="description" content="${esc(description)}"><meta property="og:type" content="website"><meta property="og:locale" content="nl_NL"><meta property="og:site_name" content="DE BOUW PRO Energy"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:image" content="https://debouwpro-playground.andrey-57c.workers.dev${brand ? `/assets/energy/photo/${brand.slug}-1600.webp` : `/assets/images/living-1280.webp`}"><meta property="og:image:alt" content="${brand ? photoNote(brand.slug) : "Architectuurreferentie; geen DE BOUW PRO project"}"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/styles.css"><link rel="stylesheet" href="/assets/energy.css"><link rel="stylesheet" href="/assets/showcase.css"><script src="/assets/site.js" defer></script><script src="/assets/energy.js" defer></script></head><body class="energy-page ${brand ? "brand-page theme-" + brand.slug : "energy-landing"}"><a class="skip-link" href="#main">Ga naar inhoud</a>${header}<main id="main">${body}</main>${footerWithTop}<div class="mobile-contact" aria-label="Snel contact"><a href="tel:+31612350850">Bel ons <span aria-hidden="true">${arrow}</span></a><a href="#contact">Vraag advies aan <span aria-hidden="true">${arrow}</span></a></div></body></html>`;
 }
 
 export function renderLanding(home) {
@@ -162,7 +161,7 @@ export function renderLanding(home) {
        `<li class="reveal"><span class="step-number">0${i + 1}<span aria-hidden="true">—</span></span><h3>${t}</h3><p>${p}</p></li>`,
    )
    .join("")}</ol></div></section>
- <section class="section shell energy-projects">${head("07 / Uit de praktijk", "Echte woningen.<br>Echte <em>oplossingen.</em>")}<div class="project-placeholder"><span class="placeholder-mark" aria-hidden="true">+</span><div><h3>Hier komen onze Energy-projecten.</h3><p>We voegen alleen eigen projectfoto’s en beschrijvingen toe nadat ze zijn gecontroleerd en voor publicatie zijn vrijgegeven.</p><span>Projectgalerij in voorbereiding · nog geen projecten gepubliceerd</span></div></div></section>
+ ${renovations()}
  ${faqs(landingFAQ)}${contact()}`;
   return shell(home, {
     title: "PRO ENERGY · Slimme energie in Utrecht | DE BOUW PRO",

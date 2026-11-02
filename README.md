@@ -78,3 +78,10 @@ The Energy landing retains its architecture and sections. A single corporate wor
 Real Powerwall 3 photography (CC0) and official publicly distributed Peblar media-pack renders supplement six clearly labelled original AI architecture scenes. No AI scene is represented as an exact manufacturer product image or a company project. Other manufacturer image rights remain documented in [the image register](docs/energy-v3/IMAGE-SOURCES.md), together with original asset sources and the older Samsung Dropbox material that was deliberately not reused for R290.
 
 With the local server running, `node scripts/preview-energy-v3.mjs` captures all seven Energy pages at desktop and mobile sizes under `docs/energy-v3/previews/`. The newer tests cover the unified wordmark, copper heading, keyboard-controlled capacity examples, charging explanations and fallback content.
+
+
+## Peblar and owner portfolio preview
+
+The Peblar page now uses manufacturer-supplied lifestyle photography in place of its former AI scene and includes Home, Business and Dual model cards. Images are local WebP derivatives from the owner's `/De Bouw Pro/B2B info/Peblar` Dropbox media packs. Existing product-view and charging-mode controls remain intact. Two owner-supplied, presentation-edited renovation photos appear in a clearly separate renovation section on `/energy` and `/energy/peblar`; they do not depict Energy installations. The corporate homepage is unchanged.
+
+Run `node scripts/preview-peblar.mjs` with the local dev server running to capture desktop/mobile previews in `docs/peblar-update/previews`. Source and verification details: [Peblar update](docs/peblar-update/README.md). Full manufacturer archives, private certificates and contracts are not deployed or redistributed.

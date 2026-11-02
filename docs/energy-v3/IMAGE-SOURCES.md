@@ -40,3 +40,8 @@ These missing rights are not hidden by fabricated branded equipment. Replace the
 ## Corporate identity
 
 `assets/brand/wordmark.svg` and `wordmark-light.svg` are original typographic DE BOUW PRO assets. Same Arial/Helvetica family, proportions and spacing; PRO always `#D97841`; DE BOUW `#1A1A1A` or white. All live headers/footers use the same light-background asset. These are logotypes; brand colour treatment is not used for low-contrast body copy.
+
+
+## Subsequent owner-supplied Peblar / portfolio update
+
+The Peblar AI architectural pair has now been replaced with authentic manufacturer photography from the owner's media pack. The original AI image remains only as a historic source in the generation workspace and in older archived screenshots. See [the current Peblar asset register](../peblar-update/README.md) for exact source files and derivative treatments. Two edited photographs of the owner's actual renovation projects are now presented separately from Energy installations. Other manufacturers' outstanding image permissions above remain unchanged.
