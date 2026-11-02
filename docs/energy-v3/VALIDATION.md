@@ -29,3 +29,16 @@ Final local and public verification results and deployment identifiers are recor
 - `npm run check`: static build and Wrangler deploy dry run passed.
 - Four viewport widths checked; axe WCAG A/AA audits passed for every Energy page on mobile and desktop.
 - `git diff --check`: passed.
+
+## Published verification
+
+- Source release commit: `5952e58a390a5f68ee0f0282d3ffce7bda643d58`.
+- GitHub Actions validation for the release passed: https://github.com/andreytruf/Debouwpro-playground/actions/runs/41539329158 .
+- While preparing publication, a newer Wrangler deployment was observed. Its assets were checked before any traffic switch: all 43 checked responses (homepage, seven Energy pages and all deployed assets) exactly match this validated local build, with noindex headers present. Results are in `live-checks.json`.
+- Verified active Worker: `debouwpro-playground`; active deployment `c49554ef-adaf-4848-ac4b-47a2ec8a6f28`, version `f5ee0dda-22b6-4171-a0fb-1a6718f82d1d`, at 100%.
+- An assets-only candidate version `7199c9af-e4e2-4303-a236-c940b50cfabe` was uploaded via the connected API but was deliberately not activated because the newer Wrangler publication already serves the exact tested files. No parallel publication was overwritten.
+- No DNS, routes, Wix settings, Main/Test repositories or production website were changed by this upgrade. Temporary upload credentials were removed; none are version controlled.
+
+## Remaining assets
+
+The site is functional and publicly verified, but authentic manufacturer photography still needs cleared use for EcoFlow, GoodWe, current Samsung EHS Mono R290, Whspr and the current EU Wall Connector. Original architectural AI scenes are explicitly labelled substitutes, not exact equipment images. See `IMAGE-SOURCES.md` for researched source links and rights status. No owner collection of basic technical specifications was required.
