@@ -1008,3 +1008,5 @@
     transition: none;
   }
 }
+
+.energy-hero h1 > span:first-child{color:#D97841}

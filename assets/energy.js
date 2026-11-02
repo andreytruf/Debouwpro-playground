@@ -33,3 +33,69 @@ if (filters) {
       ),
     );
 }
+
+// Product explorers explain supported options, without pretending to be a sizing calculator.
+const explorer = document.querySelector("[data-module-explorer]");
+if (explorer) {
+  explorer.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-modules]");
+    if (!button) return;
+    const count = Number(button.dataset.modules);
+    explorer
+      .querySelectorAll("[data-modules]")
+      .forEach((item) =>
+        item.setAttribute("aria-pressed", String(item === button)),
+      );
+    explorer
+      .querySelectorAll("[data-layer]")
+      .forEach((layer) =>
+        layer.classList.toggle(
+          "is-active",
+          Number(layer.dataset.layer) <= count,
+        ),
+      );
+    explorer.querySelector(".module-result").textContent =
+      `${count} ${count === 1 ? "module" : "modules"} · ${count * 5} kWh voorbeeldcapaciteit`;
+  });
+}
+
+const modePicker = document.querySelector("[data-mode-picker]");
+if (modePicker) {
+  function showMode(value) {
+    modePicker
+      .querySelectorAll("[data-mode]")
+      .forEach((button) =>
+        button.setAttribute(
+          "aria-pressed",
+          String(button.dataset.mode === value),
+        ),
+      );
+    modePicker
+      .querySelectorAll("[data-mode-panel]")
+      .forEach((panel) => (panel.hidden = panel.dataset.modePanel !== value));
+  }
+  showMode("normaal");
+  modePicker.querySelector(".mode-copy").setAttribute("aria-live", "polite");
+  modePicker.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-mode]");
+    if (button) showMode(button.dataset.mode);
+  });
+}
+
+const productImage = document.querySelector("[data-product-image]");
+if (productImage) {
+  document
+    .querySelector(".hardware-angle-buttons")
+    .addEventListener("click", (event) => {
+      const button = event.target.closest("[data-product-view]");
+      if (!button) return;
+      const side = button.dataset.productView === "side";
+      productImage.src = `/assets/energy/photo/peblar-${side ? "side" : "front"}.webp`;
+      productImage.alt = `Officiële Peblar Home productrender, ${side ? "zijaanzicht" : "vooraanzicht"}`;
+      document
+        .querySelectorAll("[data-product-view]")
+        .forEach((item) =>
+          item.setAttribute("aria-pressed", String(item === button)),
+        );
+    });
+}

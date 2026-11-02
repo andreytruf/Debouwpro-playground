@@ -67,3 +67,14 @@ Seven static pages are built by the existing `npm run build` workflow: `/energy`
 The corporate homepage content, existing visual styles and assets are preserved. Its only HTML change is the Energy navigation link. Shared navigation JavaScript handles links without hashes to support page-to-page navigation. Playground noindex metadata, response headers, robots and CSP remain in place. No source modules are served as public files.
 
 With the local server running, `node scripts/preview-energy.mjs` captures desktop/mobile screenshots of the landing page, Tesla and Whspr into `docs/energy/previews/`. [Asset and technical source notes](docs/energy/SOURCES.md) list verified facts and outstanding approvals. The [Energy validation report](docs/energy/VALIDATION.md) records checks and publication status.
+
+
+## Visual and product showcase upgrade
+
+The Energy landing retains its architecture and sections. A single corporate wordmark (`assets/brand/wordmark.svg`) now supplies every header and footer, with PRO in #D97841. The entire ENERGY heading is copper. No homepage main content was rewritten.
+
+`energy/showcase.mjs` supplies six genuinely different editorial compositions: cinematic Tesla, daylight modular EcoFlow, architectural/technical GoodWe, hardware-led Peblar, panoramic Samsung and human-scale Whspr. Specifications, sources, FAQs, consultation and corporate navigation continue using the existing shared renderer. `assets/showcase.css` is isolated to this presentation layer. The existing build, static HTML outputs and Cloudflare assets-only configuration are preserved.
+
+Real Powerwall 3 photography (CC0) and official publicly distributed Peblar media-pack renders supplement six clearly labelled original AI architecture scenes. No AI scene is represented as an exact manufacturer product image or a company project. Other manufacturer image rights remain documented in [the image register](docs/energy-v3/IMAGE-SOURCES.md), together with original asset sources and the older Samsung Dropbox material that was deliberately not reused for R290.
+
+With the local server running, `node scripts/preview-energy-v3.mjs` captures all seven Energy pages at desktop and mobile sizes under `docs/energy-v3/previews/`. The newer tests cover the unified wordmark, copper heading, keyboard-controlled capacity examples, charging explanations and fallback content.
