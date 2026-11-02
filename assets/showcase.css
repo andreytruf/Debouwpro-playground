@@ -1752,3 +1752,10 @@
     max-height: 560px;
   }
 }
+
+/* Whspr landing card: manufacturer garden context; product hero stays unchanged. */
+.energy-card.theme-whspr img {
+  object-fit: cover;
+  object-position: 50% 38%;
+  padding: 0;
+}

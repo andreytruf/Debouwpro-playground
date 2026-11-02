@@ -11,3 +11,8 @@ These images were already referenced by the first prototype. They are mood refer
 Query used: `auto=format&fm=webp&fit=crop&w=640&q=78` (or `w=1280`). The living 1280 variant was retrieved with equivalent `fm=webp&w=1280&q=78` parameters after rate limiting.
 
 Review the [Unsplash license](https://unsplash.com/license) and original source context before any production use. Replace these files and their alt text with approved real photography when available. Do not present stock imagery as completed work.
+
+
+## Owner portfolio replacement
+
+The corporate homepage’s existing `#inspiratie` gallery now uses the owner-supplied Nieuwegein kitchen and Houten roof-window bathroom photographs under `assets/projects/`, replacing its temporary reference images. These were provided through Dropbox as real projects with lighting/presentation edits and explicitly authorised for this homepage preview. Captions identify them as own projects; the section notes the edits. No client surname or address is published. Existing hero and service images above remain labelled references. Exact source files and derivative sizes are recorded in `docs/peblar-update/README.md`; current placement is recorded in `docs/photo-placement/README.md`.

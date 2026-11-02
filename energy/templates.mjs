@@ -1,5 +1,4 @@
 import { renderShowcase, photo, photoNote, socialPhoto } from "./showcase.mjs";
-import { renovations } from "./renovations.mjs";
 import { brands, landingFAQ } from "./content.mjs";
 const arrow =
   '<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>';
@@ -18,7 +17,15 @@ const faqs = (items, title = "Goed om<br>te weten.") =>
   `<section class="section shell faq" aria-labelledby="faq-title"><div><p class="eyebrow">Jouw vragen, helder beantwoord</p><h2 id="faq-title">${title}</h2></div><div class="faq-list">${items.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div></section>`;
 
 function card(b) {
-  return `<article class="energy-card theme-${b.slug}" data-category="${b.filter.join(" ")}"><a href="/energy/${b.slug}" aria-label="Ontdek ${esc(b.name)} — ${esc(b.kicker)}"><figure><div class="card-visual">${image(b)}</div><figcaption class="visual-disclaimer">${photoNote(b.slug)}</figcaption></figure><div class="card-body"><p class="eyebrow">${esc(b.category)}</p><div class="card-title"><h3>${b.name}</h3><span aria-hidden="true">${arrow}</span></div><p class="card-products">${esc(b.kicker)}</p><p>${esc(b.card)}</p><span class="card-link">Ontdek ${b.name} <span aria-hidden="true">↗</span></span></div></a></article>`;
+  const visual =
+    b.slug === "whspr"
+      ? '<img src="/assets/energy/photo/whspr-garden-800.webp" srcset="/assets/energy/photo/whspr-garden-480.webp 480w, /assets/energy/photo/whspr-garden-800.webp 800w" sizes="(max-width:760px) calc(100vw - 40px), 32vw" width="800" height="1200" loading="lazy" decoding="async" alt="Whspr in een tuin naast een bakstenen gevel; voorbeeld uit de fabrikantbrochure">'
+      : image(b);
+  const credit =
+    b.slug === "whspr"
+      ? "Fabrikantbeeld · © Whspr · geen eigen installatie"
+      : photoNote(b.slug);
+  return `<article class="energy-card theme-${b.slug}" data-category="${b.filter.join(" ")}"><a href="/energy/${b.slug}" aria-label="Ontdek ${esc(b.name)} — ${esc(b.kicker)}"><figure><div class="card-visual">${visual}</div><figcaption class="visual-disclaimer">${credit}</figcaption></figure><div class="card-body"><p class="eyebrow">${esc(b.category)}</p><div class="card-title"><h3>${b.name}</h3><span aria-hidden="true">${arrow}</span></div><p class="card-products">${esc(b.kicker)}</p><p>${esc(b.card)}</p><span class="card-link">Ontdek ${b.name} <span aria-hidden="true">↗</span></span></div></a></article>`;
 }
 
 function contact(brand) {
@@ -161,7 +168,7 @@ export function renderLanding(home) {
        `<li class="reveal"><span class="step-number">0${i + 1}<span aria-hidden="true">—</span></span><h3>${t}</h3><p>${p}</p></li>`,
    )
    .join("")}</ol></div></section>
- ${renovations()}
+ <section class="section shell energy-projects">${head("07 / Uit de praktijk", "Echte woningen.<br>Echte <em>oplossingen.</em>")}<div class="project-placeholder"><span class="placeholder-mark" aria-hidden="true">+</span><div><h3>Hier komen onze Energy-projecten.</h3><p>We voegen alleen eigen projectfoto’s en beschrijvingen toe nadat ze zijn gecontroleerd en voor publicatie zijn vrijgegeven.</p><span>Projectgalerij in voorbereiding · nog geen projecten gepubliceerd</span></div></div></section>
  ${faqs(landingFAQ)}${contact()}`;
   return shell(home, {
     title: "PRO ENERGY · Slimme energie in Utrecht | DE BOUW PRO",

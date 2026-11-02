@@ -150,10 +150,14 @@ test("Energy works without JavaScript, including navigation and FAQ", async ({
   await context.close();
 });
 
-test("corporate homepage main content is preserved", async ({ request }) => {
+test("corporate homepage outside the approved project gallery is preserved", async ({
+  request,
+}) => {
   const html = await (await request.get("/")).text();
-  const main = html.slice(html.indexOf("<main"), html.indexOf("</main>") + 7);
+  const main = html
+    .slice(html.indexOf("<main"), html.indexOf("</main>") + 7)
+    .replace(/<section\s+class="section inspiration"[\s\S]*?<\/section>/, "");
   expect(createHash("sha256").update(main).digest("hex")).toBe(
-    "0be1cea169664def0f896c22cbc44dc343453cd91149bdf7e23e017dc118b307",
+    "dc8d5e67cd54e9021365da9f02bcb49be7aaec05a64c2f0597256458f43ea60a",
   );
 });

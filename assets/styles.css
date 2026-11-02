@@ -1085,5 +1085,28 @@ details p {
 }
 
 /* One corporate wordmark asset across all pages. Logotype colours are brand colours. */
-.brand .brand-logo{width:160px;height:27px;object-fit:contain;object-position:left center}
-@media(max-width:760px){.brand .brand-logo{width:152px;height:26px}}
+.brand .brand-logo {
+  width: 160px;
+  height: 27px;
+  object-fit: contain;
+  object-position: left center;
+}
+@media (max-width: 760px) {
+  .brand .brand-logo {
+    width: 152px;
+    height: 26px;
+  }
+}
+
+/* Owner project photos keep their landscape/portrait framing in the existing gallery. */
+#inspiratie .gallery > figure .image-wrap {
+  height: auto;
+  aspect-ratio: 3 / 2;
+}
+#inspiratie .gallery-aside .image-wrap {
+  height: auto;
+  aspect-ratio: 3 / 4;
+}
+#inspiratie .gallery {
+  align-items: start;
+}

@@ -39,10 +39,6 @@ for (const slug of ["energy", "peblar"])
       content:
         ".site-header,.skip-link,.mobile-contact { visibility: hidden !important; }",
     });
-    await page.locator(".renovation-preview").screenshot({
-      path: `docs/peblar-update/previews/projects-${slug}-${label}.jpg`,
-      quality: 85,
-    });
     if (slug === "peblar")
       await page.locator(".peblar-range").screenshot({
         path: `docs/peblar-update/previews/range-${label}.jpg`,
