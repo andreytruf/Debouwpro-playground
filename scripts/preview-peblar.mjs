@@ -1,8 +1,11 @@
+import { existsSync } from "node:fs";
 import { chromium } from "@playwright/test";
 import { mkdir } from "node:fs/promises";
 await mkdir("docs/peblar-update/previews", { recursive: true });
 const browser = await chromium.launch({
-  executablePath: "/usr/bin/chromium",
+  executablePath:
+    process.env.CHROMIUM_PATH ||
+    (existsSync("/usr/bin/chromium") ? "/usr/bin/chromium" : undefined),
   args: ["--no-sandbox"],
 });
 for (const slug of ["energy", "peblar"])
@@ -31,6 +34,10 @@ for (const slug of ["energy", "peblar"])
     await page.screenshot({
       path: `docs/peblar-update/previews/${slug}-${label}-hero.jpg`,
       quality: 85,
+    });
+    await page.addStyleTag({
+      content:
+        ".site-header,.skip-link,.mobile-contact { visibility: hidden !important; }",
     });
     await page.locator(".renovation-preview").screenshot({
       path: `docs/peblar-update/previews/projects-${slug}-${label}.jpg`,

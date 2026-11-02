@@ -30,3 +30,12 @@ Screenshots: `previews/` contains landing/Peblar hero and full-page desktop/mobi
 `npm run check`: successful static build and Wrangler dry run. `npm test`: 20/20 passed. Direct routes, refresh, decoding all images, local links, responsive widths 320/390/768/1440, axe WCAG AA checks, keyboard interaction, no-JavaScript fallbacks and noindex verified. The existing homepage main-content hash is unchanged. A stale long-running local Wrangler asset index initially returned 404 for newly added files; restarting the development server resolved it before validation.
 
 The last card image alignment / SVG arrow cleanup is additionally covered by targeted landing and Peblar responsive/accessibility checks. Targeted final checks: 2/2 passed. All source and selected images are committed to the Playground repository only. Deployment and public verification are recorded after publication.
+
+
+## Published result
+
+Source commit: `c7e15fe58416ae537dbcb6206654244ab04e35e5`. Cloudflare version: `41b0c682-f79a-4cda-8258-1d1821512ff5`, deployment `f6ea1ce1-89f6-4a19-a396-2e3139556674` at 100% for `debouwpro-playground` only. Public verification: all 53 published files match the validated local build byte for byte; all retain the noindex header. Results are in `live-checks.json`.
+
+Preview: https://debouwpro-playground.andrey-57c.workers.dev/energy/peblar/ . Owner photographs: https://debouwpro-playground.andrey-57c.workers.dev/energy/#renovaties . No changes were made to production, DNS, other repositories or the corporate homepage.
+
+GitHub CI for the published source also passed: https://github.com/andreytruf/Debouwpro-playground/actions/runs/41545449930 .

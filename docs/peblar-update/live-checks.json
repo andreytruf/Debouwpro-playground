@@ -1,0 +1,272 @@
+{
+  "source_commit": "c7e15fe58416ae537dbcb6206654244ab04e35e5",
+  "version": "41b0c682-f79a-4cda-8258-1d1821512ff5",
+  "deployment": "f6ea1ce1-89f6-4a19-a396-2e3139556674",
+  "checks": [
+    {
+      "path": "/robots.txt",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/index.html",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/404.html",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/energy/index.html",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/favicon.svg",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/styles.css",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy.css",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy.js",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/showcase.css",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/site.js",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/energy/samsung/index.html",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/energy/ecoflow/index.html",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/energy/peblar/index.html",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/energy/tesla/index.html",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/energy/goodwe/index.html",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/energy/whspr/index.html",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/ecoflow.svg",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/whspr.svg",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/peblar.svg",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/goodwe.svg",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/samsung.svg",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/tesla.svg",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/brand/wordmark.svg",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/brand/wordmark-light.svg",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/images/kitchen-640.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/images/detail-1280.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/images/kitchen-1280.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/images/detail-640.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/images/living-1280.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/images/living-640.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/projects/houten-badkamer-1280.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/projects/nieuwegein-keuken-1280.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/projects/houten-badkamer-640.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/projects/nieuwegein-keuken-640.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/photo/peblar-front.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/photo/peblar-detail-640.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/photo/ecoflow-1600.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/photo/peblar-1600.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/photo/whspr-1600.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/photo/samsung-720.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/photo/tesla-720.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/photo/samsung-1600.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/photo/tesla-powerwall3.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/photo/ecoflow-720.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/photo/whspr-720.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/photo/peblar-detail-1200.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/photo/peblar-side.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/photo/peblar-dual.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/photo/tesla-1600.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/photo/goodwe-720.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/photo/peblar-720.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/photo/goodwe-1600.webp",
+      "matches": true,
+      "noindex": true
+    },
+    {
+      "path": "/assets/energy/photo/peblar-business.webp",
+      "matches": true,
+      "noindex": true
+    }
+  ]
+}
