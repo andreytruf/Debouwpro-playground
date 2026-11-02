@@ -1,0 +1,23 @@
+# PRO ENERGY — content and asset provenance
+
+Reviewed 2026-11-02. The pages use concise, paraphrased manufacturer information with source links beside specifications. This is a product selection, not a stock catalogue. Confirm model, availability, firmware, installation requirements and any required authorisation before quoting or accepting an installation.
+
+| Page | Verified basis | Deliberately qualified or omitted |
+| --- | --- | --- |
+| Tesla | [Powerwall NL](https://www.tesla.com/nl_nl/powerwall): 13.5 kWh; [Wall Connector](https://shop.tesla.com/nl_nl/product/wall-connector): Type 2, up to 22 kW on suitable three-phase supply, app/wifi, separate meter for dynamic power management. | No universal backup or cross-brand integration promise. Powerwall generation and local model must be confirmed; current NL material refers to 3P. No official installer claim. |
+| EcoFlow | [PowerOcean three-phase](https://energy.ecoflow.com/eu/products/powerocean) and [brochure](https://enterprise-service-eu-cdn.ecoflow.com/enterprise/documentation/1750226952533/PowerOcean%20%28three-phase%29_Brochure_20250106_EN_View.pdf): LFP, 5–45 kWh, monitoring. | Limits are explicitly for the described three-phase variant, not other PowerOcean or retrofit products. Backup and compatibility depend on chosen components. |
+| GoodWe | [Lynx Home F](https://en.goodwe.com/lynx-f), [EMEA compatibility table](https://emea.goodwe.com/Ftp/EN/Downloads/User%20Manual/GW_Battery%20Compatibility%20Overview-EMEA_EN.pdf): F Plus+ LFP; usable energy 6.55/9.83/13.10/16.38 kWh. | Keep F Plus+ distinct from other Lynx generations. Energy is under datasheet conditions and can depend on inverter. No generic model compatibility. |
+| Peblar | [Home](https://peblar.com/chargers/home): current Home 3.7/11 kW, Type 2 fixed 5/7.5 m cable, local interface, supported metering and OCPP 1.6-J. | Current Home is not universally 22 kW. Other models and older documentation differ. Accessories, firmware, EMS and car limits must be checked. |
+| Samsung | Samsung-authored [EHS Mono R290 brochure distributed by Ambrava NL](https://ambrava.nl/wp-content/uploads/2024/02/Samsung-EHS-Mono-R290-Leaflet-Ambrava-web.pdf): R290; nominal 5/8/12/16 kW at A7/W35; up to 75 °C with conditions. [Samsung technical library entry](https://partnerhub.samsung.com/s/content/aBN2y0000008RtrGAE/tdb-ehs-mono-r290-pump-for-europe-r290-50hz-hp?language=en_US) is provided as a further documentation route. | Full current Samsung Partner Hub technical pack may require access and remains a pre-order check. No generic sound figure, efficiency or subsidy claim. Final electrical variant, safety clearances, hydraulics and performance conditions require the exact model manual. |
+| Whspr | [Manufacturer](https://whspr.net/) and [installation concept](https://whspr.net/installateurs/): hybrid monoblock, existing boiler, R290, published 60 × 60 × 90 cm and 230 V. | No “quietest in the world”, savings, subsidy, one-day-installation, boundary-placement or stock claims. The first-series availability and final technical pack need confirmation. Published sound figures vary in measurement basis; no numeric acoustic claim is repeated. |
+
+## Photography, illustrations and logos
+
+- The Energy hero reuses the existing, documented `assets/images/living-*.webp` architectural reference. Its existing provenance is in `docs/PHOTO-SOURCES.md`; it is labelled as a reference, not company work.
+- `assets/energy/{tesla,ecoflow,goodwe,peblar,samsung,whspr}.svg` are original schematic editorial illustrations made for this repository. They are **not manufacturer product photography or dimensionally accurate product drawings**. Every card and product hero labels them accordingly. No official logo files are used; brand names are plain text for identification.
+- No manufacturer images have been copied or hotlinked. Approved manufacturer photography/licences and, if wanted, official brand assets remain outstanding. Replace the SVGs and corresponding alt text once those rights are supplied.
+- The project gallery is an explicitly empty placeholder. It contains no invented customers, projects, ratings or achievements. Add only authorised real project photos and verified descriptions.
+
+## Commercial facts still requiring confirmation
+
+DE BOUW PRO's exact supply channels, any manufacturer authorisations required for installation/commissioning, service/warranty arrangements, lead times and definitive product combinations have not been established. The website does not claim official partnerships. Quotes and installation commitments must confirm these operational details.

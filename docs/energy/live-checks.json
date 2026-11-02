@@ -1,0 +1,98 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "noindex": true,
+    "matches_build": true
+  },
+  {
+    "path": "/energy",
+    "status": 200,
+    "noindex": true,
+    "matches_build": true
+  },
+  {
+    "path": "/energy/tesla",
+    "status": 200,
+    "noindex": true,
+    "matches_build": true
+  },
+  {
+    "path": "/energy/ecoflow",
+    "status": 200,
+    "noindex": true,
+    "matches_build": true
+  },
+  {
+    "path": "/energy/goodwe",
+    "status": 200,
+    "noindex": true,
+    "matches_build": true
+  },
+  {
+    "path": "/energy/peblar",
+    "status": 200,
+    "noindex": true,
+    "matches_build": true
+  },
+  {
+    "path": "/energy/samsung",
+    "status": 200,
+    "noindex": true,
+    "matches_build": true
+  },
+  {
+    "path": "/energy/whspr",
+    "status": 200,
+    "noindex": true,
+    "matches_build": true
+  },
+  {
+    "path": "/assets/energy.css",
+    "status": 200,
+    "noindex": true,
+    "matches_build": true
+  },
+  {
+    "path": "/assets/energy.js",
+    "status": 200,
+    "noindex": true,
+    "matches_build": true
+  },
+  {
+    "path": "/assets/energy/ecoflow.svg",
+    "status": 200,
+    "noindex": true,
+    "matches_build": true
+  },
+  {
+    "path": "/assets/energy/whspr.svg",
+    "status": 200,
+    "noindex": true,
+    "matches_build": true
+  },
+  {
+    "path": "/assets/energy/peblar.svg",
+    "status": 200,
+    "noindex": true,
+    "matches_build": true
+  },
+  {
+    "path": "/assets/energy/goodwe.svg",
+    "status": 200,
+    "noindex": true,
+    "matches_build": true
+  },
+  {
+    "path": "/assets/energy/samsung.svg",
+    "status": 200,
+    "noindex": true,
+    "matches_build": true
+  },
+  {
+    "path": "/assets/energy/tesla.svg",
+    "status": 200,
+    "noindex": true,
+    "matches_build": true
+  }
+]

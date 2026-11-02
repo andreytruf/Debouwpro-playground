@@ -1,0 +1,1010 @@
+/* Energy styles are scoped to the new section. The corporate homepage keeps its original palette. */
+.energy-page {
+  --paper: #f2f0ec;
+  --ink: #1a1a1a;
+  --muted: #555a5b;
+  --copper: #87502e;
+  --energy-copper: #d97841;
+  --line: #d1d1cb;
+  --wash: #e9e7e1;
+  --brand-accent: #d97841;
+  background: var(--paper);
+}
+.energy-page .navigation [aria-current] {
+  color: var(--copper);
+  border-bottom: 1px solid var(--copper);
+}
+.energy-page .button,
+.energy-page .text-link {
+  font-size: 12px;
+}
+.energy-page .button {
+  gap: 25px;
+}
+.energy-page .button:hover {
+  background: var(--energy-copper);
+  color: var(--ink);
+  border-color: var(--energy-copper);
+}
+.energy-page .energy-outline {
+  background: transparent;
+  color: inherit;
+  border-color: currentColor;
+}
+.energy-page .eyebrow {
+  font-size: 10px;
+}
+.energy-page h2 {
+  font-size: clamp(42px, 4.2vw, 64px);
+}
+.energy-page .section-heading > p {
+  max-width: 350px;
+  font-size: 14px;
+}
+.energy-page .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.energy-hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  overflow: hidden;
+  background: #292b28;
+}
+.energy-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(13, 18, 17, 0.86) 0%,
+    rgba(13, 18, 17, 0.66) 45%,
+    rgba(13, 18, 17, 0.22) 100%
+  );
+}
+.energy-hero-photo {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  object-position: 50% 58%;
+}
+.energy-hero-content {
+  padding-block: 75px 65px;
+}
+.energy-hero .eyebrow {
+  color: #f0c1a4;
+}
+.energy-hero h1 {
+  font-size: clamp(70px, 8.5vw, 134px);
+  letter-spacing: -0.065em;
+  line-height: 1;
+}
+.energy-hero h1 > span:first-child {
+  font-weight: 400;
+}
+.energy-title-dot {
+  color: var(--energy-copper);
+}
+.energy-tagline {
+  font-size: clamp(36px, 4vw, 60px);
+  letter-spacing: -0.04em;
+  line-height: 1.13;
+  margin-top: 24px;
+}
+.energy-tagline em {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+.energy-hero-intro {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #f1efeb;
+  margin-block: 28px;
+}
+.energy-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.energy-hero .button-dark {
+  background: #f2f0ec;
+  color: #1a1a1a;
+  border-color: #f2f0ec;
+}
+.energy-hero .button-dark:hover {
+  background: var(--energy-copper);
+  border-color: var(--energy-copper);
+}
+.hero-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 25px;
+  position: relative;
+  padding-block: 20px;
+  border-top: 1px solid #ffffff4d;
+  font-size: 10px;
+  color: #f1efeb;
+}
+.hero-bottom span:last-child {
+  font-size: 9px;
+}
+.energy-subnav {
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+.energy-subnav nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  overflow-x: auto;
+}
+.energy-subnav a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 11px;
+  min-height: 66px;
+  white-space: nowrap;
+}
+.energy-subnav a:hover {
+  color: var(--copper);
+}
+.energy-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13%;
+}
+.energy-wash {
+  background: var(--wash);
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #b8b9b1;
+  padding-top: 26px;
+}
+.category .eyebrow {
+  font-size: 9px;
+  margin-bottom: 38px;
+}
+.category h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.category p {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+.category .text-link {
+  margin-top: auto;
+  font-size: 10px;
+  border: 0;
+}
+.category:hover h3 {
+  color: var(--copper);
+}
+.energy-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+.energy-filters[hidden] {
+  display: none;
+}
+.energy-filters button {
+  cursor: pointer;
+  min-height: 44px;
+  border: 1px solid #aaa9a2;
+  padding: 11px 21px;
+  background: transparent;
+  color: var(--ink);
+  font-size: 11px;
+  border-radius: 0;
+}
+.energy-filters button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+.filter-status {
+  font-size: 11px;
+  min-height: 22px;
+  margin-block: 10px 18px;
+  color: var(--muted);
+}
+.energy-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 35px 25px;
+}
+.energy-card {
+  min-width: 0;
+  background: #f8f7f4;
+  border: 1px solid #d9d8d2;
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
+}
+.energy-card[hidden] {
+  display: none;
+}
+.energy-card:hover {
+  border-color: var(--copper);
+  transform: translateY(-3px);
+}
+.energy-card > a {
+  display: block;
+  height: 100%;
+}
+.card-visual {
+  height: 265px;
+  overflow: hidden;
+  background: #e4e2db;
+}
+.card-visual img {
+  object-fit: cover;
+  transition: transform 0.7s;
+}
+.energy-card:hover img {
+  transform: scale(1.025);
+}
+.energy-card figure {
+  position: relative;
+}
+.energy-card .visual-disclaimer {
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  right: 15px;
+  padding: 0;
+  color: #525551;
+  font-size: 8px;
+}
+.card-body {
+  padding: 27px 26px;
+}
+.card-body .eyebrow {
+  font-size: 9px;
+  margin-bottom: 16px;
+}
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.card-title h3 {
+  font-size: 32px;
+  letter-spacing: -0.05em;
+}
+.card-title > span {
+  font-size: 22px;
+  color: var(--copper);
+}
+.card-body > p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+.card-body .card-products {
+  font-size: 11px;
+  color: var(--ink);
+  margin: 8px 0 18px;
+}
+.card-link {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  border-top: 1px solid var(--line);
+  margin-top: 24px;
+  padding-top: 18px;
+}
+.card-link > span {
+  display: none;
+}
+.energy-note {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.75;
+  max-width: 790px;
+  margin-top: 30px;
+}
+.energy-dark {
+  background: #1a1a1a;
+  color: #f2f0ec;
+}
+.energy-dark .eyebrow {
+  color: #e8ad89;
+}
+.energy-dark .section-heading > p {
+  color: #c6c9c8;
+}
+.energy-dark h2 em {
+  color: #e8ad89;
+}
+.energy-flow {
+  margin-top: 50px;
+}
+.energy-flow ol {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  gap: 32px;
+}
+.energy-flow li {
+  flex: 1;
+  position: relative;
+  padding: 28px 22px;
+  border: 1px solid #777d7b;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+  background: #242725;
+}
+.energy-flow li + li::before {
+  content: "→";
+  position: absolute;
+  left: -27px;
+  top: 48px;
+  color: #e8ad89;
+}
+.energy-flow li > span {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #c6c9c8;
+}
+.energy-flow strong {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+}
+.energy-flow figcaption {
+  display: block;
+  max-width: 800px;
+  font-size: 11px;
+  line-height: 1.7;
+  color: #c6c9c8;
+  padding-top: 20px;
+}
+.integration-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: end;
+  margin-top: 36px;
+}
+.integration-bottom p {
+  font-size: 13px;
+  color: #c6c9c8;
+  max-width: 570px;
+}
+.energy-dark .text-link {
+  border-color: #737875;
+  color: #f2f0ec;
+  flex-shrink: 0;
+}
+.energy-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 45px;
+}
+.energy-benefits article {
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+}
+.energy-benefits .eyebrow {
+  margin-bottom: 30px;
+}
+.energy-benefits h3 {
+  font-size: 23px;
+  margin-bottom: 16px;
+}
+.energy-benefits p {
+  font-size: 14px;
+  color: var(--muted);
+}
+.project-placeholder {
+  border: 1px solid var(--line);
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  background: linear-gradient(135deg, #e5e2da, #eeece6);
+}
+.placeholder-mark {
+  font-size: 80px;
+  font-weight: 200;
+  color: #98765f;
+}
+.project-placeholder h3 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+.project-placeholder p {
+  max-width: 600px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.project-placeholder div > span {
+  display: block;
+  margin-top: 28px;
+  font-size: 10px;
+  color: var(--muted);
+}
+.breadcrumbs {
+  padding-top: 28px;
+}
+.breadcrumbs nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 10px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.breadcrumbs a {
+  min-height: 30px;
+  display: inline-flex;
+  align-items: center;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.brand-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7%;
+  align-items: center;
+  padding-block: 55px 70px;
+}
+.brand-hero > div {
+  min-width: 0;
+}
+.brand-word {
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+}
+.brand-hero h1 {
+  font-size: clamp(44px, 4.4vw, 68px);
+  letter-spacing: -0.055em;
+  line-height: 1.06;
+}
+.brand-hero .eyebrow {
+  font-size: 9px;
+  margin-bottom: 22px;
+}
+.brand-intro {
+  font-size: 14px;
+  color: var(--muted);
+  max-width: 470px;
+  margin-block: 26px 30px;
+}
+.brand-hero .energy-actions {
+  align-items: stretch;
+  flex-direction: column;
+  width: max-content;
+  max-width: 100%;
+}
+.brand-hero .energy-actions .button {
+  min-width: 230px;
+}
+.product-stage {
+  position: relative;
+  min-width: 0;
+  background: #e6e3dc;
+  border: 1px solid #d5d3cc;
+  overflow: hidden;
+}
+.product-stage > img {
+  height: 540px;
+  object-fit: cover;
+}
+.product-stage .visual-disclaimer {
+  position: absolute;
+  bottom: 45px;
+  left: 25px;
+  right: 25px;
+  color: #3d423e;
+  font-size: 10px;
+  padding: 0;
+}
+.stage-index {
+  display: block;
+  padding: 17px 25px;
+  border-top: 1px solid #c3c3bc;
+  font-size: 10px;
+  color: #3d423e;
+  background: #f2f0ec;
+}
+.brand-summary {
+  border-block: 1px solid var(--line);
+}
+.brand-summary > .shell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  padding-block: 24px;
+  font-size: 11px;
+}
+.brand-summary a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-height: 30px;
+}
+.energy-specs {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 10%;
+}
+.spec-intro {
+  font-size: 13px;
+  color: var(--muted);
+  max-width: 380px;
+  margin-top: 24px;
+}
+.energy-specs dl {
+  margin: 0;
+  border-top: 1px solid #bbbdb5;
+}
+.energy-specs dl > div {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 25px;
+  padding-block: 24px;
+  border-bottom: 1px solid #bbbdb5;
+}
+.energy-specs dt {
+  font-size: 13px;
+  line-height: 1.7;
+}
+.energy-specs dd {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--muted);
+}
+.source-details {
+  margin-top: 22px;
+}
+.source-details summary {
+  font-size: 12px;
+}
+.source-details p {
+  padding: 0;
+  font-size: 12px;
+}
+.source-details > div {
+  padding-bottom: 25px;
+}
+.source-details ul {
+  padding-left: 18px;
+  margin: 20px 0 0;
+}
+.source-details li {
+  margin-top: 14px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.source-details a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.source-details svg {
+  margin-left: 8px;
+}
+.dark-note {
+  color: #c6c9c8;
+}
+.related-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.related-links > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-block: 1px solid var(--line);
+  padding-block: 26px;
+}
+.related-links small {
+  font-size: 10px;
+  color: var(--muted);
+  display: block;
+  margin-bottom: 13px;
+}
+.related-links strong {
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+.related-links > a > svg {
+  font-size: 23px;
+  color: var(--copper);
+}
+.related > .text-link {
+  margin-top: 32px;
+}
+.theme-goodwe {
+  --brand-accent: #41684d;
+}
+.theme-goodwe .brand-word {
+  color: #41684d;
+}
+.theme-ecoflow {
+  --brand-accent: #1a5561;
+}
+.theme-ecoflow .brand-word {
+  color: #1a5561;
+}
+.theme-peblar {
+  --brand-accent: #80553d;
+}
+.theme-samsung {
+  --brand-accent: #38516b;
+}
+.theme-samsung .brand-word {
+  color: #38516b;
+}
+.theme-whspr {
+  --brand-accent: #496158;
+}
+.brand-page.theme-tesla .product-stage {
+  background: #222;
+}
+.brand-page.theme-tesla .product-stage > img {
+  filter: contrast(1.03);
+}
+@media (max-width: 1100px) {
+  .energy-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 38px;
+  }
+  .category .eyebrow {
+    margin-bottom: 22px;
+  }
+  .energy-benefits {
+    gap: 30px;
+  }
+  .product-stage > img {
+    height: 480px;
+  }
+  .energy-flow li {
+    padding-inline: 16px;
+  }
+  .energy-flow strong {
+    font-size: 17px;
+  }
+  .integration-bottom {
+    align-items: start;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .brand-hero {
+    gap: 5%;
+  }
+  .brand-hero h1 {
+    font-size: clamp(40px, 4.5vw, 52px);
+  }
+  .energy-specs {
+    gap: 7%;
+  }
+  .energy-specs dl > div {
+    gap: 18px;
+    grid-template-columns: 1fr;
+  }
+  .energy-specs dd {
+    font-size: 13px;
+  }
+}
+@media (max-width: 760px) {
+  .energy-page .eyebrow {
+    font-size: 9px;
+  }
+  .energy-hero {
+    min-height: 750px;
+    justify-content: end;
+  }
+  .energy-hero::after {
+    background: linear-gradient(
+      0deg,
+      rgba(13, 18, 17, 0.93),
+      rgba(13, 18, 17, 0.65) 65%,
+      rgba(13, 18, 17, 0.32)
+    );
+  }
+  .energy-hero-photo {
+    object-position: 60% 50%;
+  }
+  .energy-hero-content {
+    padding-block: 65px 35px;
+  }
+  .energy-hero h1 {
+    font-size: clamp(46px, 11.5vw, 84px);
+    white-space: nowrap;
+  }
+  .energy-tagline {
+    font-size: clamp(35px, 8vw, 50px);
+    margin-top: 25px;
+  }
+  .energy-hero-intro {
+    font-size: 13px;
+    margin-block: 24px;
+  }
+  .energy-actions {
+    gap: 12px;
+    align-items: stretch;
+    flex-direction: column;
+    max-width: 345px;
+  }
+  .energy-actions .button {
+    font-size: 11px;
+    padding-inline: 20px;
+  }
+  .hero-bottom {
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+    font-size: 10px;
+    padding-block: 20px 27px;
+  }
+  .hero-bottom span:last-child {
+    font-size: 9px;
+  }
+  .energy-subnav nav {
+    gap: 28px;
+  }
+  .energy-subnav a {
+    min-height: 56px;
+    font-size: 10px;
+  }
+  .energy-intro {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .category-grid {
+    gap: 32px 24px;
+  }
+  .category h3 {
+    font-size: 22px;
+  }
+  .category p {
+    font-size: 13px;
+  }
+  .category .text-link {
+    font-size: 10px;
+    gap: 10px;
+  }
+  .energy-cards {
+    gap: 25px;
+    grid-template-columns: 1fr;
+  }
+  .card-visual {
+    height: 285px;
+  }
+  .card-body {
+    padding: 25px;
+  }
+  .energy-card .visual-disclaimer {
+    font-size: 9px;
+  }
+  .energy-filters {
+    gap: 8px;
+    margin-top: 0;
+  }
+  .energy-filters button {
+    padding-inline: 15px;
+    font-size: 11px;
+  }
+  .energy-flow {
+    margin-top: 35px;
+  }
+  .energy-flow ol {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .energy-flow li {
+    padding: 22px;
+    gap: 14px;
+  }
+  .energy-flow li + li::before {
+    content: "↓";
+    left: calc(50% - 5px);
+    top: -24px;
+  }
+  .energy-flow strong {
+    font-size: 22px;
+  }
+  .energy-flow li > span {
+    font-size: 10px;
+  }
+  .energy-flow figcaption {
+    font-size: 11px;
+  }
+  .energy-benefits {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .energy-benefits .eyebrow {
+    margin-bottom: 20px;
+  }
+  .energy-benefits h3 {
+    font-size: 24px;
+  }
+  .energy-benefits p {
+    font-size: 14px;
+  }
+  .project-placeholder {
+    padding: 30px;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
+  .placeholder-mark {
+    font-size: 55px;
+    line-height: 1;
+  }
+  .project-placeholder h3 {
+    font-size: 23px;
+  }
+  .project-placeholder p {
+    font-size: 13px;
+  }
+  .project-placeholder div > span {
+    font-size: 10px;
+    line-height: 1.7;
+  }
+  .breadcrumbs {
+    padding-top: 22px;
+  }
+  .breadcrumbs nav {
+    font-size: 9px;
+    gap: 10px;
+  }
+  .brand-hero {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-block: 30px 45px;
+  }
+  .brand-hero h1 {
+    font-size: clamp(41px, 9.5vw, 60px);
+  }
+  .brand-word {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .brand-intro {
+    font-size: 14px;
+    margin-top: 25px;
+  }
+  .brand-hero .energy-actions {
+    width: 100%;
+    max-width: 345px;
+  }
+  .product-stage > img {
+    height: 400px;
+    max-height: 105vw;
+  }
+  .product-stage .visual-disclaimer {
+    left: 18px;
+    font-size: 9px;
+    bottom: 50px;
+  }
+  .stage-index {
+    padding: 17px 18px;
+    font-size: 9px;
+  }
+  .brand-summary > .shell {
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 12px 25px;
+    padding-block: 18px;
+    font-size: 10px;
+  }
+  .brand-summary a {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .energy-specs {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .energy-specs dl > div {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 20px;
+  }
+  .energy-specs dt,
+  .energy-specs dd {
+    font-size: 12px;
+  }
+  .source-details summary {
+    font-size: 13px;
+  }
+  .related-links {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .related-links > a {
+    border-bottom: 0;
+  }
+  .related-links > a:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+  .energy-page .contact h2 {
+    font-size: clamp(46px, 10vw, 65px);
+  }
+  .energy-page .footer-bottom {
+    font-size: 9px;
+  }
+}
+@media (max-width: 370px) {
+  .energy-hero h1 {
+    font-size: 43px;
+  }
+  .energy-hero {
+    min-height: 730px;
+  }
+  .energy-tagline {
+    font-size: 34px;
+  }
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+  .category .eyebrow {
+    margin-bottom: 20px;
+  }
+  .energy-specs dl > div {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .brand-hero h1 {
+    font-size: 39px;
+  }
+  .energy-page .section-heading > p {
+    font-size: 13px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .energy-card:hover {
+    transform: none;
+  }
+  .energy-card img {
+    transition: none;
+  }
+}

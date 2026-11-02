@@ -21,7 +21,7 @@ navigation.addEventListener("click", (event) => {
   const link = event.target.closest("a");
   if (!link || !mobile.matches) return;
   closeMenu();
-  const target = document.querySelector(link.hash);
+  const target = link.hash ? document.querySelector(link.hash) : null;
   if (target) {
     target.setAttribute("tabindex", "-1");
     target.focus({ preventScroll: true });

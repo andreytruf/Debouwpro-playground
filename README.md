@@ -30,7 +30,7 @@ The Playwright config uses `/usr/bin/chromium` when available; otherwise it uses
 
 ## Cloudflare preparation
 
-Read-only inspection on 2026-10-29 found an existing assets-based Worker named `debouwpro-playground` and **no Workers Builds triggers** attached to it. Its current demo URL is https://debouwpro-playground.andrey-57c.workers.dev. **V2 is prepared, not deployed**; that URL continues to show the previous deployment until publication.
+Read-only inspection on 2026-10-29 found an existing assets-based Worker named `debouwpro-playground` and **no Workers Builds triggers** attached to it. Its current demo URL is https://debouwpro-playground.andrey-57c.workers.dev. V2 was already published before the PRO ENERGY extension. The Energy work targets this same playground Worker only.
 
 `wrangler.jsonc` targets only that Worker. It defines no routes, custom domains, DNS, bindings or production environments. After authenticating with access to the intended Cloudflare account, deployment is:
 
@@ -51,3 +51,19 @@ For an optional future Git integration, connect **only this repository** to the 
 ## Next steps
 
 Replace references with approved real project photography and case studies; confirm service scope and workflow copy; add a server-backed inquiry form with privacy information and spam protection if needed; measure performance on the published playground and real mobile devices; complete keyboard/screen reader and content QA before staging promotion.
+
+
+## PRO ENERGY extension
+
+Seven static pages are built by the existing `npm run build` workflow: `/energy`, `/energy/tesla`, `/energy/ecoflow`, `/energy/goodwe`, `/energy/peblar`, `/energy/samsung` and `/energy/whspr`. Cloudflare may redirect to a trailing slash; both direct requests and refreshes work. Unknown Energy paths return a real 404.
+
+- `energy/content.mjs`: Dutch page copy, model qualifiers, manufacturer references, FAQs and related solutions.
+- `energy/templates.mjs`: semantic HTML renderer. Corporate header and footer are reused from the inspected `index.html`; only internal destinations are adapted for nested pages.
+- `scripts/build-energy.mjs`: writes the seven HTML pages into `dist/energy`. Do not edit generated files in `dist`.
+- `assets/energy.css`, `assets/energy.js`: scoped visual styles and optional solution filtering. All pages and links work without JavaScript.
+- `assets/energy/*.svg`: original, explicitly labelled schematic placeholders. Manufacturer photos are still needed with permission to publish.
+- `tests/energy.spec.mjs`: direct URLs, refresh, four viewport widths, accessibility, local links/assets, navigation, filtering, CTA and no-JavaScript coverage.
+
+The corporate homepage content, existing visual styles and assets are preserved. Its only HTML change is the Energy navigation link. Shared navigation JavaScript handles links without hashes to support page-to-page navigation. Playground noindex metadata, response headers, robots and CSP remain in place. No source modules are served as public files.
+
+With the local server running, `node scripts/preview-energy.mjs` captures desktop/mobile screenshots of the landing page, Tesla and Whspr into `docs/energy/previews/`. [Asset and technical source notes](docs/energy/SOURCES.md) list verified facts and outstanding approvals. The [Energy validation report](docs/energy/VALIDATION.md) records checks and publication status.
