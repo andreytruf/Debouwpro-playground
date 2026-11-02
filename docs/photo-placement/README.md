@@ -14,3 +14,8 @@ The homepage preservation test now hashes its content outside the explicitly aut
 `node scripts/preview-photo-placement.mjs` captures homepage, Energy and Peblar on desktop/mobile plus homepage-gallery and Whspr-card crops. Older update screenshots are historical. The Peblar capture script has also been updated for the removed renovation section.
 
 Validation: static build and Wrangler dry run passed. All 20 browser tests passed, including 320/390/768/1440 px, images, accessibility, keyboard/menu/CTA behavior and preservation outside the homepage gallery. Generated HTML confirms two project image tags on the homepage and no owner project-image references on any Energy page.
+
+
+Final gallery alignment cleanup was additionally checked at all four homepage widths: 4/4 passed. Source commit `d0f90db9bc4bfff6a05db4dc6ff4611e94519db6` was pushed to GitHub. Active Playground deployment `20f4a51f-e3a6-4f8c-a880-94c62f770b3d`, version `12a8671f-599e-4dff-a118-51cf8b8ca205`, already serves the exact validated output; no redundant deployment was needed. All 61 public files matched the local build and retained noindex. Details: `live-checks.json`.
+
+Homepage gallery: https://debouwpro-playground.andrey-57c.workers.dev/#inspiratie . Whspr card: https://debouwpro-playground.andrey-57c.workers.dev/energy/#selectie . Source CI: https://github.com/andreytruf/Debouwpro-playground/actions/runs/41547852192 .
