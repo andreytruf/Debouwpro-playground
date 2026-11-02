@@ -37,3 +37,10 @@ The brochure's p.10 image is explicitly marked PLACEHOLDER RENDER and was not us
 `npm run check`: static build and Wrangler dry run passed. `npm test`: 20/20 passed, including all seven Energy routes at 320/390/768/1440 px, image decoding, WCAG AA automated checks, navigation/CTAs, no-JavaScript fallback, headers, local links and unchanged homepage content hash. Hero copy was shortened after screenshot review; final Whspr responsive/accessibility check passed (1/1) after that cleanup.
 
 No current generated HTML references the previous `whspr-1600.webp` or `whspr-720.webp`; the Energy card and Whspr hero/social metadata all point to the extracted product render. All selected images are local responsive WebP with declared dimensions and lazy loading below the hero. Product render: 18 KB at 640 px, 11 KB at 480 px.
+
+
+## Published verification
+
+Published source: `fb38e6b9c2465d2f3c758eff430e6d0d4b2b54b4`. Active Playground deployment `808e9b27-4c25-4089-b55c-d8117bbbdfd0`, version `f89b8ed4-1092-4b4f-86c8-93f4bd27930a`, at 100%. An independent Wrangler publication had already activated the same validated file contents by the final check. All 61 public files matched this local build byte for byte and retained noindex, so the additional API-uploaded candidate `064394c5-2fc9-4ca0-9e1c-35064ce05cc2` was deliberately not activated. Results: `live-checks.json`.
+
+Preview: https://debouwpro-playground.andrey-57c.workers.dev/energy/whspr/ . Landing card: https://debouwpro-playground.andrey-57c.workers.dev/energy/#selectie . Main/Test repositories, DNS and debouwpro.nl were not touched.
