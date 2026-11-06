@@ -44,3 +44,10 @@ Asset sources (all on en.goodwe.com):
 Run `npm run check`, `npm test`, then `node scripts/preview-goodwe.mjs` against the local dev server. Previews cover landing and GoodWe desktop/mobile plus package, battery, charging and flow crops. Additional functional tests verify package-specific optional charging and no-JavaScript content.
 
 Validation: static build and Wrangler dry run passed. All 24 browser tests passed after adjusting the shared dark-section accent for WCAG contrast. Tests cover 320/390/768/1440 px, direct routes/refresh, all images and local links, automated WCAG AA, independent package charging choices and their inquiry subjects, no-JavaScript fallback and preservation of the corporate homepage outside its approved project gallery. All GoodWe live image references now use manufacturer assets. Family renders illustrate the series; the text defines exact example models and module quantities.
+
+
+## Published result
+
+Source commit `72bb8869b6f768bb06e4f43243d24521a0f1d309`. Active Playground deployment `9abb7c3e-4c39-4c1c-95fd-7fe1b47d25c9`, version `5f241999-9217-4583-b46a-15646a26c933`, serves the validated files at 100%. All 75 public files matched the local build byte for byte and retained noindex. Public check report: `live-checks.json`. The matching deployment was already active, so no redundant publication was issued.
+
+GitHub CI passed: https://github.com/andreytruf/Debouwpro-playground/actions/runs/42225482602 . Preview: https://debouwpro-playground.andrey-57c.workers.dev/energy/goodwe/ .
