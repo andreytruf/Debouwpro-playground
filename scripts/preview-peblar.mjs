@@ -40,7 +40,7 @@ for (const slug of ["energy", "peblar"])
         ".site-header,.skip-link,.mobile-contact { visibility: hidden !important; }",
     });
     if (slug === "peblar")
-      await page.locator(".peblar-range").screenshot({
+      await page.locator(".peblar-lineup").screenshot({
         path: `docs/peblar-update/previews/range-${label}.jpg`,
         quality: 85,
       });

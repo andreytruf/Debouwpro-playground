@@ -95,3 +95,8 @@ The Whspr Energy card now uses the manufacturer’s garden photograph; its hero 
 ## Corrected photo placement
 
 Owner clarification: the green kitchen and roof-window bathroom belong in the main corporate landing page (`/#inspiratie`), replacing two temporary gallery images. They have been removed from all Energy pages, including Peblar. The original Energy-project placeholder is restored; other homepage sections retain their original content. Whspr’s selection card now shows the device in a real garden/manufacturer setting rather than on white, while the product page hero remains unchanged. Sources and screenshots: [photo placement](docs/photo-placement/README.md). Capture with `node scripts/preview-photo-placement.mjs`.
+
+
+## Peblar complete model selection
+
+The Peblar page now distinguishes Home, Business and Dual with cable/connection and variant selectors, a comparison table and inquiries that retain the selected option. Current manufacturer pages were checked for 5/7.5 m cable choices, socket/shutter options and Dual variants. Manufacturer photography is used throughout; image-source records are maintained in [the Peblar range register](docs/peblar-range/README.md), while public provenance captions on Peblar and its landing card have been removed as requested. Capture current previews with `node scripts/preview-peblar-range.mjs`.

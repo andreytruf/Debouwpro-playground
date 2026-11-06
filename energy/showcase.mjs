@@ -7,7 +7,7 @@ const notes = {
   tesla: "AI-architectuurconcept met Model Y · geen eigen installatie",
   ecoflow: aiNote,
   goodwe: aiNote,
-  peblar: "Fabrikantfoto · © Peblar · geen DE BOUW PRO-installatie",
+  peblar: "Peblar Home, Business en Dual",
   samsung:
     "AI-architectuurconcept · getoonde unit is geen Samsung-productweergave",
   whspr: "Productrender uit Whspr-brochure · © Whspr · geen eigen installatie",
@@ -91,22 +91,62 @@ function goodwe(b) {
 <section class="section goodwe-diagram"><div class="shell">${label("02 / Begrijpelijk verbonden")}<h2>Elk onderdeel<br>zijn eigen <em>rol.</em></h2><ol class="system-blueprint"><li><span>01</span><strong>Zonnepanelen</strong><p>Wekken gelijkstroom op.</p></li><li><span>02</span><strong>Hybride omvormer</strong><p>Zet om en koppelt passende opslag.</p></li><li><span>03</span><strong>Lynx-batterij</strong><p>Bewaart energie voor later.</p></li><li><span>04</span><strong>Woning</strong><p>Gebruikt energie via de meterkast.</p></li></ol><p class="design-caption">Principeschema, geen elektrisch aansluitschema. Meting, beveiliging en toegestane productcombinaties worden per installatie bepaald.</p></div></section>`;
 }
 
+function peblarOptions(model, options) {
+  const initial = options[0][0];
+  const href = (option) =>
+    `mailto:hello@debouwpro.nl?subject=${encodeURIComponent(`Peblar ${model} — ${option}`)}`;
+  return `<div class="peblar-options"><p class="variant-available">Uitvoeringen: ${options.map(([name]) => name).join(" · ")}</p><div class="peblar-variant-buttons" role="group" aria-label="Uitvoering Peblar ${model}" hidden>${options.map(([name, image], i) => `<button type="button" data-peblar-variant="${name}" data-variant-image-file="${image}" aria-pressed="${i === 0}">${name}</button>`).join("")}</div><p class="peblar-selected" aria-live="polite">Peblar ${model} · ${initial}</p><a class="text-link" data-variant-advice href="${href(initial)}">Vraag advies over ${model} <span aria-hidden="true">${arrow}</span></a></div>`;
+}
+
 function peblar(b) {
   return `
-<section class="peblar-hero showcase-hero shell" aria-labelledby="brand-title"><figure>${photo("peblar", true)}${caption("peblar")}</figure><div>${label("PRO ENERGY / Peblar")}<h1 id="brand-title">Een vaste plek.<br>Een slimme <em>routine.</em></h1><p>Thuiskomen en aansluiten. Een laadpunt dat past bij je parkeerplek én de capaciteit van je woning.</p>${actions()}<p class="peblar-training">Peblar Certified Installer-training afgerond · mei 2026</p></div></section>
-<section class="section peblar-product" id="mogelijkheden"><div class="shell peb-product-layout"><div>${label("01 / Peblar Home")}<h2>Alle aandacht<br>voor het <em>dagelijkse.</em></h2><p class="design-lead">Een vaste Type 2-kabel, een heldere status en bediening op je eigen netwerk.</p>${proof(
+<section class="peblar-hero showcase-hero shell" aria-labelledby="brand-title"><figure>${photo("peblar", true)}</figure><div>${label("PRO ENERGY / Peblar")}<h1 id="brand-title">Thuis. Op het werk.<br>Altijd <em>verbonden.</em></h1><p>Van één auto op je oprit tot twee laadplekken op het werk. Ontdek Home, Business en Dual — zorgvuldig gekozen en geïnstalleerd door DE BOUW PRO.</p>${actions()}<p class="peblar-training">Peblar Certified Installer-training afgerond · mei 2026</p></div></section>
+<nav class="shell peblar-product-nav" aria-label="Peblar-modellen"><a href="#mogelijkheden">01 / Home</a><a href="#peblar-business">02 / Business</a><a href="#peblar-dual">03 / Dual</a></nav><section class="section peblar-product" id="mogelijkheden" data-peblar-config="Home"><div class="shell peb-product-layout"><div>${label("01 / Peblar Home")}<h2>Alle aandacht<br>voor het <em>dagelijkse.</em></h2><p class="design-lead">Een vaste Type 2-kabel, een heldere status en bediening op je eigen netwerk.</p>${proof(
     [
       ["Tot 11 kW", "Home · drie fasen"],
       ["5 / 7,5 m", "Vaste Type 2-kabel"],
       ["Wifi / LAN", "Lokale webinterface"],
     ],
-  )}<p>Op één fase noemt de huidige Home-productpagina 3,7 kW. Het werkelijke laadvermogen volgt uit de auto, netaansluiting en instellingen.</p></div><figure class="peblar-hardware"><img src="/assets/energy/photo/peblar-front.webp" width="1100" height="1100" loading="lazy" decoding="async" alt="Officiële Peblar Home productrender met vaste laadkabel" data-product-image><div class="hardware-angle-buttons" role="group" aria-label="Productaanzicht"><button type="button" data-product-view="front" aria-pressed="true">Vooraanzicht</button><button type="button" data-product-view="side" aria-pressed="false">Zijaanzicht</button></div><figcaption>Peblar Home · © Peblar · <a href="https://peblar.com/downloads" target="_blank" rel="noopener noreferrer">officieel media pack</a>.</figcaption></figure></div></section>
-<section class="section shell peblar-range" aria-labelledby="peblar-range-title"><div class="section-heading"><div>${label("02 / Kies de uitvoering")}<h2 id="peblar-range-title">Eén ontwerpgedachte.<br>Drie <em>toepassingen.</em></h2></div><p>Je parkeerplek, laadgedrag en eventuele verrekening bepalen welk model past. Het beschikbare vermogen volgt altijd uit de netaansluiting, de auto en de ingestelde limieten.</p></div><div class="peblar-range-grid">
-<article><div class="peblar-range-visual"><img src="/assets/energy/photo/peblar-front.webp" width="1100" height="1100" loading="lazy" decoding="async" alt="Peblar Home met vaste Type 2-kabel"></div><p class="eyebrow">01 / Thuis</p><h3>Peblar Home</h3><p>Voor je eigen oprit of carport. Een vaste kabel die je direct kunt pakken.</p><ul><li>3,7 kW op één fase; tot 11 kW op drie fasen</li><li>Type 2-kabel van 5 of 7,5 meter</li><li>Lokale webinterface via wifi of ethernet</li></ul><a class="text-link" href="#contact">Advies over Home <span aria-hidden="true">${arrow}</span></a></article>
-<article><div class="peblar-range-visual"><img src="/assets/energy/photo/peblar-business.webp" width="900" height="900" loading="lazy" decoding="async" alt="Peblar Business in socket-uitvoering; officiële productrender"></div><p class="eyebrow">02 / Thuis &amp; zakelijk</p><h3>Peblar Business</h3><p>Wanneer laadregistratie en zakelijke verrekening meewegen in de keuze.</p><ul><li>Tot 7,4 kW op één fase; tot 22 kW op drie fasen</li><li>Socket, shutter of vaste kabel, per uitvoering</li><li>MID-meter; backoffice en kosten apart afstemmen</li></ul><a class="text-link" href="#contact">Advies over Business <span aria-hidden="true">${arrow}</span></a></article>
-<article><div class="peblar-range-visual peblar-range-scene"><img src="/assets/energy/photo/peblar-dual.webp" width="721" height="900" loading="lazy" decoding="async" alt="Peblar Dual met twee sockets op een zuil; fabrikantbeeld"></div><p class="eyebrow">03 / Twee laadplekken</p><h3>Peblar Dual</h3><p>Twee aansluitpunten in één laadstation voor een gedeelde of zakelijke parkeerplek.</p><ul><li>Twee Type 2-sockets, uitvoeringafhankelijk met shutter</li><li>Vermogensverdeling tussen beide aansluitpunten</li><li>MID- of Eichrecht-variant volgens model</li></ul><a class="text-link" href="#contact">Advies over Dual <span aria-hidden="true">${arrow}</span></a></article>
-</div><p class="design-caption">Productbeelden © Peblar, uit de aangeleverde fabrikantpakketten. Geen eigen installaties. Modelgegevens: Nederlandse Peblar-brochure en Dual-specificatieblad 6004-2601-9602. Beschikbaarheid, accessoires en firmwarefuncties worden per voorstel bevestigd.</p></section>
-<section class="section peblar-install-story"><div class="shell peblar-install-grid"><figure><img src="/assets/energy/photo/peblar-detail-1200.webp" srcset="/assets/energy/photo/peblar-detail-640.webp 640w, /assets/energy/photo/peblar-detail-1200.webp 1200w" sizes="(max-width:760px) calc(100vw - 40px), 42vw" width="1200" height="1800" loading="lazy" decoding="async" alt="Detail van een Peblar-laadpunt met opgerolde kabel aan een houten gevel"><figcaption>Fabrikantfoto · © Peblar · geen eigen installatie</figcaption></figure><div>${label("03 / Meer dan een laadpunt")}<h2>Ook de route<br>moet <em>kloppen.</em></h2><p class="design-lead">Van meterkast tot parkeerplek. Met aandacht voor wat je ziet én wat erachter zit.</p>${steps(
+  )}<p>Op één fase laadt Home met maximaal 3,7 kW. Je auto, netaansluiting en instellingen bepalen het werkelijke laadvermogen.</p>${peblarOptions(
+    "Home",
+    [
+      ["Kabel 5 m", ""],
+      ["Kabel 7,5 m", ""],
+    ],
+  )}</div><figure class="peblar-hardware"><img src="/assets/energy/photo/peblar-front.webp" width="1100" height="1100" loading="lazy" decoding="async" alt="Officiële Peblar Home productrender met vaste laadkabel" data-product-image><div class="hardware-angle-buttons" role="group" aria-label="Productaanzicht"><button type="button" data-product-view="front" aria-pressed="true">Vooraanzicht</button><button type="button" data-product-view="side" aria-pressed="false">Zijaanzicht</button></div></figure></div></section>
+
+<section class="section shell peblar-family" id="peblar-business" data-peblar-config="Business"><div class="peblar-family-copy">${label("02 / Peblar Business")}<h2>Zakelijk laden.<br>Helder <em>verrekenen.</em></h2><p class="design-lead">Een laadpunt voor de leaseauto thuis, een werkplek of een gedeelde parkeerplaats. Met MID-meting en een backoffice die bij je situatie past.</p>${proof(
+    [
+      ["Tot 22 kW", "Drie fasen · 7,4 kW op één fase"],
+      ["MID", "Energiemeting voor verrekening"],
+      ["OCPP", "Wifi, ethernet of mobiel netwerk"],
+    ],
+  )}<p>Kies een vaste Type 2-kabel van 5 of 7,5 meter, een socket voor je eigen losse kabel of een socket met shutter. Een Eichrecht-uitvoering is beschikbaar voor situaties die dat vereisen.</p>${peblarOptions(
+    "Business",
+    [
+      ["Kabel 5 m", "peblar-front.webp"],
+      ["Kabel 7,5 m", "peblar-front.webp"],
+      ["Socket", "peblar-business.webp"],
+      ["Socket met shutter", "peblar-business.webp"],
+    ],
+  )}</div><figure class="peblar-family-image"><img src="/assets/energy/photo/peblar-front.webp" width="1100" height="1100" loading="lazy" decoding="async" alt="Peblar Business met vaste laadkabel" data-variant-image></figure></section>
+<section class="peblar-dual-banner"><img src="/assets/energy/photo/peblar-dual-parking-1600.webp" srcset="/assets/energy/photo/peblar-dual-parking-720.webp 720w, /assets/energy/photo/peblar-dual-parking-1600.webp 1600w" sizes="100vw" width="1600" height="908" loading="lazy" decoding="async" alt="Peblar Dual-laadpunten in een parkeergarage"><div class="shell"><p class="eyebrow">Meer laadplekken. Eén doordacht plan.</p><h2>Twee aansluitpunten.<br>Eén <em>verbinding.</em></h2><a class="button" href="#peblar-dual">Ontdek Dual <span aria-hidden="true">${arrow}</span></a></div></section>
+<section class="section shell peblar-family peblar-dual-family" id="peblar-dual" data-peblar-config="Dual"><figure class="peblar-family-image peblar-dual-image"><img src="/assets/energy/photo/peblar-dual.webp" width="721" height="900" loading="lazy" decoding="async" alt="Peblar Dual met twee Type 2-sockets"></figure><div class="peblar-family-copy">${label("03 / Peblar Dual")}<h2>Meer laden.<br>Minder <em>ruimtebeslag.</em></h2><p class="design-lead">Twee aansluitpunten in één laadstation. Voor zakelijke parkeerplaatsen, bezoekers en locaties waar meerdere auto's laden.</p>${proof(
+    [
+      ["2 × Type 2", "Twee sockets"],
+      ["1 × 22 kW", "Of 2 × 11 kW op drie fasen"],
+      ["Wifi 6 / LAN", "Mobiele verbinding via LTE Cat 1"],
+    ],
+  )}<p>De beschikbare capaciteit wordt tussen de aansluitpunten verdeeld. Kies de standaard MID-uitvoering, de Eichrecht-variant of de uitvoering met shuttered sockets. Wand- of paalmontage wordt afgestemd op de locatie.</p>${peblarOptions(
+    "Dual",
+    [
+      ["Dual · MID", ""],
+      ["Dual · Eichrecht", ""],
+      ["Dual · Shutter", ""],
+    ],
+  )}<p class="design-caption">Maximumvermogen volgens de gekozen fase- en netconfiguratie. Functies die Peblar voor toekomstige hardware of firmware noemt, nemen we pas op als ze beschikbaar zijn voor de aangeboden uitvoering.</p></div></section>
+<section class="section peblar-lineup"><div class="shell"><div class="section-heading"><div>${label("De modellen naast elkaar")}<h2>Welke Peblar<br>past bij <em>jouw plek?</em></h2></div><p>Drie productlijnen. Verschillende uitvoeringen. Wij helpen je kiezen op basis van gebruik, aansluiting en gewenste verrekening.</p></div><p class="peblar-scroll-hint">Veeg opzij om alle modellen te vergelijken.</p><div class="peblar-compare-wrap" tabindex="0" role="region" aria-label="Vergelijk Peblar Home, Business en Dual"><table class="peblar-compare"><caption class="sr-only">Vergelijking van Peblar-laadoplossingen</caption><thead><tr><th scope="col">Kenmerk</th><th scope="col">Home</th><th scope="col">Business</th><th scope="col">Dual</th></tr></thead><tbody><tr><th scope="row">Laadpunten</th><td>1</td><td>1</td><td>2</td></tr><tr><th scope="row">Uitvoering</th><td>Kabel 5 / 7,5 m</td><td>Kabel 5 / 7,5 m, socket of shutter</td><td>2 sockets; MID, Eichrecht of Shutter</td></tr><tr><th scope="row">Vermogen op drie fasen</th><td>Tot 11 kW</td><td>Tot 22 kW</td><td>1 × 22 / 2 × 11 kW</td></tr><tr><th scope="row">Energiemeting</th><td>Indicatief</td><td>MID; Eichrecht-variant</td><td>MID; Eichrecht-variant</td></tr><tr><th scope="row">Netwerk</th><td>Wifi / ethernet</td><td>Wifi / ethernet / mobiel</td><td>Wifi 6 / ethernet / LTE Cat 1</td></tr><tr><th scope="row">Plaatsing</th><td>Wand of paal</td><td>Wand of paal</td><td>Wand of passende zuil</td></tr></tbody></table></div><p class="design-caption">Laadvermogen, meting en ondersteunde integraties worden afgestemd op je auto, aansluiting en gekozen uitvoering.</p></div></section>
+<section class="section peblar-install-story"><div class="shell peblar-install-grid"><figure><img src="/assets/energy/photo/peblar-detail-1200.webp" srcset="/assets/energy/photo/peblar-detail-640.webp 640w, /assets/energy/photo/peblar-detail-1200.webp 1200w" sizes="(max-width:760px) calc(100vw - 40px), 42vw" width="1200" height="1800" loading="lazy" decoding="async" alt="Detail van een Peblar-laadpunt met opgerolde kabel aan een houten gevel"></figure><div>${label("03 / Meer dan een laadpunt")}<h2>Ook de route<br>moet <em>kloppen.</em></h2><p class="design-lead">Van meterkast tot parkeerplek. Met aandacht voor wat je ziet én wat erachter zit.</p>${steps(
     [
       [
         "Eerst de woning",

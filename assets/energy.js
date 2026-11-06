@@ -99,3 +99,28 @@ if (productImage) {
         );
     });
 }
+
+// Model options update the selected execution and the matching inquiry subject.
+for (const root of document.querySelectorAll("[data-peblar-config]")) {
+  const group = root.querySelector(".peblar-variant-buttons");
+  if (!group) continue;
+  group.hidden = false;
+  root.querySelector(".variant-available").hidden = true;
+  group.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-peblar-variant]");
+    if (!button) return;
+    for (const item of group.querySelectorAll("button"))
+      item.setAttribute("aria-pressed", String(item === button));
+    const option = button.dataset.peblarVariant;
+    const model = root.dataset.peblarConfig;
+    root.querySelector(".peblar-selected").textContent =
+      `Peblar ${model} · ${option}`;
+    root.querySelector("[data-variant-advice]").href =
+      `mailto:hello@debouwpro.nl?subject=${encodeURIComponent(`Peblar ${model} — ${option}`)}`;
+    const image = root.querySelector("[data-variant-image]");
+    if (image && button.dataset.variantImageFile) {
+      image.src = "/assets/energy/photo/" + button.dataset.variantImageFile;
+      image.alt = `Peblar ${model} ${option.startsWith("Kabel") ? "met vaste laadkabel" : "in socket-uitvoering"}`;
+    }
+  });
+}

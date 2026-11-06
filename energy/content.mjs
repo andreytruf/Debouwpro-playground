@@ -240,11 +240,11 @@ export const brands = [
     category: "Slim thuisladen",
     filter: ["laden"],
     visual: "charger",
-    kicker: "Peblar Home",
+    kicker: "Home · Business · Dual",
     title: "Thuiskomen.\nAansluiten. Opladen.",
     intro:
       "Een laadpunt hoort vanzelfsprekend bij je woning te passen. We plannen de kabelroute, de plek aan de gevel of op een paal en de beschikbare ruimte op je aansluiting.",
-    card: "Een doordacht laadpunt voor je eigen parkeerplek.",
+    card: "Laden thuis en op het werk. Home, Business en Dual, passend bij je parkeerplek.",
     benefits: [
       ["Laden met overzicht", "Lokale webinterface via wifi of ethernet."],
       [
@@ -262,9 +262,14 @@ export const brands = [
         "3,7 kW op één fase of tot 11 kW op drie fasen volgens de huidige Home-productpagina.",
       ],
       [
-        "Aansluiting auto",
-        "Vaste Type 2-kabel; uitvoeringen met 5 of 7,5 meter kabel.",
+        "Business",
+        "7,4 kW op één fase of tot 22 kW op drie fasen. Vaste kabel 5/7,5 m, socket of socket met shutter; MID-meting en Eichrecht-variant.",
       ],
+      [
+        "Dual",
+        "Twee Type 2-sockets. Op drie fasen 1 × 22 kW of 2 × 11 kW; MID-, Eichrecht- en Shutter-uitvoering.",
+      ],
+      ["Kabelkeuze Home", "Vaste Type 2-kabel van 5 of 7,5 meter."],
       [
         "Koppelingen",
         "OCPP 1.6-J; load balancing via ondersteunde P1-, CT- of Modbus-meting. Accessoires en instellingen zijn configuratieafhankelijk.",
@@ -302,6 +307,11 @@ export const brands = [
     ],
     sources: [
       ["Peblar — Home en specificaties", "https://peblar.com/chargers/home"],
+      [
+        "Peblar — Business en uitvoeringen",
+        "https://peblar.com/chargers/business",
+      ],
+      ["Peblar — Dual en specificaties", "https://peblar.com/chargers/dual"],
       ["Peblar — integraties", "https://peblar.com/integrations"],
     ],
     related: ["tesla", "ecoflow", "goodwe"],
