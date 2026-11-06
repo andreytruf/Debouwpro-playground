@@ -36,3 +36,7 @@ The retrofit infographic is original HTML/CSS, showing retained PV generation/ol
 ## Validation
 
 All 25 Playwright tests passed, including direct routes, mobile layout, navigation, accessibility and new product/retrofit links. `npm run check` passed (static build and Wrangler dry run). Desktop/mobile screenshots were captured under `previews/`. A stale local development asset index initially missed the new SBP image; restarting the local server resolved it before the successful full test run. Playground noindex is retained.
+
+## Published verification
+
+Source commit: `7eba08a`. Public Playground responses matched all 77 deployed public build files byte for byte on 6 November 2026. GoodWe returned HTTP 200 and `X-Robots-Tag: noindex, nofollow`. Active deployment: `73e931f2-5081-4078-a03b-706f6c285ff8`; version: `333df22d-37fc-496a-898f-2676279b3a36`. No redundant deployment was needed. GitHub Actions status was not available at verification time; the local full test suite and build checks passed.
