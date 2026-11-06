@@ -1,3 +1,4 @@
+import { renderGoodWe } from "./goodwe.mjs";
 // Distinct editorial compositions; shared specifications and contact remain in templates.mjs.
 const arrow =
   '<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>';
@@ -6,7 +7,7 @@ export const aiNote =
 const notes = {
   tesla: "AI-architectuurconcept met Model Y · geen eigen installatie",
   ecoflow: aiNote,
-  goodwe: aiNote,
+  goodwe: "GoodWe EcoSmart Home",
   peblar: "Peblar Home, Business en Dual",
   samsung:
     "AI-architectuurconcept · getoonde unit is geen Samsung-productweergave",
@@ -15,7 +16,7 @@ const notes = {
 const alt = {
   tesla: "AI-concept van een moderne villa met witte Model Y bij avondlicht",
   ecoflow: "AI-sfeerbeeld van een lichte technische ruimte met eiken afwerking",
-  goodwe: "AI-sfeerbeeld van een moderne woning met zonnepanelen",
+  goodwe: "GoodWe EcoSmart Home woning met zonnepanelen en energiesysteem",
   peblar:
     "Peblar-laadpunt aan een lichte bakstenen gevel naast een elektrische auto; fabrikantfoto",
   samsung:
@@ -24,14 +25,20 @@ const alt = {
     "Whspr hybride warmtepomp met verticale lamellen en open onderstel; productrender van de fabrikant",
 };
 export const socialPhoto = (slug) =>
-  slug === "whspr"
-    ? "/assets/energy/photo/whspr-product-640.webp"
-    : `/assets/energy/photo/${slug}-1600.webp`;
+  slug === "goodwe"
+    ? "/assets/energy/photo/goodwe-hero-1600.webp"
+    : slug === "whspr"
+      ? "/assets/energy/photo/whspr-product-640.webp"
+      : `/assets/energy/photo/${slug}-1600.webp`;
 export const photo = (slug, priority = false, cls = "") => {
   const whspr = slug === "whspr";
   const small = whspr ? 480 : 720;
   const large = whspr ? 640 : 1600;
-  const base = whspr ? "whspr-product" : slug;
+  const base = whspr
+    ? "whspr-product"
+    : slug === "goodwe"
+      ? "goodwe-hero"
+      : slug;
   const height = whspr ? 640 : slug === "peblar" ? 1067 : 900;
   return `<img class="${cls}" src="${socialPhoto(slug)}" srcset="/assets/energy/photo/${base}-${small}.webp ${small}w, /assets/energy/photo/${base}-${large}.webp ${large}w" sizes="${whspr ? "(max-width:760px) calc(100vw - 40px), 45vw" : "100vw"}" width="${large}" height="${height}" ${priority ? 'fetchpriority="high"' : 'loading="lazy" decoding="async"'} alt="${alt[slug]}">`;
 };
@@ -84,11 +91,8 @@ function ecoflow(b) {
 <section class="section shell monitoring-story">${label("02 / Inzicht zonder ruis")}<h2>Weten wat er stroomt.<br>Begrijpen wat je <em>gebruikt.</em></h2><div class="monitoring-grid"><p class="design-lead">In de EcoFlow-app en het webportaal volg je ondersteunde gegevens over opwek, opslag en verbruik. Welke regeling wordt ingericht, leggen we vast in het voorstel.</p><div class="energy-rhythm"><span>OPWEKKEN</span><span>BEWAREN</span><span>GEBRUIKEN</span><small>Energieprincipe · geen live meetgegevens</small></div></div></section>`;
 }
 
-function goodwe(b) {
-  return `
-<section class="goodwe-hero showcase-hero" aria-labelledby="brand-title"><div class="shell">${label("PRO ENERGY / GoodWe")}<h1 id="brand-title">De verbinding tussen<br>zon en <em>thuis.</em></h1><p>Een hybride omvormer. Passende Lynx-opslag.<br>Techniek die als systeem wordt geselecteerd.</p>${actions()}</div><figure>${photo("goodwe", true)}${caption("goodwe")}</figure></section>
-<section class="section shell goodwe-system" id="mogelijkheden"><div>${label("01 / Twee rollen, één ontwerp")}<h2>Omzetten.<br>Opslaan. <em>Afstemmen.</em></h2></div><div class="two-products"><article><span class="eyebrow">A / Hybride omvormer</span><h3>De schakel in het systeem.</h3><p>Een geschikte hybride omvormer zet zonnestroom om voor de woning en verzorgt de koppeling met een compatibele batterij. Model, fase-uitvoering en firmware tellen mee.</p>${link("Bekijk GoodWe-opslagsystemen", "https://en.goodwe.com/energy-storage-solutions")}</article><article><span class="eyebrow">B / Lynx Home F Plus+</span><h3>Modulair energie bewaren.</h3><p>De F Plus+-serie gebruikt stapelbare LFP-modules. Kies de batterij niet los van de omvormer: de compatibiliteitslijst bepaalt welke combinatie is toegestaan.</p>${link("Originele Lynx-productbeelden", b.sources[0][1])}</article></div></section>
-<section class="section goodwe-diagram"><div class="shell">${label("02 / Begrijpelijk verbonden")}<h2>Elk onderdeel<br>zijn eigen <em>rol.</em></h2><ol class="system-blueprint"><li><span>01</span><strong>Zonnepanelen</strong><p>Wekken gelijkstroom op.</p></li><li><span>02</span><strong>Hybride omvormer</strong><p>Zet om en koppelt passende opslag.</p></li><li><span>03</span><strong>Lynx-batterij</strong><p>Bewaart energie voor later.</p></li><li><span>04</span><strong>Woning</strong><p>Gebruikt energie via de meterkast.</p></li></ol><p class="design-caption">Principeschema, geen elektrisch aansluitschema. Meting, beveiliging en toegestane productcombinaties worden per installatie bepaald.</p></div></section>`;
+function goodwe() {
+  return renderGoodWe();
 }
 
 function peblarOptions(model, options) {

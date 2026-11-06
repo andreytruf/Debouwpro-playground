@@ -165,34 +165,45 @@ export const brands = [
     category: "Zon & opslag",
     filter: ["opslag", "zon"],
     visual: "hybrid",
-    kicker: "Hybride omvormers · Lynx",
+    kicker: "Zon · Lynx-opslag · HCA G2",
     title: "Van zon op het dak\nnaar energie in huis.",
     intro:
       "Zonnepanelen wekken gelijkstroom op. De omvormer maakt die bruikbaar voor je woning. Met passende opslag voeg je een volgende stap toe: energie bewaren voor een ander moment.",
-    card: "Hybride omvorming en Lynx-opslag als afgestemd systeem.",
+    card: "Een compleet energieplan met zon, passende opslag en thuisladen.",
     benefits: [
       [
-        "Hybride systeemkeuze",
-        "Een geschikte hybride omvormer verbindt zonnepanelen en batterij.",
+        "Gerichte systeemkeuze",
+        "Voorbeelden met ES G2 of ET G2, passende Lynx-opslag en optioneel HCA G2-laadadvies.",
       ],
-      ["Lynx-opslag", "De Lynx Home F Plus+ gebruikt stapelbare LFP-modules."],
+      [
+        "Nieuwe batterijgeneraties",
+        "Lynx U G3 voor laagspanning; Lynx D G2 voor geschikte hoogspanningssystemen.",
+      ],
       [
         "Compatibiliteit eerst",
-        "De gekozen omvormer bepaalt welke batterijcombinaties mogelijk zijn.",
+        "Modelnummers, meetaccessoires en firmware bepalen de systeemopbouw.",
       ],
     ],
     specs: [
       [
-        "Voorbeeldserie",
-        "Lynx Home F Plus+ — LX F6.6-H, F9.8-H, F13.1-H en F16.4-H.",
+        "Hybride omvormers",
+        "ES G2: één fase, modellen van 3 tot 6 kW. ET G2: drie fasen, 6 / 8 / 10 / 12 / 15 kW.",
       ],
       [
-        "Bruikbare energie",
-        "6,55 / 9,83 / 13,10 / 16,38 kWh volgens het serieblad; testcondities en gekoppelde omvormer zijn van invloed.",
+        "Lynx U G3",
+        "LXU 5.0-30: 5 kWh bruikbaar per module, laagspanning, LFP. In onze voorbeelden gekoppeld aan ES G2.",
       ],
       [
-        "Batterijchemie",
-        "LFP (LiFePO4). Omvormerkeuze en firmware volgens de actuele compatibiliteitslijst.",
+        "Lynx D G2",
+        "GW5.1-BAT-D-G20: 5,12 kWh nominaal en 5 kWh bruikbaar per module. Ook modellen met 5,8 / 8 / 8,7 kWh bruikbare energie, per uitvoering.",
+      ],
+      [
+        "HCA G2",
+        "7 kW op één fase of 11 / 22 kW op drie fasen. Laadvermogen en integratie hangen af van auto, netaansluiting, meting en firmware.",
+      ],
+      [
+        "Software & compatibiliteit",
+        "Batterijmatrix EMEA V029.1 van 22 oktober 2026: ES G2 + U G3 vraagt passende ARM-versie (vanaf 13); ET G2 + D G2 vanaf ARM 18. EV-koppeling volgt daarnaast de aparte EV/inverterlijst van 20 oktober 2026.",
       ],
     ],
     installation:
@@ -226,10 +237,18 @@ export const brands = [
       ],
     ],
     sources: [
-      ["GoodWe — Lynx Home F", "https://en.goodwe.com/lynx-f"],
+      ["GoodWe — ES G2", "https://en.goodwe.com/es-g2"],
+      ["GoodWe — ET G2", "https://en.goodwe.com/et-g2"],
+      ["GoodWe — Lynx U G3", "https://en.goodwe.com/lynx-u-g3"],
+      ["GoodWe — Lynx D G2", "https://en.goodwe.com/lynx-d-g2"],
+      ["GoodWe — HCA G2", "https://en.goodwe.com/hca-g2"],
       [
         "GoodWe — batterijcompatibiliteit EMEA",
         "https://emea.goodwe.com/Ftp/EN/Downloads/User%20Manual/GW_Battery%20Compatibility%20Overview-EMEA_EN.pdf",
+      ],
+      [
+        "GoodWe — EV-laders en omvormers",
+        "https://en.goodwe.com/Ftp/EN/Downloads/User%20Manual/GW_Compatibility-list-of-GoodWe-EV-Chargers-and-Inverters-EN.pdf",
       ],
     ],
     related: ["ecoflow", "tesla", "peblar"],

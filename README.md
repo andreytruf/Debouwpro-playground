@@ -100,3 +100,8 @@ Owner clarification: the green kitchen and roof-window bathroom belong in the ma
 ## Peblar complete model selection
 
 The Peblar page now distinguishes Home, Business and Dual with cable/connection and variant selectors, a comparison table and inquiries that retain the selected option. Current manufacturer pages were checked for 5/7.5 m cable choices, socket/shutter options and Dual variants. Manufacturer photography is used throughout; image-source records are maintained in [the Peblar range register](docs/peblar-range/README.md), while public provenance captions on Peblar and its landing card have been removed as requested. Capture current previews with `node scripts/preview-peblar-range.mjs`.
+
+
+## GoodWe curated systems
+
+GoodWe now presents three residential system examples with explicitly separate PV kWp, inverter kW and usable battery kWh, verified ES G2 / Lynx U G3 and ET G2 / Lynx D G2 pairings, optional HCA G2 charging requests, dedicated battery/charger sections and a principle infographic. Genuine manufacturer imagery replaces the old AI scene on GoodWe and its landing card. Exact models, firmware conditions, arithmetic assumptions and image sources are documented in [GoodWe systems](docs/goodwe-systems/README.md). Capture current previews with `node scripts/preview-goodwe.mjs`.

@@ -124,3 +124,16 @@ for (const root of document.querySelectorAll("[data-peblar-config]")) {
     }
   });
 }
+
+// Optional charging is part of the advice request, never an unverified automatic bundle.
+for (const kit of document.querySelectorAll("[data-goodwe-package]")) {
+  const choice = kit.querySelector("[data-goodwe-ev]");
+  choice.closest("label").hidden = false;
+  choice.addEventListener("change", () => {
+    const name = kit.dataset.goodwePackage;
+    const extra = choice.checked ? "met HCA G2 laadadvies" : "zonder laadpunt";
+    kit.querySelector(".gw-kit-selection").textContent = `${name} · ${extra}`;
+    kit.querySelector("[data-goodwe-inquiry]").href =
+      `mailto:hello@debouwpro.nl?subject=${encodeURIComponent(`GoodWe ${name} — ${extra}`)}`;
+  });
+}

@@ -1967,3 +1967,366 @@
     margin-bottom: 20px;
   }
 }
+
+/* GoodWe: a curated EcoSmart catalogue with restrained manufacturer-red accents. */
+.theme-goodwe {
+  --gw-red: #b51f36;
+}
+.theme-goodwe main h2 em,
+.gw-heading h1 em {
+  color: var(--gw-red);
+}
+.gw-hero {
+  background: #f2f0ec;
+}
+.gw-heading {
+  text-align: center;
+  padding-block: 65px 55px;
+}
+.gw-heading .energy-actions {
+  justify-content: center;
+  margin-inline: auto;
+}
+.gw-heading > p:not(.eyebrow) {
+  margin-inline: auto;
+  max-width: 600px;
+}
+.gw-hero > figure img {
+  width: 100%;
+  height: 570px;
+  object-fit: cover;
+}
+.gw-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-block: 24px;
+  border-bottom: 1px solid var(--line);
+}
+.gw-nav a {
+  font-size: 12px;
+  padding-block: 12px;
+  border-bottom: 1px solid var(--gw-red);
+}
+.gw-packages {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.gw-package {
+  background: #fff;
+  border: 1px solid #d5d3cb;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+}
+.gw-package-top > span {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gw-red);
+}
+.gw-package h3 {
+  font-size: 37px;
+  letter-spacing: -0.045em;
+  margin: 20px 0 15px;
+}
+.gw-package-top p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+  min-height: 70px;
+}
+.gw-kit-visual {
+  display: grid;
+  grid-template-columns: 1fr 18px 1fr;
+  align-items: center;
+  height: 205px;
+  margin: 20px -8px;
+}
+.gw-kit-visual img {
+  width: 100%;
+  height: 195px;
+  object-fit: contain;
+}
+.gw-kit-visual > span {
+  color: var(--gw-red);
+  font-size: 25px;
+}
+.gw-kit-specs {
+  margin: 0;
+}
+.gw-kit-specs > div {
+  padding-block: 17px;
+  border-top: 1px solid #d5d3cb;
+}
+.gw-kit-specs dt {
+  font-size: 10px;
+  color: var(--muted);
+  margin-bottom: 7px;
+}
+.gw-kit-specs dd {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+.gw-kit-detail {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 10px 0 20px;
+}
+.gw-ev-option {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.7;
+  min-height: 48px;
+  margin-top: auto;
+  padding-top: 15px;
+}
+.gw-ev-option[hidden] {
+  display: none;
+}
+.gw-ev-option input {
+  accent-color: var(--gw-red);
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+}
+.gw-kit-selection {
+  font-size: 11px;
+  margin: 15px 0 20px;
+  color: var(--muted);
+}
+.gw-package .button {
+  font-size: 11px;
+  gap: 12px;
+  padding-inline: 18px;
+}
+.gw-package-note {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.8;
+  max-width: 1000px;
+  margin-top: 30px;
+}
+.gw-battery-section {
+  background: #e9e7e0;
+}
+.gw-batteries {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+}
+.gw-batteries article {
+  min-width: 0;
+}
+.gw-batteries figure {
+  background: #f8f7f3;
+  margin-bottom: 30px;
+}
+.gw-batteries figure img {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+  padding: 20px;
+}
+.gw-batteries h3 {
+  font-size: 40px;
+  margin-block: 20px;
+  letter-spacing: -0.04em;
+}
+.gw-capacity {
+  font-size: 27px;
+  letter-spacing: -0.03em;
+  margin-bottom: 25px;
+}
+.gw-capacity small {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0;
+  margin-top: 7px;
+}
+.gw-batteries p:not(.eyebrow):not(.gw-capacity),
+.gw-batteries li {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.gw-batteries ul {
+  padding-left: 20px;
+  margin: 25px 0;
+}
+.gw-charging {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8%;
+  align-items: center;
+}
+.gw-charging > div > p:not(.eyebrow):not(.design-lead) {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.gw-charging figure {
+  background: #eceae3;
+}
+.gw-charging figure img {
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+}
+.gw-charge-powers {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  padding-block: 25px;
+  border-block: 1px solid var(--line);
+  margin: 30px 0;
+}
+.gw-charge-powers span {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.gw-charge-powers strong {
+  font-size: 27px;
+  color: var(--ink);
+}
+.gw-charging .text-link {
+  margin-top: 30px;
+}
+.gw-system-section {
+  background: #1a1a1a;
+  color: #f2f0ec;
+}
+.gw-system-section .eyebrow {
+  color: #ecb0ba;
+}
+.theme-goodwe .gw-system-section h2 em {
+  color: #f2b2bc;
+}
+.gw-flow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 25px;
+  list-style: none;
+  margin: 55px 0 0;
+  padding: 0;
+}
+.gw-flow li {
+  border-top: 2px solid #c86777;
+  padding-top: 25px;
+}
+.gw-flow li > span {
+  display: block;
+  color: #edb3bd;
+  font-size: 11px;
+  margin-bottom: 28px;
+}
+.gw-flow strong {
+  font-size: 23px;
+  display: block;
+  margin-bottom: 20px;
+}
+.gw-flow p,
+.gw-system-section .gw-package-note {
+  color: #cfceca;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.gw-design-principles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 65px;
+  border-top: 1px solid #646462;
+  padding-top: 35px;
+}
+.gw-design-principles h3 {
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+.gw-design-principles p {
+  color: #cfceca;
+  font-size: 13px;
+  line-height: 1.8;
+}
+@media (max-width: 1000px) {
+  .gw-packages {
+    gap: 15px;
+  }
+  .gw-package {
+    padding: 20px;
+  }
+  .gw-batteries {
+    gap: 40px;
+  }
+  .gw-flow {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 760px) {
+  .gw-heading {
+    padding-block: 35px 40px;
+    text-align: left;
+  }
+  .gw-heading h1 {
+    font-size: 45px;
+  }
+  .gw-heading .energy-actions {
+    justify-content: flex-start;
+  }
+  .gw-hero > figure img {
+    height: 285px;
+    object-position: 57% center;
+  }
+  .gw-nav {
+    gap: 15px 22px;
+  }
+  .gw-packages,
+  .gw-batteries,
+  .gw-charging,
+  .gw-design-principles {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .gw-package {
+    padding: 25px;
+  }
+  .gw-package-top p {
+    min-height: 0;
+  }
+  .gw-kit-visual {
+    height: 210px;
+  }
+  .gw-package h3 {
+    font-size: 34px;
+  }
+  .gw-batteries figure img {
+    height: 300px;
+  }
+  .gw-batteries h3 {
+    font-size: 34px;
+  }
+  .gw-charging figure img {
+    height: 420px;
+  }
+  .gw-flow {
+    gap: 30px 20px;
+  }
+  .gw-flow strong {
+    font-size: 20px;
+  }
+}
+/* Keep the GoodWe accent readable in the shared dark installation section. */
+.theme-goodwe .energy-dark h2 em {
+  color: #f2b2bc;
+}
