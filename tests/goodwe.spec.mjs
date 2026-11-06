@@ -44,3 +44,27 @@ test("GoodWe complete system examples and advice remain available without JavaSc
   await expect(page.locator("#goodwe-laden")).toContainText("HCA G2");
   await context.close();
 });
+
+test("GoodWe landing opens with individual products and routes existing systems to a model check", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/energy/goodwe");
+  const hero = page.locator(".gw-entry-hero");
+  await expect(hero.locator(".gw-entry-products a")).toHaveCount(3);
+  await hero.getByRole("link", { name: "Ik heb al zonnepanelen" }).click();
+  await expect(page).toHaveURL(/#goodwe-bestaand$/);
+  const retrofit = page.locator("#goodwe-bestaand");
+  await expect(retrofit).toContainText("éénfase-batterijomvormer");
+  await expect(retrofit.locator(".gw-retrofit-hardware")).toContainText(
+    "SBP G2",
+  );
+  await expect(
+    retrofit.getByRole("link", { name: "Laat mijn installatie beoordelen" }),
+  ).toHaveAttribute("href", /Type%20bestaande%20omvormer/);
+  await hero.locator('a[href="#goodwe-batterijen"]').click();
+  await expect(page).toHaveURL(/#goodwe-batterijen$/);
+  await expect(page.locator("#goodwe-batterijen .gw-item-advice")).toHaveCount(
+    2,
+  );
+});

@@ -186,6 +186,10 @@ export const brands = [
     ],
     specs: [
       [
+        "Bestaande PV uitbreiden",
+        "SBP G2: AC-gekoppelde éénfase-batterijomvormer voor passende laagspanningsopslag. Bestaande PV-omvormer behouden na beoordeling; exacte fase- en netconfiguratie per ontwerp.",
+      ],
+      [
         "Hybride omvormers",
         "ES G2: één fase, modellen van 3 tot 6 kW. ET G2: drie fasen, 6 / 8 / 10 / 12 / 15 kW.",
       ],
@@ -203,7 +207,7 @@ export const brands = [
       ],
       [
         "Software & compatibiliteit",
-        "Batterijmatrix EMEA V029.1 van 22 oktober 2026: ES G2 + U G3 vraagt passende ARM-versie (vanaf 13); ET G2 + D G2 vanaf ARM 18. EV-koppeling volgt daarnaast de aparte EV/inverterlijst van 20 oktober 2026.",
+        "Batterijmatrix EMEA V029.1 van 22 oktober 2026: ES G2/SBP G2 + U G3 vraagt passende ARM-versie (vanaf 13); ET G2 + D G2 vanaf ARM 18. EV-koppeling volgt daarnaast de aparte EV/inverterlijst van 20 oktober 2026.",
       ],
     ],
     installation:
@@ -224,6 +228,14 @@ export const brands = [
     ],
     faq: [
       [
+        "Kan ik mijn bestaande GoodWe-omvormer behouden?",
+        "Dat hangt af van het model. Bij een geschikte hybride omvormer onderzoeken we directe batterijkoppeling. Voor een gewone netgekoppelde PV-omvormer kan een AC-gekoppelde batterijomvormer zoals SBP G2 een passende uitbreidingsroute zijn.",
+      ],
+      [
+        "Is SBP G2 een adapter voor iedere batterij?",
+        "SBP G2 is een aparte AC-gekoppelde batterijomvormer, geen universele adapter. Hij werkt met toegestane laagspanningsbatterijen. Lynx U G3 vraagt onder meer passende firmware volgens de GoodWe-batterijmatrix; Lynx D G2 is geen rechtstreekse vervanger binnen deze koppeling.",
+      ],
+      [
         "Wat doet een hybride omvormer?",
         "Hij verzorgt de omzetting van zonnestroom en de koppeling met een compatibele batterij. Welke energiestromen worden ondersteund, hangt af van het specifieke model en ontwerp.",
       ],
@@ -237,6 +249,7 @@ export const brands = [
       ],
     ],
     sources: [
+      ["GoodWe Nederland — SBP G2 retrofit", "https://nl.goodwe.com/sbp-g2"],
       ["GoodWe — ES G2", "https://en.goodwe.com/es-g2"],
       ["GoodWe — ET G2", "https://en.goodwe.com/et-g2"],
       ["GoodWe — Lynx U G3", "https://en.goodwe.com/lynx-u-g3"],

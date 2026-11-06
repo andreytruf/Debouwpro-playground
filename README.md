@@ -105,3 +105,8 @@ The Peblar page now distinguishes Home, Business and Dual with cable/connection 
 ## GoodWe curated systems
 
 GoodWe now presents three residential system examples with explicitly separate PV kWp, inverter kW and usable battery kWh, verified ES G2 / Lynx U G3 and ET G2 / Lynx D G2 pairings, optional HCA G2 charging requests, dedicated battery/charger sections and a principle infographic. Genuine manufacturer imagery replaces the old AI scene on GoodWe and its landing card. Exact models, firmware conditions, arithmetic assumptions and image sources are documented in [GoodWe systems](docs/goodwe-systems/README.md). Capture current previews with `node scripts/preview-goodwe.mjs`.
+
+
+## GoodWe individual products and retrofit
+
+GoodWe now opens with inverter/battery/charger choices and “Los kiezen. Slim combineren.” Visitors can request one item or explore complete systems. A dedicated existing-installation section explains retaining a suitable PV inverter with SBP G2 AC-coupled storage, and distinguishes it from direct storage on a compatible hybrid inverter. SBP G2 is explicitly a single-phase battery inverter, not a universal adapter. New source and validation register: [GoodWe retrofit](docs/goodwe-retrofit/README.md). Capture previews with `node scripts/preview-goodwe-retrofit.mjs`.
