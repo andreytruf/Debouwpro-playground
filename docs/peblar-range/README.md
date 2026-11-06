@@ -29,3 +29,10 @@ Public image provenance captions are removed from Peblar and its landing card. T
 Use `npm run check`, `npm test` and `node scripts/preview-peblar-range.mjs` with the local dev server running. Captures include Energy/Peblar desktop and mobile, plus comparison-table crops.
 
 Validation: `npm run check` passed (static build and Wrangler dry run). All 22 browser tests passed, including all seven Energy routes, responsive widths 320/390/768/1440, automated WCAG AA checks, image decoding, local links, keyboard model selection, inquiry subjects and no-JavaScript access to the complete range. The homepage preservation test passed. Final screenshots include family sections; mobile comparison has a swipe hint.
+
+
+## Public deployment
+
+Source commit `28b3edaebf9f5ff787d66ad454bf71be59c5861d` is saved in GitHub. Active Playground deployment `2da1db6d-1857-44c9-90de-5c39fd9d7cc5`, version `384681d7-8ca8-42d4-88dc-5e52e2ce3de1`, serves the validated files at 100%. All 63 public files match the local build byte for byte and retain noindex. Details: `live-checks.json`. No redundant Cloudflare deployment was issued after detecting the matching active publication.
+
+Preview: https://debouwpro-playground.andrey-57c.workers.dev/energy/peblar/ . Source CI: https://github.com/andreytruf/Debouwpro-playground/actions/runs/42215658716 .
