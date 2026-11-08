@@ -1,0 +1,828 @@
+{
+  "checkedAt": "2026-11-08T23:01:08.950Z",
+  "managedProxyCertificateOverride": true,
+  "base": "https://debouwpro-playground.andrey-57c.workers.dev",
+  "observations": [
+    {
+      "route": "/",
+      "width": 390,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=G0PkO4RUY93CBRzw8unjOPcB85%2FfATyxiTT555gpvFY%2BHFZ6twWOJBDgY%2B4ayn8G0ZGWn2LDCTWuwpMGLRxjWPMHZxmT3bvq0%2BixMFOP0zesQGT6sSG9iZQPEvnXOWwvD0xrF5su%2BO4FN7KAt93nJFnJ7B2J%2BC1gRTTd6nB9\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/",
+        "/assets/styles.css",
+        "/assets/site.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/images/living-640.webp",
+        "/assets/favicon.svg"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/energy/",
+      "width": 390,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=c4Pnnpzqrct%2BX%2B3p1yEmnXLYvuwu4Mw7oxCmKRYqU2GOkX7g1dDzYsNZ%2Fd%2F9UJqyEw%2B6%2BJqbnoYjAtDhUVgBspqWCf%2FcSSK5Tyh%2FeY02dEDMaAXIiaONQKpNyfOtBSMpLyE6%2B%2B3ybopBrQZRyv8xj5wghs9FezHpLIbs8ohM\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/energy/",
+        "/assets/styles.css",
+        "/assets/energy.css",
+        "/assets/showcase.css",
+        "/assets/site.js",
+        "/assets/energy.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/images/living-640.webp",
+        "/assets/favicon.svg",
+        "/assets/energy/photo/samsung-720.webp",
+        "/assets/energy/photo/whspr-garden-480.webp"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js",
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/energy.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/energy/tesla/",
+      "width": 390,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=i1zDv63cLwXF7btgOgIgAH%2FPmdaGzH%2B6vSq2diFppfTsVyshoBVRZnwfBwr%2Bf8M77zXI%2FqTXXeKykkEARw6%2FUcrpMm78uk5da4xzfVpq%2FF36IEmwqYe9cxHVKUXQf0VD7NCC9vzjIa0cBfpiGJlF80CWsgC%2FYIx3oJklkErk\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/energy/tesla/",
+        "/assets/styles.css",
+        "/assets/energy.css",
+        "/assets/showcase.css",
+        "/assets/site.js",
+        "/assets/energy.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/energy/photo/tesla-720.webp",
+        "/assets/energy/photo/tesla-powerwall3.webp",
+        "/assets/favicon.svg"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js",
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/energy.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/energy/ecoflow/",
+      "width": 390,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=uHLXxzN%2Bfl2C%2Fk%2FwYX9IX1zfE17E5ouirD77BiQeZYVBxk0bJi5lBfIKBTLX6de0olJ6O7u9XPAa2K9%2B4mhrTLI%2BMmxcoCvXc4%2Fx93FyABlycQjXI%2BVgXBbSHvV5PE1%2FJFDrTTT2K3zhP0lV4bh7nXGHT6UHA0DfW3tSHFNr\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/energy/ecoflow/",
+        "/assets/styles.css",
+        "/assets/energy.css",
+        "/assets/showcase.css",
+        "/assets/site.js",
+        "/assets/energy.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/energy/photo/ecoflow-720.webp",
+        "/assets/favicon.svg"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js",
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/energy.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/energy/goodwe/",
+      "width": 390,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=9rMcTbytSXVXfdT2CcZ44io3cujTzLNGRW1uqs127zCbLp8NPWNMkkGtE%2BGVdsX%2FcTsctz%2FAz5w2styK8%2FE5bevcsRDYdVZdXxQFeB4LM6NGzdWi2PvIxtryKzo%2BVcdol19Ap560DvSyWGDvURWuFrQkhXPMv9xYql073iAg\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/energy/goodwe/",
+        "/assets/styles.css",
+        "/assets/energy.css",
+        "/assets/showcase.css",
+        "/assets/site.js",
+        "/assets/energy.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/energy/photo/goodwe-et-480.webp",
+        "/assets/energy/photo/goodwe-u-480.webp",
+        "/assets/energy/photo/goodwe-hca-480.webp",
+        "/assets/energy/photo/goodwe-es-480.webp",
+        "/assets/favicon.svg"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js",
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/energy.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/energy/peblar/",
+      "width": 390,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=qD%2FGFylI8Z25a0c5CTnVgypgryG6UpmUeXXn2yOc5aTmLQPjtgQljtfBehmkRgywrg9MiwLLOAF%2F764ZnSYDOFot7sID1x29Zj5sBz28D1JuW64TCVW7hOtxqdq1GArGPVn%2Bw5%2Bf%2B2ozt%2BH7K5WQ6biziKoQBZo%2Bzt%2FqrSJu\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/energy/peblar/",
+        "/assets/styles.css",
+        "/assets/energy.css",
+        "/assets/showcase.css",
+        "/assets/site.js",
+        "/assets/energy.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/energy/photo/peblar-720.webp",
+        "/assets/energy/photo/peblar-front.webp",
+        "/assets/favicon.svg"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js",
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/energy.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/energy/samsung/",
+      "width": 390,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=K%2FW7tywQgKuAUnjh374kX%2FTIYUw35lmugpF0KlU7T%2BkgyTFcaYza1HrDEAzxxI%2Fe%2FiYde6oYF8fabjvA0PZNgmKMtd8Ow5KfOrU4wUqQ2IEJxHFn8qjKcp%2F8gdRGh2RJkQ8Jt75hYONAZTmCa4mR1rhNfDEi1dmKLIJKfrIe\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/energy/samsung/",
+        "/assets/styles.css",
+        "/assets/energy.css",
+        "/assets/showcase.css",
+        "/assets/site.js",
+        "/assets/energy.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/energy/photo/samsung-720.webp",
+        "/assets/favicon.svg"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js",
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/energy.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/energy/whspr/",
+      "width": 390,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=I08M7Pwei26BgjK8bcLSbSVw24fKefA55DVVlPhqSebfcktvcWBOSoSO0lRiHHaX%2FatGoEjkP5PgCvHDfSy4kqKplveokwo9wKDzbITW6uLHpe1EeA9Muc2tc8YB4SzLLee4B1eSy9VHAY6U4CQuZyZqTxjkC3EboEZg2TxG\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/energy/whspr/",
+        "/assets/styles.css",
+        "/assets/energy.css",
+        "/assets/showcase.css",
+        "/assets/site.js",
+        "/assets/energy.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/energy/photo/whspr-product-480.webp",
+        "/assets/favicon.svg"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js",
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/energy.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/algemene-voorwaarden/",
+      "width": 390,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=t1%2FQh%2FKiOR6UJZDKT0MPgHI79uYSOtU5GCDpotMDueeXH%2FBJkmv9ZeAVnJ09bLiTfMIAiS08noizRVFgCKSftZZPUyQpdo2TGxOIQjvqxfY62IXgzUFkQ7eYWizZr%2BpCBOhVEzG9SVd%2Fhj%2F7Dw3D%2F%2F5K%2BLtomgG63%2Bh1oPnM\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/algemene-voorwaarden/",
+        "/assets/styles.css",
+        "/assets/legal.css",
+        "/assets/site.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/favicon.svg"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/privacy/",
+      "width": 390,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=4KU%2Bk2gdIu2xeu60CWB%2B7PljG0M%2B%2FE%2FTsYxzyRzqdVTZttOO0xdKOECc%2FWVEQ%2BMrmtIZPy0mCStwS%2B5oDuK%2B7UEWPXbe4LSkrAcPm4VoGELLAdeodrAPECtM5gUM8b3KLskf7yoa3bDlSFwOXLF4ThRg%2FudMHqgs%2FA8Fg51W\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/privacy/",
+        "/assets/styles.css",
+        "/assets/legal.css",
+        "/assets/site.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/favicon.svg"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/cookies/",
+      "width": 390,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=lvpZ%2BHwlhLt1SS3HAc8MGqqQC2UXVAUUYC0Ff3%2Bx1EbqTBD%2FyCXJ2%2Bnzy3BjbDgYlwdS2liYBnIY6BEcR8x3i4BVYb1ohJYNmwVS%2BJzTdKYIoT4W3x24HP%2BN1zn452hAxxm7KM2EoalJAuN4KqGN3M6IjBnLhoR8t%2BoS5aKh\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/cookies/",
+        "/assets/styles.css",
+        "/assets/legal.css",
+        "/assets/site.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/favicon.svg"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=4K2to1thFVpU3pguIGV83DVh7YL%2FtXxS%2Fy8bYv8BuKOzn42M4iof2VHCE65PDzLjjffdNiqTt35cssGtnsoX0U13SDEuSmcfY%2FAliSA2KUih8rBTe3NAuHkcCrwPCsa2CXDeQEK6TaF8DZZHclN2Perf1HVTrnowZWBGd57R\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/",
+        "/assets/styles.css",
+        "/assets/site.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/images/living-1280.webp",
+        "/assets/images/kitchen-640.webp",
+        "/assets/favicon.svg"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/energy/",
+      "width": 1440,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=dZatup2l5YbHSH9kc9BCPuZJAJBwBA%2BwPFQggZdN%2BkPkvjHEeXVwcNrycHK5WNQAa2ORbQpOMeU4W2gVyIQc0xcl5Rs5RD1FzOMDJwXpNry354MmTfX%2BQTxXMu7QKxGFgKHdkHPfNhRbuIwWkyxZrTbtiHM0020A1tpDuYed\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/energy/",
+        "/assets/styles.css",
+        "/assets/energy.css",
+        "/assets/showcase.css",
+        "/assets/site.js",
+        "/assets/energy.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/images/living-1280.webp",
+        "/assets/favicon.svg",
+        "/assets/energy/photo/samsung-1600.webp",
+        "/assets/energy/photo/whspr-garden-480.webp"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js",
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/energy.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/energy/tesla/",
+      "width": 1440,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ENEfe5hDV2JGuRHNPdxjG8Ff2yrWmV7W8P%2BTplH8cxr6NaQknC3L9mRIDkHmwLGr0Ex2Qvia9UefOV06314SlkjFEVbZzDMrGVwIT43Hi0YCe7Kv%2F5llohwpdCQ0gwTemyQuRQZeuUCwrCUdOi51wmabPvTtr3WZTvIGdUWj\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/energy/tesla/",
+        "/assets/styles.css",
+        "/assets/energy.css",
+        "/assets/showcase.css",
+        "/assets/site.js",
+        "/assets/energy.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/energy/photo/tesla-1600.webp",
+        "/assets/energy/photo/tesla-powerwall3.webp",
+        "/assets/favicon.svg"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js",
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/energy.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/energy/ecoflow/",
+      "width": 1440,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Vk0YjgoB64ej%2FMRgv9bzzpGU%2BuDbEuL4DO%2BsSVX3PqhUdyjEdUqhwCb1EkgMlWFjYTAQZhwa26MOH%2FavWQoOMSwBFIg1QDQcqjEwrK%2Bf6fSbFoxjPt%2FhYKPqnkyu55aB8nKRU39%2BZT%2Fz11XbBvtOf3uEWgqrdlPhIcM03BfR\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/energy/ecoflow/",
+        "/assets/styles.css",
+        "/assets/energy.css",
+        "/assets/showcase.css",
+        "/assets/site.js",
+        "/assets/energy.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/energy/photo/ecoflow-1600.webp",
+        "/assets/favicon.svg"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js",
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/energy.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/energy/goodwe/",
+      "width": 1440,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=5AAMOmLJGhD3rIiTz2qxCws1%2FlRBahQYg7QqcGuYeW9bCVOaPE4RREXr%2BJHqQTVntCqBa18IpFVom3ByvXwI9M6qlMAtlY7Hz4rbJ3TRrL5QhRXSzEeS5qt2%2FebWGWDvfMomJQRFWgZybL0kxc0b9vW4GAZYGbeJqL%2Ftfpnk\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/energy/goodwe/",
+        "/assets/styles.css",
+        "/assets/energy.css",
+        "/assets/showcase.css",
+        "/assets/site.js",
+        "/assets/energy.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/energy/photo/goodwe-et-900.webp",
+        "/assets/energy/photo/goodwe-u-900.webp",
+        "/assets/energy/photo/goodwe-hca-900.webp",
+        "/assets/energy/photo/goodwe-es-900.webp",
+        "/assets/energy/photo/goodwe-sbp-900.webp",
+        "/assets/favicon.svg"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js",
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/energy.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/energy/peblar/",
+      "width": 1440,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=8a86yhKxSzlBw2f9boeXvD7nIztJtY8%2FVFN7WAQIBu3vKxmnMBma3z88Z9jIMseFzp%2F%2BhOkkPleIULAVHgdYNtn7m5oq74QZx%2FApJYaT76tGOA%2B%2BNb7QcV0QCIUzrTuFFuJ4EOgwwbJfWH5qoWUw7kGciRXqkxL%2FCprhqkEI\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/energy/peblar/",
+        "/assets/styles.css",
+        "/assets/energy.css",
+        "/assets/showcase.css",
+        "/assets/site.js",
+        "/assets/energy.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/energy/photo/peblar-1600.webp",
+        "/assets/energy/photo/peblar-front.webp",
+        "/assets/favicon.svg"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js",
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/energy.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/energy/samsung/",
+      "width": 1440,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=EHWpbtv%2BputUkH7SaxKXdceDLLai1euNSfRP%2BQIxOruCAttTykZVszUqtVKQcgxbGDn%2BLXQphavRC0on9jci0BGBvDGUSoUFjW9Lq4R0f112kDc2lRfulsI8lIPI4ugcgQPO3A%2B6Co3uO3iS0mYdDMJ7fExuKhKFuhHEp4nW\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/energy/samsung/",
+        "/assets/styles.css",
+        "/assets/energy.css",
+        "/assets/showcase.css",
+        "/assets/site.js",
+        "/assets/energy.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/energy/photo/samsung-1600.webp",
+        "/assets/favicon.svg"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js",
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/energy.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/energy/whspr/",
+      "width": 1440,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=OEvww9uwjQucRTAw1OcgeT0m%2BbM8Mycr234aLW9cozmPIgJEbE%2BglZJJu0glFmf7sAt%2F3KI9IFxm%2FPk2jlU3DqO9Q69%2F8g0rkbm0IgrjvAx5WIDoJt9JHzp3xUG2WzUgOZ8vSj7JyO%2FyPPaY%2BSdQVc3wCzELVaEk7J3qHvUM\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/energy/whspr/",
+        "/assets/styles.css",
+        "/assets/energy.css",
+        "/assets/showcase.css",
+        "/assets/site.js",
+        "/assets/energy.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/energy/photo/whspr-product-640.webp",
+        "/assets/energy/photo/whspr-detail-725.webp",
+        "/assets/favicon.svg"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js",
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/energy.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/algemene-voorwaarden/",
+      "width": 1440,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=hOUaiuMUIoS2MYvDm1FKyP1hsvMSPRgs4hOy0nODbmstIca8Gm%2BPXBuwNv53BHvJGiVgGsdVuPQunhq2LQPOWjGiPOjW08q0EoPoTXDPGs6v9G90mgoCyTE6Z5Y4O2Llde7%2FkVWiy7mTrPy%2FU3GAkpUTQ2D26mKYHHYo7b8B\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/algemene-voorwaarden/",
+        "/assets/styles.css",
+        "/assets/legal.css",
+        "/assets/site.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/favicon.svg"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/privacy/",
+      "width": 1440,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=9Cb5cgv9MjY2jpTvYLSsXvnLsEuR%2BQTV12NQb%2FQv0TuPVe3AcIJ96HEfAULy05UX2nUhbzMp5Le5sZQKyAetOf%2BQNDQdiRuBMILV2iFSkxNP1VZdseAKSmGo3xUCj0qee%2FvvPQNKZwrZaGjLUIVXxPUGJ%2FuyCoGIj%2F6Yg1T3\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/privacy/",
+        "/assets/styles.css",
+        "/assets/legal.css",
+        "/assets/site.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/favicon.svg"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    },
+    {
+      "route": "/cookies/",
+      "width": 1440,
+      "status": 200,
+      "headers": {
+        "robots": "noindex, nofollow",
+        "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "reportTo": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=nCCNY0N44WY0cn8bzsanm5XRAb5Ou9JgnO6T0TOvx%2FPgr58fJ4z%2FhR4VJSn9uZuSXJMX1sUygjHv9lWuPSmM%2BmQCZg%2BU7Kl8YJaKigonMQZZlYkP8ATK8FFvYwqMeapK6faUDiWwAwsI9alAmNrtlCc2WuFIA6aHY2kZy6KB\"}]}",
+        "setCookiePresent": false
+      },
+      "requests": [
+        "/cookies/",
+        "/assets/styles.css",
+        "/assets/legal.css",
+        "/assets/site.js",
+        "/assets/brand/wordmark.svg",
+        "/assets/favicon.svg"
+      ],
+      "externalRequests": [],
+      "cookies": [],
+      "browser": {
+        "local": [],
+        "session": [],
+        "indexedDB": [],
+        "serviceWorkers": 0,
+        "caches": [],
+        "scripts": [
+          "https://debouwpro-playground.andrey-57c.workers.dev/assets/site.js"
+        ],
+        "iframes": 0,
+        "forms": 0
+      }
+    }
+  ]
+}

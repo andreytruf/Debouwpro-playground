@@ -15,6 +15,7 @@ try {
   for (const width of [390, 1440]) {
     const c = await b.newContext({
       viewport: { width, height: 900 },
+      ignoreHTTPSErrors: process.env.PRIVACY_AUDIT_PROXY_CA === "1",
       reducedMotion: "reduce",
     });
     const p = await c.newPage();
@@ -88,7 +89,13 @@ try {
   await writeFile(
     "docs/privacy-cookies/deployed-audit.json",
     JSON.stringify(
-      { checkedAt: new Date().toISOString(), base, observations },
+      {
+        checkedAt: new Date().toISOString(),
+        managedProxyCertificateOverride:
+          process.env.PRIVACY_AUDIT_PROXY_CA === "1",
+        base,
+        observations,
+      },
       null,
       2,
     ) + "\n",
