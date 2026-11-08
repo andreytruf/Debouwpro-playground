@@ -1,0 +1,331 @@
+{
+  "checked_at": "2026-11-08",
+  "source_commit": "9145e3d99748e7c55c4823f267ed0bead33e2454",
+  "base_url": "https://debouwpro-playground.andrey-57c.workers.dev",
+  "results": [
+    {
+      "path": "/robots.txt",
+      "match": true
+    },
+    {
+      "path": "/",
+      "match": true
+    },
+    {
+      "path": "/404.html",
+      "match": true
+    },
+    {
+      "path": "/energy/",
+      "match": true
+    },
+    {
+      "path": "/assets/legal.css",
+      "match": true
+    },
+    {
+      "path": "/assets/favicon.svg",
+      "match": true
+    },
+    {
+      "path": "/assets/styles.css",
+      "match": true
+    },
+    {
+      "path": "/assets/energy.css",
+      "match": true
+    },
+    {
+      "path": "/assets/energy.js",
+      "match": true
+    },
+    {
+      "path": "/assets/showcase.css",
+      "match": true
+    },
+    {
+      "path": "/assets/site.js",
+      "match": true
+    },
+    {
+      "path": "/algemene-voorwaarden/",
+      "match": true
+    },
+    {
+      "path": "/energy/samsung/",
+      "match": true
+    },
+    {
+      "path": "/energy/ecoflow/",
+      "match": true
+    },
+    {
+      "path": "/energy/peblar/",
+      "match": true
+    },
+    {
+      "path": "/energy/tesla/",
+      "match": true
+    },
+    {
+      "path": "/energy/goodwe/",
+      "match": true
+    },
+    {
+      "path": "/energy/whspr/",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/ecoflow.svg",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/whspr.svg",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/peblar.svg",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/goodwe.svg",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/samsung.svg",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/tesla.svg",
+      "match": true
+    },
+    {
+      "path": "/assets/legal/de-bouw-pro-algemene-voorwaarden-concept-2026-11-08.pdf",
+      "match": true
+    },
+    {
+      "path": "/assets/legal/de-bouw-pro-projectformulieren-concept-2026-11-08.pdf",
+      "match": true
+    },
+    {
+      "path": "/assets/brand/wordmark.svg",
+      "match": true
+    },
+    {
+      "path": "/assets/brand/wordmark-light.svg",
+      "match": true
+    },
+    {
+      "path": "/assets/images/kitchen-640.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/images/detail-1280.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/images/kitchen-1280.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/images/detail-640.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/images/living-1280.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/images/living-640.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/projects/houten-badkamer-1280.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/projects/nieuwegein-keuken-1280.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/projects/houten-badkamer-640.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/projects/nieuwegein-keuken-640.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/whspr-detail-480.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/peblar-front.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/peblar-detail-640.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/whspr-thermostat-1280.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/ecoflow-1600.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/goodwe-dg2-900.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/peblar-1600.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/whspr-1600.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/samsung-720.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/tesla-720.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/goodwe-hca-480.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/whspr-thermostat-640.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/peblar-dual-parking-720.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/goodwe-sbp-900.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/samsung-1600.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/whspr-product-480.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/goodwe-hero-1600.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/goodwe-et-900.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/goodwe-hca-900.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/whspr-product-640.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/tesla-powerwall3.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/peblar-dual-parking-1600.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/ecoflow-720.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/whspr-garden-480.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/whspr-720.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/peblar-detail-1200.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/goodwe-sbp-480.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/whspr-garden-800.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/peblar-side.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/peblar-dual.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/goodwe-dg2-480.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/goodwe-u-900.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/goodwe-es-480.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/tesla-1600.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/goodwe-hero-720.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/goodwe-720.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/peblar-720.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/goodwe-1600.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/peblar-business.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/goodwe-et-480.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/goodwe-es-900.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/whspr-detail-725.webp",
+      "match": true
+    },
+    {
+      "path": "/assets/energy/photo/goodwe-u-480.webp",
+      "match": true
+    }
+  ]
+}
