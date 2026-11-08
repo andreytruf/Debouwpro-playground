@@ -110,3 +110,7 @@ GoodWe now presents three residential system examples with explicitly separate P
 ## GoodWe individual products and retrofit
 
 GoodWe now opens with inverter/battery/charger choices and “Los kiezen. Slim combineren.” Visitors can request one item or explore complete systems. A dedicated existing-installation section explains retaining a suitable PV inverter with SBP G2 AC-coupled storage, and distinguishes it from direct storage on a compatible hybrid inverter. SBP G2 is explicitly a single-phase battery inverter, not a universal adapter. New source and validation register: [GoodWe retrofit](docs/goodwe-retrofit/README.md). Capture previews with `node scripts/preview-goodwe-retrofit.mjs`.
+
+## Algemene voorwaarden — legal review concept
+
+A Dutch `/algemene-voorwaarden` page and shared footer link now expose clearly marked review drafts: 21 articles covering renovation and Energy plus a separate PDF with six blank project forms. The terms are not automatically adopted or applied to inquiries/existing contracts. Owner-confirmed KvK and current website address are included; full contractual identity, insurance and legal review remain adoption prerequisites. See [review, sources and reproduction](docs/algemene-voorwaarden/README.md) and the [Russian findings](docs/algemene-voorwaarden/REVIEW-RU.md). Regenerate checked-in PDFs with `node scripts/generate-legal-pdfs.mjs` after legal text changes; capture previews with `node scripts/preview-legal.mjs`.

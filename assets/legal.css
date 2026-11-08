@@ -1,0 +1,165 @@
+.legal-hero {
+  padding-top: 110px;
+  padding-bottom: 70px;
+}
+.legal-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 11px;
+  margin-bottom: 65px;
+}
+.legal-hero h1 {
+  font-size: clamp(42px, 6vw, 82px);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+  max-width: 850px;
+}
+.legal-lead {
+  font-size: 20px;
+  max-width: 660px;
+  margin: 30px 0;
+}
+.legal-status {
+  border-left: 3px solid #a94f28;
+  background: #e9e5de;
+  padding: 20px 24px;
+  max-width: 790px;
+  margin: 28px 0;
+}
+.legal-status p {
+  margin: 8px 0 0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.legal-downloads {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 30px 0;
+}
+.legal-meta {
+  font-size: 13px;
+  line-height: 1.9;
+  color: #555;
+}
+.legal-layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 85px;
+  padding-bottom: 100px;
+}
+.legal-index {
+  font-size: 13px;
+}
+.legal-index h2 {
+  font:
+    600 15px Arial,
+    sans-serif;
+  letter-spacing: 0;
+}
+.legal-index ol {
+  padding-left: 20px;
+  line-height: 1.5;
+}
+.legal-index li {
+  margin: 0 0 12px;
+  padding-left: 5px;
+}
+.legal-index a:hover {
+  text-decoration: underline;
+}
+.legal-content {
+  max-width: 800px;
+  min-width: 0;
+}
+.legal-article {
+  scroll-margin-top: 115px;
+  padding: 35px 0;
+  border-top: 1px solid #ccc7bf;
+}
+.legal-article h2 {
+  font:
+    400 clamp(25px, 3vw, 34px)/1.2 Arial,
+    sans-serif;
+  letter-spacing: -0.025em;
+  margin-bottom: 24px;
+}
+.legal-article h2 span {
+  display: block;
+  font:
+    600 11px/1.5 Arial,
+    sans-serif;
+  letter-spacing: 0.13em;
+  color: #87421f;
+  margin-bottom: 12px;
+}
+.legal-article p {
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 0 0 20px;
+  overflow-wrap: anywhere;
+}
+.clause-number {
+  font-size: 12px;
+  color: #555;
+  margin-right: 6px;
+}
+.legal-page .button {
+  white-space: normal;
+}
+.footer-bottom a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+@media (max-width: 900px) {
+  .legal-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .legal-index ol {
+    columns: 2;
+    column-gap: 35px;
+  }
+  .legal-index li {
+    break-inside: avoid;
+  }
+  .legal-hero {
+    padding-top: 65px;
+    padding-bottom: 35px;
+  }
+  .legal-breadcrumb {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 520px) {
+  .legal-index ol {
+    columns: 1;
+  }
+  .legal-hero h1 {
+    font-size: 43px;
+  }
+  .legal-downloads {
+    align-items: stretch;
+    gap: 20px;
+  }
+  .legal-downloads .button {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .legal-status {
+    padding: 17px;
+  }
+  .legal-layout {
+    padding-bottom: 45px;
+  }
+  .legal-article {
+    padding: 28px 0;
+  }
+}
+/* Long Dutch legal terms must remain readable at 320px. */
+.legal-article h2 {
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
