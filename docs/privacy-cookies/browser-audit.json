@@ -1,0 +1,84 @@
+{
+  "base": "http://127.0.0.1:8787",
+  "checked_at": "2026-11-08T22:55:42.187Z",
+  "observations": [
+    {
+      "route": "privacy",
+      "label": "desktop",
+      "status": 200,
+      "origins": [
+        "http://127.0.0.1:8787"
+      ],
+      "cookies": [],
+      "storage": {
+        "local": [],
+        "session": []
+      }
+    },
+    {
+      "route": "privacy",
+      "label": "mobile",
+      "status": 200,
+      "origins": [
+        "http://127.0.0.1:8787"
+      ],
+      "cookies": [],
+      "storage": {
+        "local": [],
+        "session": []
+      }
+    },
+    {
+      "route": "cookies",
+      "label": "desktop",
+      "status": 200,
+      "origins": [
+        "http://127.0.0.1:8787"
+      ],
+      "cookies": [],
+      "storage": {
+        "local": [],
+        "session": []
+      }
+    },
+    {
+      "route": "cookies",
+      "label": "mobile",
+      "status": 200,
+      "origins": [
+        "http://127.0.0.1:8787"
+      ],
+      "cookies": [],
+      "storage": {
+        "local": [],
+        "session": []
+      }
+    },
+    {
+      "route": "algemene-voorwaarden",
+      "label": "desktop",
+      "status": 200,
+      "origins": [
+        "http://127.0.0.1:8787"
+      ],
+      "cookies": [],
+      "storage": {
+        "local": [],
+        "session": []
+      }
+    },
+    {
+      "route": "algemene-voorwaarden",
+      "label": "mobile",
+      "status": 200,
+      "origins": [
+        "http://127.0.0.1:8787"
+      ],
+      "cookies": [],
+      "storage": {
+        "local": [],
+        "session": []
+      }
+    }
+  ]
+}

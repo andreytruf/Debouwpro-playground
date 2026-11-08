@@ -114,3 +114,7 @@ GoodWe now opens with inverter/battery/charger choices and “Los kiezen. Slim c
 ## Algemene voorwaarden — legal review concept
 
 A Dutch `/algemene-voorwaarden` page and shared footer link now expose clearly marked review drafts: 21 articles covering renovation and Energy plus a separate PDF with six blank project forms. The terms are not automatically adopted or applied to inquiries/existing contracts. Owner-confirmed KvK and current website address are included; full contractual identity, insurance and legal review remain adoption prerequisites. See [review, sources and reproduction](docs/algemene-voorwaarden/README.md) and the [Russian findings](docs/algemene-voorwaarden/REVIEW-RU.md). Regenerate checked-in PDFs with `node scripts/generate-legal-pdfs.mjs` after legal text changes; capture previews with `node scripts/preview-legal.mjs`.
+
+## Current legal source: Google Drive review set
+
+The earlier 21-article draft above is historical reference. The current Playground hub `/algemene-voorwaarden/` presents six separate Drive-sourced CONCEPT documents: Particulieren v0.3; B2B, ZZP, Energy and oplevering/fototoestemming v0.2; Privacy v0.1. `/privacy/` marks unverified facts and audit supplements; `/cookies/` explains the current tracking-free application without an unnecessary consent banner. No contractual draft is activated, no Google Drive master was edited, and old PDF URLs remain available as reference. See [source reconciliation, audit, testing and outstanding issues](docs/privacy-cookies/README.md).

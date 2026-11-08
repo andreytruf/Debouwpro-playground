@@ -58,7 +58,9 @@ test("no JavaScript and reduced motion", async ({ browser }) => {
   });
   const page = await context.newPage();
   await page.goto("http://127.0.0.1:8787/");
-  await expect(page.getByRole("navigation")).toBeVisible();
+  await expect(
+    page.getByRole("navigation", { name: "Hoofdnavigatie" }),
+  ).toBeVisible();
   await expect(page.locator(".intro-copy")).toHaveCSS("opacity", "1");
   await context.close();
   const reduced = await browser.newContext({ reducedMotion: "reduce" });
