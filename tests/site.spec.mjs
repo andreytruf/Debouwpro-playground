@@ -25,10 +25,10 @@ for (const width of [320, 390, 768, 1440]) {
         () => document.documentElement.scrollWidth <= innerWidth,
       ),
     ).toBe(true);
-    const allMedia = page.locator(".service-media, .home-gallery a");
+    const allMedia = page.locator(".home-gallery a");
     for (const media of await allMedia.all()) {
       const box = await media.boundingBox();
-      expect(box.width / box.height).toBeCloseTo(1.6, 1);
+      expect(box.width / box.height).toBeCloseTo(width <= 475 ? 1 : 4 / 3, 1);
     }
     const cards = await page.locator(".services article").evaluateAll((items) =>
       items.map((item) => ({
@@ -160,7 +160,7 @@ test("flooring and excavation are linked from expertise", async ({
     page.getByRole("heading", { name: "Infrezen in de bestaande dekvloer" }),
   ).toBeVisible();
   await expect(
-    page.getByRole("link", { name: "Bespreek uw project" }),
+    page.getByRole("link", { name: "Bespreek uw project", exact: true }),
   ).toHaveAttribute("href", /^mailto:hallo@debouwpro\.nl/);
   const excavation = await request.get("/graafwerk/");
   expect(excavation.status()).toBe(200);

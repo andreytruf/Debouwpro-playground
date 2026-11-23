@@ -72,6 +72,8 @@ document.querySelectorAll("[data-gallery]").forEach((link) => {
       link.parentElement.querySelectorAll("figcaption span"),
       (part) => part.textContent,
     ).join(" · ");
+    const details = viewer.querySelector("#beelddetails");
+    if (details) details.textContent = photo.alt;
     viewer.showModal();
   });
 });

@@ -122,3 +122,7 @@ The earlier 21-article draft above is historical reference. The current Playgrou
 ## Owner-confirmed contact rule — 23 November 2026
 
 Use **hallo@debouwpro.nl** and **info@debouwpro.nl** everywhere, including handoffs to Test/Main. The main mailbox uses the Dutch greeting with **a**, regardless of speech-recognition spelling. See AGENTS.md. No mailbox, DNS or routing change is implied by this text correction.
+
+## Playground V3 — compare against Test
+
+The current experiment first imports the Test staging branch at `ee2bcad` and then applies the requested hero, Energy typography, dark footer, icon/photo service comparison and compact keyboard-accessible projects. `/vergelijk/` provides links to the frozen Test presentation and the new Playground. Test/Main are unchanged. The geometric Energy introduction stays on the homepage without an equipment showcase; undefined Maatwerk and unmatched before/after examples are deferred. Details, provenance, screenshots and validation: [concept V3](docs/concept-v3/README.md).

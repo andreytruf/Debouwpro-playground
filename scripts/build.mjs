@@ -1,5 +1,6 @@
 import { cp, mkdir, rm, stat } from "node:fs/promises";
 import { buildLegal } from "./build-legal.mjs";
+import { buildComparison } from "./build-comparison.mjs";
 import { buildServices } from "./build-services.mjs";
 import { buildEnergy } from "./build-energy.mjs";
 // Only public files belong in the deploy directory.
@@ -21,4 +22,5 @@ for (const name of ["living", "kitchen", "detail"]) {
 await buildEnergy();
 await buildLegal();
 await buildServices();
+await buildComparison();
 console.log("Static build ready in dist/.");

@@ -20,7 +20,7 @@ test("one corporate wordmark and copper Energy heading across the site", async (
   await page.goto("/energy");
   await expect(page.locator("#energy-title > span").first()).toHaveCSS(
     "color",
-    "rgb(217, 120, 65)",
+    "rgb(189, 98, 46)",
   );
 });
 
