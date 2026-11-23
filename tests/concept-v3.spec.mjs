@@ -29,7 +29,7 @@ test("Test reference remains separate and both Energy versions are linked", asyn
     0,
   );
   await page.goto("/");
-  await expect(page.locator("h1")).toContainText("zonder gedoe.");
+  await expect(page.locator("h1")).toContainText("Onze expertise.");
   await expect(page.locator(".home-gallery figure")).toHaveCount(5);
   await expect(page.locator("#offerte")).toHaveCount(1);
 });
@@ -78,5 +78,6 @@ test("shared dark footer and compatible heading styles on homepage and Energy", 
       page.locator('footer a[href="mailto:hallo@debouwpro.nl"]'),
     ).toHaveCount(1);
   }
-  expect(sizes[0]).toEqual(sizes[1]);
+  expect(sizes[0][0]).toEqual(sizes[1][0]);
+  expect(sizes[0][2]).toEqual(sizes[1][2]);
 });

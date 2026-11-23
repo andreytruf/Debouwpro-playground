@@ -1,5 +1,7 @@
 # Playground concept V3 — staging-based comparison
 
+**Latest owner preference:** the homepage now restores the warm Test hero and original heading. The light hero remains available at `/vergelijk/licht/`; other V3 sections stay. Nested-route asset paths were corrected for Graafwerk, flooring and the frozen Test reference.
+
 Baseline: andreytruf/Debouwpro-test branch staging/playground-3e17934, commit ee2bcadfb843eb09fd20b0cd6af692c6c3d828e5. Read-only reference checkout; no mutation or deployment to Test/Main. Main branch of Test only contains instructions, so the deployed staging branch is the relevant source.
 
 First import the staging homepage, its exact home CSS/JS, supplied V2 logo, new project/service images and flooring/excavation page builder. Keep existing Playground legal masters, PDFs, source/contact rules, Worker identity and noindex. Adjust only the factual privacy description for the imported browser-side inquiry-draft form. No new data-submission backend, analytics, trackers or third-party page resources.
@@ -23,3 +25,9 @@ Shared footer: three desktop columns (V2 brand + WhatsApp, services, contacts), 
 Build and Wrangler dry run passed. All 36 distinct checks passed across the full run and targeted rerun: initial run had 35 passes and one ambiguous selector caused by the new footer WhatsApp link; the service-page assertion now uses the exact main CTA name. The affected service, homepage, Energy and new concept checks passed on rerun. No functional assertion was removed. Final checks additionally cover 320px comparison page, matching homepage/Energy h1 styling, frozen baseline routes, accessible variant switching, no storage, keyboard modal/focus, no-JS fallback, local form validation and intentional WhatsApp navigation. Desktop/mobile screenshots for both variants, service views, project modal and footer are under previews/. No test data was sent to a real external recipient.
 
 No framework/dependency change, trackers, backend, cookie storage, production/DNS change or mutation of Test/Main/Drive. Fresh public file verification is recorded after Playground publication.
+
+## Warm hero revision and nested-page fix
+
+Owner requested the earlier warmer landing hero back. Restore the Test hero image treatment, headline and mobile overlay on the main homepage while keeping the other V3 sections. Preserve the light version separately at `/vergelijk/licht/` and link it from the comparison page.
+
+The reported Graafwerk problem was reproducible in a fresh deployed browser: the HTML returned 200 but styles.css, site.js and favicon used relative `assets/...` paths, resolving under the nested page instead of the root. Earlier route-only checks missed the missing CSS/JS. Root-absolute paths now propagate to both generated service pages, and the same normalization fixes the frozen Test snapshot. New regression checks require actual asset responses, sticky styled header, functioning mobile menu, no JS errors, no overflow and service-page accessibility. All 39 tests passed; build/dry-run passed. Static checks cover the preserved light route as well. No Test/Main mutation.

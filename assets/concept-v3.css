@@ -473,3 +473,72 @@
   stroke-width: 1.5;
   flex-shrink: 0;
 }
+
+/* Owner preference: restore the warm Test hero; retain the new sections below. */
+.home-design .home-hero.hero-warm {
+  display: grid;
+  align-items: center;
+  min-height: clamp(38rem, calc(100svh - 82px), 57rem);
+  color: #f2f0ec;
+  background: #342b24;
+}
+.home-hero.hero-warm picture {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  order: initial;
+  aspect-ratio: auto;
+  z-index: -1;
+}
+.home-hero.hero-warm picture img {
+  object-position: 55% 52%;
+}
+.home-hero.hero-warm::after {
+  display: block;
+  background:
+    linear-gradient(90deg, #13100ee0, #17120fa8 46%, #17120f0d),
+    linear-gradient(0deg, #17120eba, transparent 36%);
+}
+.home-hero.hero-warm .hero-content {
+  padding-block: 4rem 6rem;
+  order: initial;
+}
+.home-design .home-hero.hero-warm h1 {
+  font-size: clamp(3.05rem, 8.3vw, 8.3rem);
+  line-height: 1.02;
+  max-width: none;
+  margin-top: 1.6rem;
+}
+.home-hero.hero-warm .eyebrow {
+  color: #f2f0ec;
+}
+.home-hero.hero-warm .home-intro {
+  max-width: 32rem;
+  margin: 1.45rem 0 2rem;
+}
+.home-hero.hero-warm .hero-credit {
+  inset: auto 5% 1rem;
+  max-width: none;
+  background: transparent;
+  color: #f2f0ec;
+  padding: 0.75rem 0 0;
+  border-top: 1px solid #f2f0ec80;
+  gap: 1rem;
+}
+.home-hero.hero-warm :focus-visible {
+  outline-color: #f2f0ec;
+}
+@media (max-width: 760px) {
+  .home-design .home-hero.hero-warm {
+    min-height: max(35rem, calc(100svh - 130px));
+  }
+  .home-hero.hero-warm picture img {
+    object-position: 61% 50%;
+  }
+  .home-hero.hero-warm::after {
+    background:
+      linear-gradient(90deg, #17120ee8, #17120e80),
+      linear-gradient(0deg, #17120eaa, transparent 30%);
+  }
+}
