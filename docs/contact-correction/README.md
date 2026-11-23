@@ -9,3 +9,5 @@ The owner expressly authorised correcting all documents, superseding the previou
 No mailbox provisioning, email routing, DNS, Wix, production, Main or Test repository changes are part of this correction. No email was sent.
 
 Validation: static build and Wrangler dry run passed; all 30 Playwright checks passed. A repository-wide text scan and pdftotext scan of all eight legal PDFs found no obsolete mailbox spelling. Drive readback confirmed the three corrected documents. Current privacy/legal preview screenshots were refreshed. Publication verification follows the source commit.
+
+Published verification: source commit f25ddf3; all 89 public files matched the validated dist byte for byte. Active Playground deployment 1863487f-59f8-4889-aa10-7cb87960ce48, version 103de4e4-c6ee-42db-9c9c-a82686a6356e. Existing publication completed without a redundant deployment.
