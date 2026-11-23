@@ -158,6 +158,6 @@ test("corporate homepage outside the approved project gallery is preserved", asy
     .slice(html.indexOf("<main"), html.indexOf("</main>") + 7)
     .replace(/<section\s+class="section inspiration"[\s\S]*?<\/section>/, "");
   expect(createHash("sha256").update(main).digest("hex")).toBe(
-    "dc8d5e67cd54e9021365da9f02bcb49be7aaec05a64c2f0597256458f43ea60a",
+    "460ab51e0745d22c3fc25853c0dfc949bf401a9308633d5825ecc0c5e245eede",
   );
 });

@@ -98,7 +98,7 @@ function goodwe() {
 function peblarOptions(model, options) {
   const initial = options[0][0];
   const href = (option) =>
-    `mailto:hello@debouwpro.nl?subject=${encodeURIComponent(`Peblar ${model} — ${option}`)}`;
+    `mailto:hallo@debouwpro.nl?subject=${encodeURIComponent(`Peblar ${model} — ${option}`)}`;
   return `<div class="peblar-options"><p class="variant-available">Uitvoeringen: ${options.map(([name]) => name).join(" · ")}</p><div class="peblar-variant-buttons" role="group" aria-label="Uitvoering Peblar ${model}" hidden>${options.map(([name, image], i) => `<button type="button" data-peblar-variant="${name}" data-variant-image-file="${image}" aria-pressed="${i === 0}">${name}</button>`).join("")}</div><p class="peblar-selected" aria-live="polite">Peblar ${model} · ${initial}</p><a class="text-link" data-variant-advice href="${href(initial)}">Vraag advies over ${model} <span aria-hidden="true">${arrow}</span></a></div>`;
 }
 

@@ -1,5 +1,7 @@
 # Legal, privacy and cookie preview
 
+**Contact correction, 23 November 2026:** use **hallo@debouwpro.nl** and **info@debouwpro.nl**. The owner subsequently authorised this contact-only correction in the three affected Drive masters. References below to read-only Drive handling describe the original 8 November delivery. See [correction record](../contact-correction/README.md).
+
 Only Debouwpro-playground changed. Canonical pages: `/algemene-voorwaarden/`, `/privacy/`, `/cookies/`. Existing brand/logo, homepage main content, Energy pages, security headers and noindex are retained. Main, Test, production domains and Google Drive masters were not changed.
 
 ## Source and status

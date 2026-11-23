@@ -44,7 +44,7 @@ For an optional future Git integration, connect **only this repository** to the 
 
 - Photography is local, responsive WebP, sourced from the prototype's Unsplash references. Every photographic section identifies it as inspiration/reference, not a DE BOUW PRO project. Sources are listed in [docs/PHOTO-SOURCES.md](docs/PHOTO-SOURCES.md).
 - No fabricated projects, testimonials, ratings, awards or performance claims.
-- Public email `hello@debouwpro.nl` and phone `+31 6 12350850` come from `AGENTS.md`. Email buttons open the visitor's mail app; there is no submission backend or delivery promise.
+- Public email `hallo@debouwpro.nl` and phone `+31 6 12350850` come from `AGENTS.md`. Email buttons open the visitor's mail app; there is no submission backend or delivery promise.
 - No analytics, cookies, external fonts, third-party runtime requests or frameworks. Runtime is HTML, CSS and small progressive enhancement JavaScript.
 - Semantic headings, Dutch metadata, Open Graph tags and image descriptions are included. Playground is deliberately `noindex, nofollow` in HTML and response headers, with a disallowing `robots.txt`. No production canonical or sitemap is added to this experiment. Set verified canonical URLs, indexability and sitemap only when promoting reviewed code to a real site.
 
@@ -118,3 +118,7 @@ A Dutch `/algemene-voorwaarden` page and shared footer link now expose clearly m
 ## Current legal source: Google Drive review set
 
 The earlier 21-article draft above is historical reference. The current Playground hub `/algemene-voorwaarden/` presents six separate Drive-sourced CONCEPT documents: Particulieren v0.3; B2B, ZZP, Energy and oplevering/fototoestemming v0.2; Privacy v0.1. `/privacy/` marks unverified facts and audit supplements; `/cookies/` explains the current tracking-free application without an unnecessary consent banner. No contractual draft is activated, no Google Drive master was edited, and old PDF URLs remain available as reference. See [source reconciliation, audit, testing and outstanding issues](docs/privacy-cookies/README.md).
+
+## Owner-confirmed contact rule — 23 November 2026
+
+Use **hallo@debouwpro.nl** and **info@debouwpro.nl** everywhere, including handoffs to Test/Main. The main mailbox uses the Dutch greeting with **a**, regardless of speech-recognition spelling. See AGENTS.md. No mailbox, DNS or routing change is implied by this text correction.

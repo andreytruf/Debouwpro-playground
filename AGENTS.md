@@ -2,7 +2,7 @@
 
 ## Brand
 DE BOUW PRO is a premium full-service renovation and building contractor in Utrecht / De Meern, Netherlands. Main domain: debouwpro.nl. The company is NOT positioned as a small-job handyman. Services: complete home renovations, bathrooms, kitchens, electrical and plumbing work, drainage, underfloor heating, heat pumps, extensions, flat roofs, and project management.
-Primary site language: Dutch (NL-NL). Public contacts: hello@debouwpro.nl, info@debouwpro.nl, +31 6 12350850.
+Primary site language: Dutch (NL-NL). Public contacts: hallo@debouwpro.nl, info@debouwpro.nl, +31 6 12350850.
 
 ## Design direction
 Build a high-end, conversion-focused website with the quiet confidence and precision of premium design brands; original and distinctive, not a copy of Tesla, Apple, or any template. Prior B12 inspiration: warm off-white/ivory backgrounds, charcoal typography, restrained copper accents, large editorial architectural images, strong whitespace, subtle motion, crisp mobile UI. Prioritize accessibility, performance, SEO, visual hierarchy and real client inquiries. Avoid cheap construction clip art, generic exaggerated sales copy, and fake reviews.
@@ -23,3 +23,6 @@ Use the existing B12-inspired design direction for a polished Dutch landing page
 
 ## Repository-specific role
 Experimental repository. Iterate on the existing index.html prototype, do not deploy to main website.
+
+## Mandatory contact spelling
+Canonical public addresses: **hallo@debouwpro.nl** (Dutch spelling, with a) and **info@debouwpro.nl**. Treat spoken or transcribed “hello”, “hallo”, or phonetic variations of the brand as hallo@debouwpro.nl when they refer to the main DE BOUW PRO mailbox. Never infer a different mailbox from speech recognition. Apply this rule to website copy, mailto links, structured data, PDFs, legal drafts, instructions, handoffs and generated materials. This is an owner-confirmed correction dated 23 November 2026.

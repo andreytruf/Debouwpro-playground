@@ -56,7 +56,7 @@ export const notices = [
       ],
       [
         "Vragen en wijzigingen",
-        "Heb je vragen over cookies of merk je een onverwacht script of cookie op? Mail hello@debouwpro.nl en vermeld de pagina en je browser, zonder gevoelige gegevens mee te sturen. De datum bovenaan geeft aan op welke versie deze verklaring is gebaseerd.",
+        "Heb je vragen over cookies of merk je een onverwacht script of cookie op? Mail hallo@debouwpro.nl en vermeld de pagina en je browser, zonder gevoelige gegevens mee te sturen. De datum bovenaan geeft aan op welke versie deze verklaring is gebaseerd.",
       ],
     ],
     links: [
@@ -99,7 +99,7 @@ privacy.sections.push([
   "Cloudflare verzorgt hosting en beveiliging. Voor levering en beveiliging kunnen onder andere IP-adres, tijdstip, opgevraagde URL, browser- en netwerkgegevens worden verwerkt. De publieke responses bevatten ook Cloudflare-netwerkfoutrapportageheaders. Dit is niet hetzelfde als een door DE BOUW PRO geïnstalleerde marketingtracker. Exacte logtermijnen en accountinstellingen zijn niet door deze frontendcontrole vastgesteld.",
   "Voor de fiscale basisadministratie geldt in het algemeen zeven jaar, en voor bepaalde btw-gegevens over onroerende zaken tien jaar. Dit is een wettelijk kader, geen bevestiging dat elke foto of lead zo lang wordt bewaard. Een categorisch bewaarschema moet nog worden vastgesteld.",
   "Cloudflare, Google en Dropbox zijn internationale aanbieders. Er wordt geen uitsluitend Nederlandse of Europese opslag beloofd. De concrete doorgiftegrond en de noodzakelijke waarborgen moeten per gebruikte dienst en account worden gecontroleerd.",
-  "Voor een privacyverzoek kun je mailen naar hello@debouwpro.nl. In beginsel geldt een reactietermijn van één maand; een wettelijk toegestane verlenging wordt binnen die eerste maand toegelicht. Stuur niet uit jezelf een volledig identiteitsbewijs. Een websitebezoek of adviesvraag is geen toestemming voor marketing of portfolio-publicatie.",
+  "Voor een privacyverzoek kun je mailen naar hallo@debouwpro.nl. In beginsel geldt een reactietermijn van één maand; een wettelijk toegestane verlenging wordt binnen die eerste maand toegelicht. Stuur niet uit jezelf een volledig identiteitsbewijs. Een websitebezoek of adviesvraag is geen toestemming voor marketing of portfolio-publicatie.",
 ]);
 notices[1].slug = "cookies";
 export function renderNotice(home, n) {

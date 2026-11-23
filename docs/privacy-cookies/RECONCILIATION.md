@@ -1,5 +1,7 @@
 # Drive-led legal reconciliation — 8 November 2026
 
+**Contact correction, 23 November 2026:** use **hallo@debouwpro.nl** and **info@debouwpro.nl**. The owner subsequently authorised this contact-only correction in the three affected Drive masters. References below to read-only Drive handling describe the original 8 November delivery. See [correction record](../contact-correction/README.md).
+
 Authoritative working folder: the owner-supplied Google Drive folder. The six selected versions are captured in `legal/drive-sources.json` with source IDs, titles, modification timestamps and SHA-256 of the displayable extracted text. Google Drive master files were read only; no write, conversion, sharing or revision was performed there. Files are stored DOCX, not native Docs. Latest selected versions: Particulieren v0.3; B2B, ZZP, Energy and oplevering/foto v0.2; privacy v0.1. Older similarly named Drive copies were not selected.
 
 ## Publication boundary

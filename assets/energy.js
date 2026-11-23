@@ -116,7 +116,7 @@ for (const root of document.querySelectorAll("[data-peblar-config]")) {
     root.querySelector(".peblar-selected").textContent =
       `Peblar ${model} · ${option}`;
     root.querySelector("[data-variant-advice]").href =
-      `mailto:hello@debouwpro.nl?subject=${encodeURIComponent(`Peblar ${model} — ${option}`)}`;
+      `mailto:hallo@debouwpro.nl?subject=${encodeURIComponent(`Peblar ${model} — ${option}`)}`;
     const image = root.querySelector("[data-variant-image]");
     if (image && button.dataset.variantImageFile) {
       image.src = "/assets/energy/photo/" + button.dataset.variantImageFile;
@@ -134,6 +134,6 @@ for (const kit of document.querySelectorAll("[data-goodwe-package]")) {
     const extra = choice.checked ? "met HCA G2 laadadvies" : "zonder laadpunt";
     kit.querySelector(".gw-kit-selection").textContent = `${name} · ${extra}`;
     kit.querySelector("[data-goodwe-inquiry]").href =
-      `mailto:hello@debouwpro.nl?subject=${encodeURIComponent(`GoodWe ${name} — ${extra}`)}`;
+      `mailto:hallo@debouwpro.nl?subject=${encodeURIComponent(`GoodWe ${name} — ${extra}`)}`;
   });
 }

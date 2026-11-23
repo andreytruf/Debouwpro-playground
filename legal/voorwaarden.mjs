@@ -4,7 +4,7 @@ export const company = {
   name: "DE BOUW PRO",
   kvk: "55345344",
   address: "Veldzigt 18, De Meern",
-  email: "hello@debouwpro.nl",
+  email: "hallo@debouwpro.nl",
   phone: "+31 6 12350850",
 };
 export const status =
