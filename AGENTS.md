@@ -26,3 +26,6 @@ Experimental repository. Iterate on the existing index.html prototype, do not de
 
 ## Mandatory contact spelling
 Canonical public addresses: **hallo@debouwpro.nl** (Dutch spelling, with a) and **info@debouwpro.nl**. Treat spoken or transcribed “hello”, “hallo”, or phonetic variations of the brand as hallo@debouwpro.nl when they refer to the main DE BOUW PRO mailbox. Never infer a different mailbox from speech recognition. Apply this rule to website copy, mailto links, structured data, PDFs, legal drafts, instructions, handoffs and generated materials. This is an owner-confirmed correction dated 23 November 2026.
+
+## Current Playground design choices
+The owner prefers the warm kitchen hero, with a short photo → soft shade → copy entrance and immediate reduced-motion/keyboard alternatives. Service cards default to icons; retain the photo option for comparison. Do not replace this preference with the light hero without a new instruction. Graafwerk has a complete dedicated layout; its schematic illustration is not a project photograph or execution plan.

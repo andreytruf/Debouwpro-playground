@@ -1,5 +1,7 @@
 import { mkdir, writeFile, readFile } from "node:fs/promises";
 
+import { renderGraafwerk } from "../services/graafwerk.mjs";
+
 const pages = [
   {
     slug: "vloerverwarming",
@@ -45,7 +47,10 @@ const pages = [
 export async function buildServices() {
   const home = await readFile("index.html", "utf8");
   for (const { slug, title, intro, sections, related, photo } of pages) {
-    const main = `<main id="main" class="shell section">
+    const main =
+      slug === "graafwerk"
+        ? renderGraafwerk()
+        : `<main id="main" class="shell section">
       <a class="text-link" href="/#diensten">Terug naar expertise</a>
       <h1 class="service-page-title">${title}</h1>
       <p class="home-intro">${intro}</p>
@@ -56,7 +61,7 @@ export async function buildServices() {
         ${related ?? ""}
       </div>
     </main>`;
-    const html = home
+    let html = home
       .replace(/<title>.*?<\/title>/, `<title>${title} | DE BOUW PRO</title>`)
       .replace(/(<meta\s+name="description"\s+content=")[^"]+/, `$1${intro}`)
       .replace(
@@ -72,6 +77,25 @@ export async function buildServices() {
       .replace(/href="#(?!main")/g, 'href="/#')
       .replace(/<main\b[\s\S]*?<\/main>/, main)
       .replace(/<dialog\b[\s\S]*?<\/dialog>/, "");
+    if (slug === "graafwerk") {
+      html = html
+        .replace(
+          "</head>",
+          '<link rel="stylesheet" href="/assets/graafwerk.css"></head>',
+        )
+        .replace(
+          'class="home-design service-page"',
+          'class="home-design service-page ground-page"',
+        )
+        .replace(
+          /(<meta\s+property="og:image"\s+content=")[^"]+/,
+          "$1https://debouwpro-playground.andrey-57c.workers.dev/assets/brand/primary-v2.png",
+        )
+        .replace(
+          /(<meta\s+property="og:image:alt"\s+content=")[^"]+/,
+          "$1DE BOUW PRO — Graafwerk",
+        );
+    }
     await mkdir(`dist/${slug}`, { recursive: true });
     await writeFile(`dist/${slug}/index.html`, html);
   }

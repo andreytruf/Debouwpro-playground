@@ -126,3 +126,7 @@ Use **hallo@debouwpro.nl** and **info@debouwpro.nl** everywhere, including hando
 ## Playground V3 — compare against Test
 
 The current experiment first imports the Test staging branch at `ee2bcad` and then applies the requested hero, Energy typography, dark footer, icon/photo service comparison and compact keyboard-accessible projects. `/vergelijk/` provides links to the frozen Test presentation and the new Playground. Test/Main are unchanged. The geometric Energy introduction stays on the homepage without an equipment showcase; undefined Maatwerk and unmatched before/after examples are deferred. Details, provenance, screenshots and validation: [concept V3](docs/concept-v3/README.md).
+
+## Warm hero entrance and Graafwerk
+
+The warm kitchen now appears before the shade and introduction fade in; reduced motion, no-JS and keyboard focus show content immediately. Icons remain the default service view. `/graafwerk/` has a complete responsive service layout with an original schematic, work categories, preparation checklist, FAQ and contact CTAs. No invented job/machine photography or technical promise was added. See [implementation and verification](docs/hero-graafwerk/README.md).

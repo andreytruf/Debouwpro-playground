@@ -1,0 +1,26 @@
+[
+  {
+    "stage": "photo",
+    "ms": 532,
+    "shade": 0,
+    "copy": 0
+  },
+  {
+    "stage": "shade",
+    "ms": 956,
+    "shade": 0.447543,
+    "copy": 0
+  },
+  {
+    "stage": "copy",
+    "ms": 1454,
+    "shade": 0.952871,
+    "copy": 0.827771
+  },
+  {
+    "stage": "ready",
+    "ms": 2307,
+    "shade": 1,
+    "copy": 1
+  }
+]
