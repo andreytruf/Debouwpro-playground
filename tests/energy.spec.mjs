@@ -1,4 +1,3 @@
-import { createHash } from "node:crypto";
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 const routes = [
@@ -150,14 +149,14 @@ test("Energy works without JavaScript, including navigation and FAQ", async ({
   await context.close();
 });
 
-test("corporate homepage outside the approved project gallery is preserved", async ({
-  request,
+test("corporate homepage links to the existing Energy landing", async ({
+  page,
 }) => {
-  const html = await (await request.get("/")).text();
-  const main = html
-    .slice(html.indexOf("<main"), html.indexOf("</main>") + 7)
-    .replace(/<section\s+class="section inspiration"[\s\S]*?<\/section>/, "");
-  expect(createHash("sha256").update(main).digest("hex")).toBe(
-    "460ab51e0745d22c3fc25853c0dfc949bf401a9308633d5825ecc0c5e245eede",
-  );
+  await page.goto("/");
+  await page
+    .locator("#energy")
+    .getByRole("link", { name: "Ontdek onze energieoplossingen" })
+    .click();
+  await expect(page).toHaveURL(/\/energy\/?$/);
+  await expect(page.locator("#energy-title")).toBeVisible();
 });

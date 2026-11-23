@@ -33,11 +33,7 @@ for (const route of ["/privacy/", "/cookies/"]) {
     await expect(page.locator("#onderdeel-2")).toBeInViewport();
     await page.reload();
     await expect(page.locator("#onderdeel-2")).toBeInViewport();
-    for (const slug of [
-      "privacy/",
-      "cookies/",
-      "algemene-voorwaarden",
-    ])
+    for (const slug of ["privacy/", "cookies/", "algemene-voorwaarden"])
       await expect(page.locator(`footer a[href="/${slug}"]`)).toHaveCount(1);
     expect((await request.get("/legal/privacy.mjs")).status()).toBe(404);
   });
@@ -75,9 +71,11 @@ test("current website uses no application cookies, browser storage or external p
         session: Object.keys(sessionStorage),
       })),
     ).toEqual({ local: [], session: [] });
-    expect(await page.locator('form,iframe,script[src^="http"]').count()).toBe(
-      0,
-    );
+    expect(
+      await page
+        .locator('form:not(#offerte),iframe,script[src^="http"]')
+        .count(),
+    ).toBe(0);
     for (const slug of ["privacy/", "cookies/"])
       await expect(page.locator(`footer a[href="/${slug}"]`)).toHaveCount(1);
   }

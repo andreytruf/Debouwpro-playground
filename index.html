@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f7f5f0" />
+    <meta name="theme-color" content="#F2F0EC" />
     <meta
       name="description"
       content="Complete woningrenovatie in Utrecht en De Meern. DE BOUW PRO coördineert jouw verbouwing, van indeling en installaties tot keuken, badkamer en afwerking."
@@ -14,7 +14,7 @@
     <meta property="og:site_name" content="DE BOUW PRO" />
     <meta
       property="og:title"
-      content="DE BOUW PRO — Ruimte voor bijzonder wonen."
+      content="DE BOUW PRO — Uw woning. Onze expertise."
     />
     <meta
       property="og:description"
@@ -22,23 +22,31 @@
     />
     <meta
       property="og:image"
-      content="https://debouwpro-playground.andrey-57c.workers.dev/assets/images/living-1280.webp"
+      content="https://debouwpro-playground.andrey-57c.workers.dev/assets/projects/keuken-utrecht.webp"
     />
     <meta
       property="og:image:alt"
-      content="Licht interieur met natuurlijke materialen — referentiefotografie"
+      content="Keukenrenovatie in Utrecht met warme natuurlijke materialen"
     />
     <title>Woningrenovatie Utrecht · DE BOUW PRO</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/styles.css" />
     <script src="assets/site.js" defer></script>
+    <link rel="stylesheet" href="/assets/home.css" />
+    <script src="/assets/home.js" defer></script>
   </head>
-  <body>
+  <body class="home-design">
     <a class="skip-link" href="#main">Ga naar inhoud</a>
     <header class="site-header">
       <div class="shell header-inner">
         <a class="brand" href="#home" aria-label="DE BOUW PRO — naar het begin"
-          ><img class="brand-logo" src="/assets/brand/wordmark.svg" width="160" height="27" alt="DE BOUW PRO"></a>
+          ><img
+            class="brand-logo"
+            src="/assets/brand/primary-v2.png"
+            width="198"
+            height="32"
+            alt="DE BOUW PRO"
+        /></a>
         <button
           class="menu-toggle"
           type="button"
@@ -50,219 +58,219 @@
         </button>
         <nav id="navigation" class="navigation" aria-label="Hoofdnavigatie">
           <a href="#diensten">Expertise</a><a href="#aanpak">Onze aanpak</a
-          ><a href="#inspiratie">Inspiratie</a><a href="/energy">Energy</a
-          ><a class="nav-contact" href="#contact"
-            >Bespreek je plannen
-            <span aria-hidden="true"
-              ><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M5 19 19 5M5 5h14v14" /></svg></span
-          ></a>
+          ><a href="#inspiratie">Projecten</a><a href="#over">Over ons</a
+          ><a href="/energy">Energy</a
+          ><a class="nav-contact" href="#contact">Contact</a>
         </nav>
       </div>
     </header>
     <main id="main">
-      <section class="hero shell" id="home" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">
-            <span class="dot" aria-hidden="true"></span> Totaalrenovatie ·
-            Utrecht & omgeving
+      <section class="home-hero" id="home" aria-labelledby="titel">
+        <picture
+          ><source
+            media="(max-width: 720px)"
+            srcset="/assets/projects/keuken-utrecht-small.webp" />
+          <img
+            src="/assets/projects/keuken-utrecht.webp"
+            alt=""
+            width="1675"
+            height="939"
+            fetchpriority="high"
+        /></picture>
+        <div class="shell hero-content">
+          <p class="eyebrow">Aannemer in Utrecht & omgeving</p>
+          <h1 id="titel">Uw woning.<br /><em>Onze expertise.</em></h1>
+          <p class="home-intro">
+            Van complete renovaties tot hoogwaardige afwerking. Eén betrouwbare
+            partner voor uw verbouwing.
           </p>
-          <h1 id="hero-title">
-            Ruimte voor<br />bijzonder<br /><em>wonen.</em>
-          </h1>
-          <p class="hero-intro">
-            Een huis dat klopt. In de indeling, in de details, in het dagelijks
-            leven. Wij brengen jouw renovatie samen tot één doordacht geheel.
-          </p>
-          <a class="button button-dark" href="#contact"
-            >Vertel ons je plannen
-            <span aria-hidden="true"
-              ><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M5 19 19 5M5 5h14v14" /></svg></span
-          ></a>
-          <a class="text-link hero-link" href="#diensten"
-            >Ontdek onze expertise <span aria-hidden="true">↓</span></a
-          >
-        </div>
-        <figure class="hero-visual">
-          <div class="hero-image">
-            <img
-              src="assets/images/living-1280.webp"
-              srcset="
-                assets/images/living-640.webp   640w,
-                assets/images/living-1280.webp 1280w
-              "
-              sizes="(max-width: 760px) calc(100vw - 40px), 52vw"
-              width="1280"
-              height="870"
-              fetchpriority="high"
-              alt="Lichte leefruimte met hout, natuursteen en zicht op de tuin; interieurreferentie"
-            />
+          <div class="home-actions">
+            <a class="home-button copper" href="#contact"
+              >Vraag een offerte aan </a
+            ><a class="home-button outline" href="#inspiratie"
+              >Bekijk onze projecten
+            </a>
           </div>
-          <div class="image-note" aria-hidden="true">
-            <span>Een nieuwe blik</span><span>op thuis.</span>
-          </div>
-          <figcaption>
-            <span>01 / Licht. Ruimte. Balans.</span
-            ><span>Referentiebeeld · geen eigen project</span>
-          </figcaption>
-        </figure>
-      </section>
-      <div class="promise-strip">
-        <div class="shell">
-          <span>Van eerste idee tot laatste detail</span
-          ><span>Eén aanspreekpunt</span
-          ><span>Utrecht · De Meern · omgeving</span>
         </div>
-      </div>
-      <section class="section shell intro" aria-labelledby="intro-title">
-        <div>
-          <p class="eyebrow">01 / De gedachte erachter</p>
-          <h2 id="intro-title">Meer samenhang.<br />Meer <em>thuis.</em></h2>
-        </div>
-        <div class="intro-copy reveal">
-          <p class="lead">
-            Een mooie verbouwing begint met verder kijken dan de afzonderlijke
-            ruimtes.
-          </p>
-          <p>
-            Hoe valt het licht? Waar wil je samenkomen? En welke techniek maakt
-            je woning comfortabel? DE BOUW PRO verbindt indeling, installaties
-            en afwerking in een complete renovatie.
-          </p>
-          <p>
-            Vanuit Utrecht en De Meern begeleiden we het hele traject. Met
-            heldere afstemming en aandacht voor de keuzes die ertoe doen.
-          </p>
-          <a class="text-link" href="#aanpak"
-            >Zo werken wij
-            <span aria-hidden="true"
-              ><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M5 19 19 5M5 5h14v14" /></svg></span
-          ></a>
+        <div class="hero-credit">
+          <span>PORTFOLIO</span><span>Keukenrenovatie · Utrecht</span>
         </div>
       </section>
-      <section
-        class="section expertise"
-        id="diensten"
-        aria-labelledby="services-title"
-      >
-        <div class="shell">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">02 / Onze expertise</p>
-              <h2 id="services-title">
-                De hele woning.<br />Het hele <em>verhaal.</em>
-              </h2>
-            </div>
-            <p>
-              Van een nieuwe indeling tot verfijnde afwerking. Alle onderdelen
-              van je verbouwing, op elkaar afgestemd.
-            </p>
+
+      <section class="shell section" id="diensten">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Werkzaamheden</p>
+            <h2>Onze expertise</h2>
           </div>
-          <div class="service-layout">
-            <figure class="service-photo reveal">
+          <p>
+            Van de eerste ingreep tot de laatste afwerking. Wij stemmen de
+            werkzaamheden op elkaar af.
+          </p>
+        </div>
+        <div class="services">
+          <article>
+            <div class="service-media">
               <img
-                src="assets/images/kitchen-1280.webp"
-                srcset="
-                  assets/images/kitchen-640.webp   640w,
-                  assets/images/kitchen-1280.webp 1280w
-                "
-                sizes="(max-width: 760px) calc(100vw - 40px), 40vw"
-                width="1280"
-                height="1920"
+                src="/assets/projects/keuken-utrecht-detail.webp"
+                alt=""
                 loading="lazy"
-                decoding="async"
-                alt="Badkamer met vrijstaand bad en een rustig materiaalpalet; interieurreferentie"
+                width="1180"
+                height="661"
               />
-              <figcaption>Materiaal & ruimte · referentiebeeld</figcaption>
-            </figure>
-            <div class="service-list">
-              <article class="service">
-                <span class="service-number">01</span>
-                <div>
-                  <h3>Complete woningrenovatie</h3>
-                  <p>
-                    Indeling, uitvoering en projectcoördinatie. Eén samenhangend
-                    plan voor de transformatie van je woning.
-                  </p>
-                </div>
-                <span class="service-mark" aria-hidden="true"
-                  ><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M5 19 19 5M5 5h14v14" /></svg
-                ></span>
-              </article>
-              <article class="service">
-                <span class="service-number">02</span>
-                <div>
-                  <h3>Keuken & badkamer</h3>
-                  <p>
-                    Een zorgvuldige opbouw, van leidingwerk en elektra tot
-                    tegelwerk, montage en de laatste afwerking.
-                  </p>
-                </div>
-                <span class="service-mark" aria-hidden="true"
-                  ><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M5 19 19 5M5 5h14v14" /></svg
-                ></span>
-              </article>
-              <article class="service">
-                <span class="service-number">03</span>
-                <div>
-                  <h3>Techniek & wooncomfort</h3>
-                  <p>
-                    Elektra, loodgieterswerk, afvoer, vloerverwarming en
-                    warmtepompen. Passend bij je woning en wensen.
-                  </p>
-                </div>
-                <span class="service-mark" aria-hidden="true"
-                  ><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M5 19 19 5M5 5h14v14" /></svg
-                ></span>
-              </article>
-              <article class="service">
-                <span class="service-number">04</span>
-                <div>
-                  <h3>Uitbouw & platte daken</h3>
-                  <p>
-                    Meer leefruimte en een doordachte bouwkundige basis. We
-                    bespreken de mogelijkheden en wat daarvoor nodig is.
-                  </p>
-                </div>
-                <span class="service-mark" aria-hidden="true"
-                  ><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M5 19 19 5M5 5h14v14" /></svg
-                ></span>
-              </article>
-              <a class="text-link" href="#contact"
-                >Wat kunnen we voor jouw woning betekenen?
-                <span aria-hidden="true"
-                  ><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M5 19 19 5M5 5h14v14" /></svg></span
-              ></a>
             </div>
-          </div>
+            <div class="card-copy">
+              <h3>Complete woningrenovatie</h3>
+              <p>
+                Een samenhangend plan voor verbouwing, installaties en
+                afwerking. Ook een uitbouw of plat dak kan deel uitmaken van de
+                renovatie.
+              </p>
+              <a href="#contact" data-project="Complete woningrenovatie"
+                >Bespreek uw renovatie
+              </a>
+            </div>
+          </article>
+          <article>
+            <div class="service-media">
+              <img
+                src="/assets/projects/badkamer-utrecht.webp"
+                alt=""
+                loading="lazy"
+                width="1180"
+                height="664"
+              />
+            </div>
+            <div class="card-copy">
+              <h3>Badkamer & toilet</h3>
+              <p>Van leidingwerk en tegelwerk tot sanitair en verlichting.</p>
+              <a href="#contact" data-project="Badkamer & toilet"
+                >Bespreek uw badkamer
+              </a>
+            </div>
+          </article>
+          <article>
+            <div class="service-media">
+              <img
+                src="/assets/projects/keuken-nieuwegein.webp"
+                alt=""
+                loading="lazy"
+                width="1030"
+                height="784"
+              />
+            </div>
+            <div class="card-copy">
+              <h3>Keukenrenovatie</h3>
+              <p>
+                Een keuken die werkt in uw ruimte, met aansluitingen en
+                afwerking op elkaar afgestemd.
+              </p>
+              <a href="#contact" data-project="Keukenrenovatie"
+                >Bespreek uw keuken
+              </a>
+            </div>
+          </article>
+          <article>
+            <div class="service-media installation-media">
+              <div>
+                <img
+                  src="/assets/projects/kookplaat-utrecht.webp"
+                  alt="Inductiekookplaat"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <img
+                  src="/assets/services/peblar-installatie.webp"
+                  alt="Peblar-laadstation"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="card-copy">
+              <h3>Elektra & installatietechniek</h3>
+              <p class="installation-credit">
+                Peblar: voorbeeldbeeld van de fabrikant.
+              </p>
+              <p>
+                Van groepenkast en kookaansluiting tot verlichting en
+                laadstation. Ook voor water, afvoer en ventilatie.
+              </p>
+              <a href="#contact" data-project="Elektra & installatietechniek"
+                >Bespreek uw installatie
+              </a>
+            </div>
+          </article>
+          <article>
+            <div class="service-media floor-media">
+              <div>
+                <img
+                  src="/assets/services/vloer-utrecht.webp"
+                  alt="Detail van vloerafwerking in een keuken"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <img
+                  src="/assets/services/tegelvloer-utrecht.webp"
+                  alt="Detail van een tegelvloer in een badkamer"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="card-copy">
+              <h3>Vloeren & afwerking</h3>
+              <p>
+                Vloerafwerking met PVC, tegels of geschikt laminaat, ook in
+                combinatie met vloerverwarming. Vloeren, stucwerk en
+                schilderwerk kunnen deel uitmaken van uw renovatie.
+              </p>
+              <a href="/vloerverwarming/">Vloerverwarming en vloerafwerking</a>
+            </div>
+          </article>
+          <article>
+            <div class="service-media energy-art mini" aria-hidden="true">
+              <i></i><i></i><i></i>
+            </div>
+            <div class="card-copy">
+              <h3>Duurzame energieoplossingen</h3>
+              <p>Thuis energie opslaan, slim laden en uw woning verwarmen.</p>
+              <a href="/energy">Bekijk DE BOUW PRO ENERGY </a>
+            </div>
+          </article>
+        </div>
+        <div class="groundwork-link">
+          <h3>Graafwerk met een minigraver</h3>
+          <p>
+            Graafwerk voor uw renovatie, tuin of leidingtracé in Utrecht en
+            omgeving.
+          </p>
+          <a href="/graafwerk/">Bekijk graafwerk</a>
         </div>
       </section>
-      <section class="considered" aria-labelledby="considered-title">
-        <div class="shell considered-inner">
-          <p class="eyebrow">Doordacht tot in de details</p>
-          <h2 id="considered-title" class="reveal">
-            Een verbouwing vraagt veel.<br />Wij brengen <em>overzicht.</em>
-          </h2>
-          <div class="considered-bottom">
-            <span class="architectural-mark" aria-hidden="true"
-              ><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M5 19 19 5M5 5h14v14" /></svg
-            ></span>
+
+      <section class="dark" id="over">
+        <div class="shell section home-about">
+          <div>
+            <p class="eyebrow">Over DE BOUW PRO</p>
+            <h2>Ruimte voor<br /><em>bijzonder wonen.</em></h2>
+          </div>
+          <div class="about-copy intro-copy">
             <p>
-              De juiste volgorde. Afgestemde werkzaamheden. Ruimte voor overleg.
-              Zo maken we van losse keuzes een helder traject — en van een
-              woning jouw thuis.
+              DE BOUW PRO is uw aannemer voor renovatie en afwerking in Utrecht
+              en omgeving. Wij coördineren het werk van voorbereiding tot
+              oplevering, zodat techniek, planning en afwerking op elkaar
+              aansluiten.
             </p>
+            <p>
+              We bespreken vooraf wat uw woning nodig heeft, leggen afspraken
+              helder vast en houden u tijdens de uitvoering op de hoogte.
+            </p>
+            <a class="text-link" href="#contact">Bespreek uw plannen </a>
           </div>
         </div>
       </section>
+
       <section
         class="section shell"
         id="aanpak"
@@ -270,7 +278,7 @@
       >
         <div class="section-heading">
           <div>
-            <p class="eyebrow">03 / Van plan naar plek</p>
+            <p class="eyebrow">Van plan naar plek</p>
             <h2 id="approach-title">
               Goed voorbereid.<br />Met aandacht <em>gemaakt.</em>
             </h2>
@@ -325,70 +333,109 @@
           </li>
         </ol>
       </section>
-      <section
-        class="section inspiration"
-        id="inspiratie"
-        aria-labelledby="inspiration-title"
-      >
-        <div class="shell">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">04 / Uit eigen werk</p>
-              <h2 id="inspiration-title">
-                Zacht licht.<br />Sterke <em>materialen.</em>
-              </h2>
-            </div>
-            <p>
-              Een selectie uit onze renovatieprojecten in Nieuwegein en Houten.
-              Foto’s bewerkt voor licht en presentatie.
-            </p>
+
+      <section class="shell section" id="inspiratie">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Portfolio</p>
+            <h2>Onze projecten</h2>
           </div>
-          <div class="gallery">
-            <figure class="reveal">
-              <div class="image-wrap">
-                <img
-                  src="/assets/projects/nieuwegein-keuken-1280.webp"
-                  srcset="
-                    /assets/projects/nieuwegein-keuken-640.webp   640w,
-                    /assets/projects/nieuwegein-keuken-1280.webp 1280w
-                  "
-                  sizes="(max-width: 760px) calc(100vw - 40px), 55vw"
-                  width="1280"
-                  height="853"
-                  loading="lazy"
-                  decoding="async"
-                  alt="Eigen keukenrenovatie in Nieuwegein met donkergroene fronten en warme werkbladverlichting"
-                />
-              </div>
-              <figcaption>
-                <span>01 / Keuken · Nieuwegein</span><span>Eigen renovatieproject</span>
-              </figcaption>
-            </figure>
-            <div class="gallery-aside">
-              <p class="editorial-note">
-                Het bijzondere zit vaak<br />in wat je <em>weglaat.</em>
-              </p>
-              <figure class="reveal">
-                <div class="image-wrap">
-                  <img
-                    src="/assets/projects/houten-badkamer-1280.webp"
-                    srcset="/assets/projects/houten-badkamer-640.webp 640w, /assets/projects/houten-badkamer-1280.webp 1086w"
-                    sizes="(max-width: 760px) calc(100vw - 40px), 35vw"
-                    width="1086"
-                    height="1448"
-                    loading="lazy"
-                    decoding="async"
-                    alt="Eigen badkamerrenovatie in Houten met glazen douchewand en een dakraam"
-                  />
-                </div>
-                <figcaption>
-                  <span>02 / Badkamer · Houten</span><span>Eigen renovatieproject</span>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
+          <p>
+            Keukens en badkamers uit het DE BOUW PRO-portfolio. De beelden
+            kunnen voor presentatie zijn bewerkt.
+          </p>
+        </div>
+        <div class="home-gallery">
+          <figure>
+            <a href="/assets/projects/houten-badkamer-1280.webp" data-gallery
+              ><img
+                src="/assets/projects/houten-badkamer-640.webp"
+                alt="Badkamer met glazen douchewand en dakraam"
+                loading="lazy"
+                width="1086"
+                height="1448"
+            /></a>
+            <figcaption>
+              <span>Badkamerrenovatie</span><span>Houten</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <a href="/assets/projects/keuken-utrecht.webp" data-gallery
+              ><img
+                src="/assets/projects/keuken-utrecht.webp"
+                alt="Warme keuken met lange werkbank en eettafel"
+                loading="lazy"
+                width="1675"
+                height="939"
+            /></a>
+            <figcaption>
+              <span>Keukenrenovatie</span><span>Utrecht</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <a href="/assets/projects/badkamer-utrecht.webp" data-gallery
+              ><img
+                src="/assets/projects/badkamer-utrecht.webp"
+                alt="Badkamer met warme tegels en verlichte spiegel"
+                loading="lazy"
+                width="1180"
+                height="664"
+            /></a>
+            <figcaption>
+              <span>Badkamerrenovatie</span><span>Utrecht</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <a href="/assets/projects/keuken-nieuwegein.webp" data-gallery
+              ><img
+                src="/assets/projects/keuken-nieuwegein.webp"
+                alt="Groene keuken met messing details en daglicht"
+                loading="lazy"
+                width="1030"
+                height="784"
+            /></a>
+            <figcaption>
+              <span>Keukenrenovatie</span><span>Nieuwegein</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <a href="/assets/projects/badkamer-nieuwegein.webp" data-gallery
+              ><img
+                src="/assets/projects/badkamer-nieuwegein.webp"
+                alt="Badkamer met houten wastafelmeubel en brede spiegel"
+                loading="lazy"
+                width="712"
+                height="950"
+            /></a>
+            <figcaption>
+              <span>Badkamerrenovatie</span><span>Nieuwegein</span>
+            </figcaption>
+          </figure>
         </div>
       </section>
+
+      <section class="home-energy dark" id="energy">
+        <div class="energy-art" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="home-energy-copy">
+          <p class="eyebrow">DE BOUW PRO ENERGY</p>
+          <h2>Slimme energie.<br /><em>Mooi geïntegreerd.</em></h2>
+          <p>
+            Combineer uw renovatie met energieoplossingen die passen bij uw
+            woning en uw verbruik.
+          </p>
+          <ul>
+            <li>Tesla Powerwall</li>
+            <li>Laadstations voor elektrische auto’s</li>
+            <li>Thuisbatterijen</li>
+            <li>Slim energiemanagement</li>
+            <li>Warmtepompen</li>
+          </ul>
+          <a class="home-button copper" href="/energy"
+            >Ontdek onze energieoplossingen</a
+          >
+        </div>
+      </section>
+
       <section class="section shell faq" aria-labelledby="faq-title">
         <div>
           <p class="eyebrow">Voor je begint</p>
@@ -431,65 +478,132 @@
           </details>
         </div>
       </section>
-      <section
-        class="contact section"
-        id="contact"
-        aria-labelledby="contact-title"
-      >
-        <div class="shell contact-grid">
-          <div>
-            <p class="eyebrow">Een goed begin is een gesprek</p>
-            <h2 id="contact-title">
-              Jouw plannen.<br />Onze <em>aandacht.</em>
-            </h2>
-            <p class="contact-intro">
-              Een andere indeling, meer comfort of een complete nieuwe start.
-              Vertel ons wat je voor ogen hebt.
-            </p>
-          </div>
-          <div class="contact-options">
-            <a
-              class="button button-dark"
-              href="mailto:hallo@debouwpro.nl?subject=Mijn%20renovatieplannen&body=Woonplaats%3A%20%0A%0AMijn%20plannen%3A%20%0A%0AGewenste%20periode%3A%20%0A%0ABudgetindicatie%20(optioneel)%3A%20"
-              >Mail je renovatieplannen
-              <span aria-hidden="true"
-                ><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M5 19 19 5M5 5h14v14" /></svg></span></a
-            ><a class="contact-phone" href="tel:+31612350850"
-              ><span>Liever even bellen?</span
-              ><strong
-                >+31 6 12350850
-                <span aria-hidden="true"
-                  ><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M5 19 19 5M5 5h14v14" /></svg></span></strong></a
-            ><a class="text-link" href="mailto:hallo@debouwpro.nl"
-              >hallo@debouwpro.nl
-              <span aria-hidden="true"
-                ><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M5 19 19 5M5 5h14v14" /></svg></span
-            ></a>
-            <p class="contact-tip">
-              Stuur je woonplaats, je wensen en de gewenste periode mee. Dan
-              kunnen we gericht met je meedenken.
-            </p>
-          </div>
+
+      <section class="shell section home-contact" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Uw project<br /><em>begint hier.</em></h2>
+          <p>
+            Vertel ons wat u wilt verbouwen. Dan bespreken we de mogelijkheden
+            en de volgende stap.
+          </p>
+          <address>
+            <a href="mailto:hallo@debouwpro.nl">hallo@debouwpro.nl</a
+            ><a href="tel:+31612350850">+31 6 12350850</a
+            ><a href="https://wa.me/31612350850">Stuur een WhatsApp-bericht</a
+            ><span>Utrecht, Nederland</span
+            ><a href="https://debouwpro.nl">debouwpro.nl</a>
+          </address>
         </div>
+        <form id="offerte" method="post">
+          <fieldset disabled>
+            <div class="fields">
+              <label
+                >Naam <span>*</span
+                ><input
+                  name="naam"
+                  autocomplete="name"
+                  required
+                  maxlength="120" /></label
+              ><label
+                >E-mailadres <span>*</span
+                ><input
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  maxlength="254"
+              /></label>
+              <label
+                >Telefoonnummer<input
+                  name="telefoon"
+                  type="tel"
+                  autocomplete="tel"
+                  maxlength="40"
+              /></label>
+              <label
+                >Type project <span>*</span
+                ><select name="project" required>
+                  <option value="">Kies een projecttype</option>
+                  <option>Complete woningrenovatie</option>
+                  <option>Badkamer & toilet</option>
+                  <option>Keukenrenovatie</option>
+                  <option>Elektra & installatietechniek</option>
+                  <option>Vloeren & afwerking</option>
+                  <option>Uitbouw & platte daken</option>
+                  <option>Duurzame energieoplossingen</option>
+                  <option>Anders</option>
+                </select></label
+              >
+              <label class="wide"
+                >Bericht <span>*</span
+                ><textarea
+                  name="bericht"
+                  rows="5"
+                  required
+                  maxlength="1500"
+                  placeholder="Bijvoorbeeld het type woning, uw wensen en planning"
+                ></textarea>
+              </label>
+            </div>
+            <p class="form-note" id="form-uitleg">
+              U opent een concept in uw e-mailapp of WhatsApp en verstuurt het
+              bericht zelf. Velden met * zijn verplicht. Lees onze
+              <a href="/privacy/">privacyverklaring</a>.
+            </p>
+            <div class="home-actions">
+              <button
+                class="home-button copper"
+                type="submit"
+                value="email"
+                disabled
+                aria-describedby="form-uitleg"
+              >
+                Open e-mailconcept</button
+              ><button
+                class="home-button outline"
+                type="submit"
+                value="whatsapp"
+                disabled
+                aria-describedby="form-uitleg"
+              >
+                Open WhatsApp
+              </button>
+            </div>
+            <p id="status" role="status"></p>
+          </fieldset>
+          <noscript
+            ><p>
+              Gebruik het e-mailadres of WhatsApp om contact op te nemen.
+            </p></noscript
+          >
+        </form>
       </section>
     </main>
     <footer class="footer">
       <div class="shell">
         <div class="footer-top">
           <a class="brand" href="#home"
-            ><img class="brand-logo" src="/assets/brand/wordmark.svg" width="160" height="27" alt="DE BOUW PRO"></a>
+            ><img
+              class="brand-logo"
+              src="/assets/brand/primary-v2.png"
+              width="198"
+              height="32"
+              alt="DE BOUW PRO"
+          /></a>
           <p>Doordacht verbouwen.<br />Bijzonder wonen.</p>
           <a class="text-link" href="#home"
             >Terug naar boven <span aria-hidden="true">↑</span></a
           >
         </div>
         <div class="footer-bottom">
-          <span>© 2026 DE BOUW PRO · Utrecht / De Meern</span
-          ><nav class="footer-legal" aria-label="Juridische informatie"><a href="/algemene-voorwaarden">Algemene voorwaarden</a><a href="/privacy/">Privacyverklaring</a><a href="/cookies/">Cookieverklaring</a></nav
-          ><span>Websiteconcept V2 · fotografie ter inspiratie</span>
+          <span>© 2026 DE BOUW PRO · Utrecht / De Meern</span>
+          <nav class="footer-legal" aria-label="Juridische informatie">
+            <a href="/algemene-voorwaarden">Algemene voorwaarden</a
+            ><a href="/privacy/">Privacyverklaring</a
+            ><a href="/cookies/">Cookieverklaring</a>
+          </nav>
+          <span>Portfoliofoto’s bewerkt voor presentatie</span>
         </div>
       </div>
     </footer>
@@ -506,5 +620,12 @@
             <path d="M5 19 19 5M5 5h14v14" /></svg></span
       ></a>
     </div>
+    <dialog id="beeldviewer" aria-labelledby="beeldtitel">
+      <div class="viewer-head">
+        <p id="beeldtitel"></p>
+        <button type="button" aria-label="Foto sluiten">Sluiten</button>
+      </div>
+      <img alt="" />
+    </dialog>
   </body>
 </html>

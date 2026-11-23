@@ -2,7 +2,6 @@ import { test, expect } from "@playwright/test";
 
 test("one corporate wordmark and copper Energy heading across the site", async ({
   page,
-  request,
 }) => {
   for (const route of [
     "/",
@@ -14,13 +13,10 @@ test("one corporate wordmark and copper Energy heading across the site", async (
     await page.goto(route);
     await expect(page.locator(".brand-logo")).toHaveCount(2);
     for (const logo of await page.locator(".brand-logo").all()) {
-      await expect(logo).toHaveAttribute("src", "/assets/brand/wordmark.svg");
+      await expect(logo).toHaveAttribute("src", "/assets/brand/primary-v2.png");
       await expect(logo).toHaveAttribute("alt", "DE BOUW PRO");
     }
   }
-  const source = await (await request.get("/assets/brand/wordmark.svg")).text();
-  expect(source).toContain('fill="#D97841"');
-  expect(source).toContain('fill="#1A1A1A"');
   await page.goto("/energy");
   await expect(page.locator("#energy-title > span").first()).toHaveCSS(
     "color",
