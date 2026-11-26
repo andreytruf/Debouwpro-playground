@@ -9,7 +9,7 @@ export const brands = [
     kicker: "Powerwall · Wall Connector",
     title: "Energie voor thuis.\nKlaar voor onderweg.",
     intro:
-      "Opslaan wanneer er energie is. Laden wanneer je auto thuis staat. We bekijken hoe Powerwall en Wall Connector passen bij jouw woning, aansluiting en dagelijks ritme.",
+      "Opslaan wanneer er energie is. Laden wanneer uw auto thuis staat. We bekijken hoe Powerwall en Wall Connector passen bij uw woning, aansluiting en dagelijks ritme.",
     card: "Thuisopslag en elektrisch laden, helder samengebracht.",
     benefits: [
       [
@@ -21,7 +21,7 @@ export const brands = [
         "Wall Connector ondersteunt auto’s met een Type 2-laadpoort.",
       ],
       [
-        "Inzicht in je systeem",
+        "Inzicht in uw systeem",
         "De Tesla-app biedt inzicht en bediening voor ondersteunde functies.",
       ],
     ],
@@ -40,7 +40,7 @@ export const brands = [
       ],
     ],
     installation:
-      "We beginnen bij je hoofdaansluiting, meterkast en kabelroute. Daarna bepalen we de plek voor opslag en laadpunt. Een eventuele back-upfunctie vraagt om een afzonderlijk ontworpen configuratie; die is niet vanzelfsprekend voor de hele woning.",
+      "We beginnen bij uw hoofdaansluiting, meterkast en kabelroute. Daarna bepalen we de plek voor opslag en laadpunt. Een eventuele back-upfunctie vraagt om een afzonderlijk ontworpen configuratie; die is niet vanzelfsprekend voor de hele woning.",
     applications: [
       [
         "Woning met zonnepanelen",
@@ -58,7 +58,7 @@ export const brands = [
     faq: [
       [
         "Heb ik een Tesla-auto nodig?",
-        "Wall Connector kan laden via Type 2. Controleer ook het AC-laadvermogen van jouw auto; dat kan lager zijn dan het maximum van het laadpunt.",
+        "Wall Connector kan laden via Type 2. Controleer ook het AC-laadvermogen van uw auto; dat kan lager zijn dan het maximum van het laadpunt.",
       ],
       [
         "Kan ik bij stroomuitval blijven laden?",
@@ -87,8 +87,8 @@ export const brands = [
     kicker: "PowerOcean",
     title: "Ruimte om\nmee te groeien.",
     intro:
-      "Een energieplan hoeft niet in één keer af te zijn. We onderzoeken hoe modulaire opslag en monitoring aansluiten op jouw bestaande installatie én de volgende stap voor je woning.",
-    card: "Modulaire opslag met overzicht in je energiegebruik.",
+      "Een energieplan hoeft niet in één keer af te zijn. We onderzoeken hoe modulaire opslag en monitoring aansluiten op uw bestaande installatie én de volgende stap voor uw woning.",
+    card: "Modulaire opslag met overzicht in uw energiegebruik.",
     benefits: [
       [
         "Modulair opgebouwd",
@@ -118,7 +118,7 @@ export const brands = [
       ],
     ],
     installation:
-      "We beoordelen of je bestaande zonnepanelen en omvormer behouden kunnen blijven. PowerOcean, een eventuele retrofit-oplossing en andere EcoFlow-producten zijn geen onderling uitwisselbare sets. We selecteren het exacte systeem op basis van de fabrikantdocumentatie.",
+      "We beoordelen of uw bestaande zonnepanelen en omvormer behouden kunnen blijven. PowerOcean, een eventuele retrofit-oplossing en andere EcoFlow-producten zijn geen onderling uitwisselbare sets. We selecteren het exacte systeem op basis van de fabrikantdocumentatie.",
     applications: [
       [
         "Gefaseerd verduurzamen",
@@ -126,7 +126,7 @@ export const brands = [
       ],
       [
         "Inzicht gewenst",
-        "Bespreek welke meetgegevens je wilt volgen en hoe de verbinding wordt ingericht.",
+        "Bespreek welke meetgegevens u wilt volgen en hoe de verbinding wordt ingericht.",
       ],
       [
         "Nieuwe zonne-installatie",
@@ -136,7 +136,7 @@ export const brands = [
     faq: [
       [
         "Kan PowerOcean op elke omvormer?",
-        "Nee. Compatibiliteit verschilt per uitvoering. We controleren jouw omvormermodel en de geldende fabrikantdocumentatie voordat we een combinatie voorstellen.",
+        "Nee. Compatibiliteit verschilt per uitvoering. We controleren uw omvormermodel en de geldende fabrikantdocumentatie voordat we een combinatie voorstellen.",
       ],
       [
         "Kan ik later batterijmodules toevoegen?",
@@ -168,7 +168,7 @@ export const brands = [
     kicker: "Zon · Lynx-opslag · HCA G2",
     title: "Van zon op het dak\nnaar energie in huis.",
     intro:
-      "Zonnepanelen wekken gelijkstroom op. De omvormer maakt die bruikbaar voor je woning. Met passende opslag voeg je een volgende stap toe: energie bewaren voor een ander moment.",
+      "Zonnepanelen wekken gelijkstroom op. De omvormer maakt die bruikbaar voor uw woning. Met passende opslag voegt u een volgende stap toe: energie bewaren voor een ander moment.",
     card: "Een compleet energieplan met zon, passende opslag en thuisladen.",
     benefits: [
       [
@@ -223,7 +223,7 @@ export const brands = [
       ],
       [
         "Meer eigen energie gebruiken",
-        "Dimensioneer de batterij op je dagprofiel, niet alleen op het aantal panelen.",
+        "Dimensioneer de batterij op uw dagprofiel, niet alleen op het aantal panelen.",
       ],
     ],
     faq: [
@@ -245,7 +245,7 @@ export const brands = [
       ],
       [
         "Levert een grotere batterij altijd meer op?",
-        "Nee. Capaciteit moet passen bij opwek en verbruik. We doen geen rendements- of terugverdienbelofte zonder een onderbouwde berekening voor jouw situatie.",
+        "Nee. Capaciteit moet passen bij opwek en verbruik. We doen geen rendements- of terugverdienbelofte zonder een onderbouwde berekening voor uw situatie.",
       ],
     ],
     sources: [
@@ -275,8 +275,8 @@ export const brands = [
     kicker: "Home · Business · Dual",
     title: "Thuiskomen.\nAansluiten. Opladen.",
     intro:
-      "Een laadpunt hoort vanzelfsprekend bij je woning te passen. We plannen de kabelroute, de plek aan de gevel of op een paal en de beschikbare ruimte op je aansluiting.",
-    card: "Laden thuis en op het werk. Home, Business en Dual, passend bij je parkeerplek.",
+      "Een laadpunt hoort vanzelfsprekend bij uw woning te passen. We plannen de kabelroute, de plek aan de gevel of op een paal en de beschikbare ruimte op uw aansluiting.",
+    card: "Laden thuis en op het werk. Home, Business en Dual, passend bij uw parkeerplek.",
     benefits: [
       ["Laden met overzicht", "Lokale webinterface via wifi of ethernet."],
       [
@@ -316,7 +316,7 @@ export const brands = [
       ],
       [
         "Zonnepanelen aanwezig",
-        "Laat meting en laadinstellingen op jouw opwek en verbruik afstemmen.",
+        "Laat meting en laadinstellingen op uw opwek en verbruik afstemmen.",
       ],
       [
         "Woning met meerdere grote verbruikers",
@@ -330,7 +330,7 @@ export const brands = [
       ],
       [
         "Wat is load balancing?",
-        "De laadstroom wordt aangepast op basis van het gemeten huisverbruik. De meetmethode, instellingen en beschikbare aansluitcapaciteit bepalen hoe dat in jouw woning werkt.",
+        "De laadstroom wordt aangepast op basis van het gemeten huisverbruik. De meetmethode, instellingen en beschikbare aansluitcapaciteit bepalen hoe dat in uw woning werkt.",
       ],
       [
         "Kan Peblar direct met elke thuisbatterij praten?",
@@ -355,7 +355,7 @@ export const brands = [
     filter: ["warmte"],
     visual: "heatpump",
     kicker: "EHS Mono R290",
-    title: "Comfort dat past\nbij je woning.",
+    title: "Comfort dat past\nbij uw woning.",
     intro:
       "Een warmtepomp kiezen begint bij de woning. We beoordelen warmteverlies, isolatie, radiatoren of vloerverwarming en de beschikbare buitenruimte voordat we een uitvoering voorstellen.",
     card: "Monoblock-techniek voor een doordacht verwarmingsplan.",
@@ -435,7 +435,7 @@ export const brands = [
     kicker: "Hybride monoblock",
     title: "Klein van formaat.\nRustig op zijn plek.",
     intro:
-      "Voor een rijwoning telt elke meter. We onderzoeken hoe een compacte hybride warmtepomp naast je bestaande cv-ketel past, met aandacht voor de buren, leidingroutes en dagelijks comfort.",
+      "Voor een rijwoning telt elke meter. We onderzoeken hoe een compacte hybride warmtepomp naast uw bestaande cv-ketel past, met aandacht voor de buren, leidingroutes en dagelijks comfort.",
     card: "Compacte hybride warmte, ontworpen voor de rijwoning.",
     benefits: [
       ["Hybride aanpak", "Whspr-regeling kiest tussen warmtepomp en cv-ketel."],
@@ -460,7 +460,7 @@ export const brands = [
       ],
       [
         "Elektrische aansluiting",
-        "230 V; maximaal elektrisch vermogen 1,7 kW. Groep, beveiliging en aansluiting beoordelen we voor jouw situatie.",
+        "230 V; maximaal elektrisch vermogen 1,7 kW. Groep, beveiliging en aansluiting beoordelen we voor uw situatie.",
       ],
       [
         "Geluid",
@@ -472,7 +472,7 @@ export const brands = [
       ],
     ],
     installation:
-      "We beoordelen ketelcompatibiliteit, afgiftesysteem, buitenruimte en leidingroutes. Het compacte concept kan de uitvoering vereenvoudigen, maar installatieduur en benodigde aanpassingen hangen af van jouw woning. Beschikbaarheid en definitieve uitvoering bevestigen we vóór een opdracht.",
+      "We beoordelen ketelcompatibiliteit, afgiftesysteem, buitenruimte en leidingroutes. Het compacte concept kan de uitvoering vereenvoudigen, maar installatieduur en benodigde aanpassingen hangen af van uw woning. Beschikbaarheid en definitieve uitvoering bevestigen we vóór een opdracht.",
     applications: [
       [
         "Nederlandse rijwoning",
@@ -494,7 +494,7 @@ export const brands = [
       ],
       [
         "Past Whspr direct tegen de schutting?",
-        "Niet zonder beoordeling. De aangeleverde handleiding noemt 30 cm vrije ruimte rondom voor luchtstroom en aparte R290-veiligheidsafstanden. Ook hoeken, openingen en de buren tellen mee. We controleren de actuele voorschriften voor jouw plek.",
+        "Niet zonder beoordeling. De aangeleverde handleiding noemt 30 cm vrije ruimte rondom voor luchtstroom en aparte R290-veiligheidsafstanden. Ook hoeken, openingen en de buren tellen mee. We controleren de actuele voorschriften voor uw plek.",
       ],
       [
         "Heb ik een andere thermostaat nodig?",
@@ -524,7 +524,7 @@ export const brands = [
 export const landingFAQ = [
   [
     "Waar begin ik: zonnepanelen, een batterij of een laadpunt?",
-    "Begin bij je woning, jaarverbruik en plannen. Bestaande zonnepanelen, een elektrische auto of een aanstaande renovatie kunnen de volgorde veranderen. We helpen je een passende eerste stap te kiezen.",
+    "Begin bij uw woning, jaarverbruik en plannen. Bestaande zonnepanelen, een elektrische auto of een aanstaande renovatie kunnen de volgorde veranderen. We helpen u een passende eerste stap te kiezen.",
   ],
   [
     "Werken al deze merken met elkaar samen?",
@@ -536,10 +536,10 @@ export const landingFAQ = [
   ],
   [
     "Wat kost een compleet energiesysteem?",
-    "De prijs hangt af van vermogen, opslag, bekabeling, meterkast, plaatsing en gewenste functies. Je ontvangt een voorstel met scope en onderdelen; we publiceren geen niet-onderbouwde besparingen of terugverdientijden.",
+    "De prijs hangt af van vermogen, opslag, bekabeling, meterkast, plaatsing en gewenste functies. U ontvangt een voorstel met scope en onderdelen; we publiceren geen niet-onderbouwde besparingen of terugverdientijden.",
   ],
   [
     "Werken jullie in Utrecht en omgeving?",
-    "Ja, onze focus ligt op Utrecht, De Meern en omgeving. Vermeld je woonplaats en plannen in je aanvraag, dan bespreken we de mogelijkheden.",
+    "Ja, onze focus ligt op Utrecht, De Meern en omgeving. Vermeld uw woonplaats en plannen in uw aanvraag, dan bespreken we de mogelijkheden.",
   ],
 ];

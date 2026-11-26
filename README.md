@@ -130,3 +130,6 @@ The current experiment first imports the Test staging branch at `ee2bcad` and th
 ## Warm hero entrance and Graafwerk
 
 The warm kitchen now appears before the shade and introduction fade in; reduced motion, no-JS and keyboard focus show content immediately. Icons remain the default service view. `/graafwerk/` has a complete responsive service layout with an original schematic, work categories, preparation checklist, FAQ and contact CTAs. No invented job/machine photography or technical promise was added. See [implementation and verification](docs/hero-graafwerk/README.md).
+
+### Contact and mobile refinement
+The Playground contact panel, compact mobile icon cards and Graafwerk card are described in [contact refinement](docs/contact-refinement/README.md). The inquiry form continues to prepare an e-mail/WhatsApp draft; direct server delivery is not active and requires a verified sender setup. Corporate/Energy copy uses formal Dutch u/uw.

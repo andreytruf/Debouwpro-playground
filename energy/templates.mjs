@@ -14,7 +14,7 @@ const image = (brand, priority = false) => photo(brand.slug, priority);
 const head = (eyebrow, title, text = "") =>
   `<div class="section-heading"><div><p class="eyebrow">${eyebrow}</p><h2>${title}</h2></div>${text ? `<p>${text}</p>` : ""}</div>`;
 const faqs = (items, title = "Goed om<br>te weten.") =>
-  `<section class="section shell faq" aria-labelledby="faq-title"><div><p class="eyebrow">Jouw vragen, helder beantwoord</p><h2 id="faq-title">${title}</h2></div><div class="faq-list">${items.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div></section>`;
+  `<section class="section shell faq" aria-labelledby="faq-title"><div><p class="eyebrow">Uw vragen, helder beantwoord</p><h2 id="faq-title">${title}</h2></div><div class="faq-list">${items.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div></section>`;
 
 function card(b) {
   const visual =
@@ -31,7 +31,7 @@ function card(b) {
 function contact(brand) {
   const subject = `PRO ENERGY — ${brand ? brand.name : "adviesaanvraag"}`;
   const mail = `mailto:hallo@debouwpro.nl?subject=${encodeURIComponent(subject)}&amp;body=${encodeURIComponent("Woonplaats: \n\nMijn woning en plannen: \n\nBestaande installatie: \n\nGewenste periode: ")}`;
-  return `<section class="contact section energy-contact" id="contact" aria-labelledby="contact-title"><div class="shell contact-grid"><div><p class="eyebrow">DE BOUW PRO Energy · Utrecht & omgeving</p><h2 id="contact-title">Jouw woning.<br>Een helder <em>energieplan.</em></h2><p class="contact-intro">${brand ? `Benieuwd of ${esc(brand.name)} bij jouw woning past?` : "Een eerste stap of een compleet systeem?"} Vertel ons je plannen. We denken mee over een passende oplossing.</p></div><div class="contact-options">${button("Vraag advies aan", mail)}<a class="contact-phone" href="tel:+31612350850"><span>Liever even bellen?</span><strong>+31 6 12350850 <span aria-hidden="true">${arrow}</span></strong></a><a class="text-link" href="mailto:hallo@debouwpro.nl">hallo@debouwpro.nl ${arrow}</a><p class="contact-tip">Stuur je woonplaats, je huidige installatie en je wensen mee. De mailknop opent je eigen mailprogramma.</p></div></div></section>`;
+  return `<section class="contact section energy-contact" id="contact" aria-labelledby="contact-title"><div class="shell contact-grid"><div><p class="eyebrow">DE BOUW PRO Energy · Utrecht & omgeving</p><h2 id="contact-title">Uw woning.<br>Een helder <em>energieplan.</em></h2><p class="contact-intro">${brand ? `Benieuwd of ${esc(brand.name)} bij uw woning past?` : "Een eerste stap of een compleet systeem?"} Vertel ons uw plannen. We denken mee over een passende oplossing.</p></div><div class="contact-options">${button("Vraag advies aan", mail)}<a class="contact-phone" href="tel:+31612350850"><span>Liever even bellen?</span><strong>+31 6 12350850 <span aria-hidden="true">${arrow}</span></strong></a><a class="text-link" href="mailto:hallo@debouwpro.nl">hallo@debouwpro.nl ${arrow}</a><p class="contact-tip">Stuur uw woonplaats, uw huidige installatie en uw wensen mee. De mailknop opent uw eigen mailprogramma.</p></div></div></section>`;
 }
 
 function flow(heat = false) {
@@ -77,19 +77,19 @@ export function renderLanding(home) {
   <div class="shell hero-bottom"><span>Bewust geselecteerd. Vakkundig geïnstalleerd.</span><span>Sfeerbeeld · geen eigen project</span></div>
  </section>
  <div class="energy-subnav"><nav class="shell" aria-label="Op deze pagina"><a href="#mogelijkheden">Mogelijkheden</a><a href="#selectie">Onze selectie</a><a href="#samenspel">Het samenspel</a><a href="#werkwijze">Installatie</a><a href="#contact">Advies ${arrow}</a></nav></div>
- <section class="section shell energy-intro"><div><p class="eyebrow">01 / Een bewuste keuze</p><h2>Niet alles.<br>Alleen wat <em>klopt.</em></h2></div><div class="intro-copy reveal"><p class="lead">Goede energieoplossingen beginnen niet bij een eindeloze catalogus. Ze beginnen bij jouw woning.</p><p>PRO ENERGY is de energiedivisie van DE BOUW PRO. We richten ons op een gerichte selectie systemen voor opslag, laden, opwek en warmte. Met aandacht voor techniek, plaatsing en de uitstraling van je huis.</p><p>We kijken wat samenwerkt, wat je nodig hebt en wat je kunt voorbereiden voor later. Bewust geselecteerd. Vakkundig geïnstalleerd.</p></div></section>
- <section class="section energy-wash" id="mogelijkheden"><div class="shell">${head("02 / Vier richtingen, één woning", "Wat wil je<br><em>verduurzamen?</em>", "Een losse stap mag. Een samenhangend plan maakt de volgende stap eenvoudiger.")}<div class="category-grid">
+ <section class="section shell energy-intro"><div><p class="eyebrow">01 / Een bewuste keuze</p><h2>Niet alles.<br>Alleen wat <em>klopt.</em></h2></div><div class="intro-copy reveal"><p class="lead">Goede energieoplossingen beginnen niet bij een eindeloze catalogus. Ze beginnen bij uw woning.</p><p>PRO ENERGY is de energiedivisie van DE BOUW PRO. We richten ons op een gerichte selectie systemen voor opslag, laden, opwek en warmte. Met aandacht voor techniek, plaatsing en de uitstraling van uw huis.</p><p>We kijken wat samenwerkt, wat u nodig hebt en wat u kunt voorbereiden voor later. Bewust geselecteerd. Vakkundig geïnstalleerd.</p></div></section>
+ <section class="section energy-wash" id="mogelijkheden"><div class="shell">${head("02 / Vier richtingen, één woning", "Wat wilt u<br><em>verduurzamen?</em>", "Een losse stap mag. Een samenhangend plan maakt de volgende stap eenvoudiger.")}<div class="category-grid">
  ${[
    [
      "01",
      "Thuisbatterijen",
-     "Bewaar elektriciteit voor later. De juiste capaciteit volgt uit je opwek en verbruik.",
+     "Bewaar elektriciteit voor later. De juiste capaciteit volgt uit uw opwek en verbruik.",
      "opslag",
    ],
    [
      "02",
      "EV-laden",
-     "Een laadpunt op de juiste plek, afgestemd op je auto en huisaansluiting.",
+     "Een laadpunt op de juiste plek, afgestemd op uw auto en huisaansluiting.",
      "laden",
    ],
    [
@@ -125,11 +125,11 @@ export function renderLanding(home) {
    .join(
      "",
    )}</div><p class="filter-status" aria-live="polite" aria-atomic="true"></p><div class="energy-cards">${brands.map(card).join("")}</div><p class="energy-note">Merknamen dienen ter productidentificatie. We claimen geen officiële partner- of installateursstatus. Beschikbaarheid en uitvoeringsvoorwaarden bevestigen we vóór opdracht.</p></section>
- <section class="section energy-dark" id="samenspel"><div class="shell">${head("04 / De kracht van het samenspel", "Je dak. Je batterij.<br>Je auto. <em>Eén plan.</em>", "Overdag opwekken, energie bewaren en laden op een passend moment. Niet als losse apparaten, maar als onderdelen van een zorgvuldig afgestemde installatie.")} ${flow()}<div class="integration-bottom"><p>Een verbinding op papier is nog geen werkend systeem. We controleren omvormer, batterij, meting en laadregeling op hun concrete mogelijkheden. Dezelfde aandacht gaat naar kabelroutes, veiligheid en een rustige afwerking.</p><a class="text-link" href="#contact">Bespreek een geïntegreerd plan ${arrow}</a></div></div></section>
- <section class="section shell">${head("05 / Waarom DE BOUW PRO Energy?", "Techniek die klopt.<br>Ook in je <em>interieur.</em>")}<div class="energy-benefits">${[
+ <section class="section energy-dark" id="samenspel"><div class="shell">${head("04 / De kracht van het samenspel", "Uw dak. Uw batterij.<br>Uw auto. <em>Eén plan.</em>", "Overdag opwekken, energie bewaren en laden op een passend moment. Niet als losse apparaten, maar als onderdelen van een zorgvuldig afgestemde installatie.")} ${flow()}<div class="integration-bottom"><p>Een verbinding op papier is nog geen werkend systeem. We controleren omvormer, batterij, meting en laadregeling op hun concrete mogelijkheden. Dezelfde aandacht gaat naar kabelroutes, veiligheid en een rustige afwerking.</p><a class="text-link" href="#contact">Bespreek een geïntegreerd plan ${arrow}</a></div></div></section>
+ <section class="section shell">${head("05 / Waarom DE BOUW PRO Energy?", "Techniek die klopt.<br>Ook in uw <em>interieur.</em>")}<div class="energy-benefits">${[
    [
      "Gericht geselecteerd",
-     "Geen oneindige productlijst. We maken de afweging op basis van jouw woning, gebruik en plannen.",
+     "Geen oneindige productlijst. We maken de afweging op basis van uw woning, gebruik en plannen.",
    ],
    [
      "Installatie in samenhang",
@@ -137,7 +137,7 @@ export function renderLanding(home) {
    ],
    [
      "Heldere afstemming",
-     "Je bespreekt scope, modelkeuze en benodigde aanpassingen voordat het werk begint.",
+     "U bespreekt scope, modelkeuze en benodigde aanpassingen voordat het werk begint.",
    ],
  ]
    .map(
@@ -148,7 +148,7 @@ export function renderLanding(home) {
  <section class="section energy-wash" id="werkwijze"><div class="shell">${head("06 / Van advies naar aansluiting", "Rust in het proces.<br>Precisie in de <em>uitvoering.</em>")}<ol class="steps">${[
    [
      "Woning & wensen",
-     "We bespreken je gebruik, bestaande installatie en toekomstplannen.",
+     "We bespreken uw gebruik, bestaande installatie en toekomstplannen.",
    ],
    [
      "Opname & ontwerp",
@@ -173,7 +173,7 @@ export function renderLanding(home) {
   return shell(home, {
     title: "PRO ENERGY · Slimme energie in Utrecht | DE BOUW PRO",
     description:
-      "Gerichte energieoplossingen voor jouw woning in Utrecht: thuisbatterijen, EV-laden, zonnepanelen en warmtepompen. Advies en installatie door DE BOUW PRO Energy.",
+      "Gerichte energieoplossingen voor uw woning in Utrecht: thuisbatterijen, EV-laden, zonnepanelen en warmtepompen. Advies en installatie door DE BOUW PRO Energy.",
     body,
   });
 }
@@ -184,7 +184,7 @@ export function renderBrand(home, b) {
  ${renderShowcase(b)}
  <section class="section energy-wash"><div class="shell energy-specs"><div><p class="eyebrow">02 / De juiste uitvoering</p><h2>Van mogelijkheden<br>naar <em>modelkeuze.</em></h2><p class="spec-intro">Dit is een selectie van fabrikantgegevens, geen volledige productspecificatie. In het voorstel leggen we model, configuratie en voorwaarden vast.</p></div><div><dl>${b.specs.map(([t, p]) => `<div><dt>${esc(t)}</dt><dd>${esc(p)}</dd></div>`).join("")}</dl><details class="source-details"><summary>Bronnen & productdocumentatie</summary><div><p>${b.slug === "whspr" ? "Gebaseerd op de aangeleverde Whspr-brochure van 24 september 2026 (p. 8–10) en installatiehandleiding v1.2, voor review (p. 5 en 26–28)." : b.slug === "peblar" ? "Home-, Business- en Dual-productpagina’s van Peblar geraadpleegd op 6 november 2026." : b.slug === "goodwe" ? "GoodWe-productpagina’s en compatibiliteitslijsten geraadpleegd op 6 november 2026." : "Geraadpleegd op 2 november 2026."} Specificaties kunnen wijzigen. Controleer de actuele documentatie voor de gekozen uitvoering.</p><ul>${b.sources.map(([t, u]) => `<li><a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(t)} <span class="sr-only">(opent in een nieuw tabblad)</span>${arrow}</a></li>`).join("")}</ul></div></details></div></div></section>
  <section class="section energy-dark"><div class="shell">${head("03 / Integratie & installatie", "De beste plek.<br>De juiste <em>verbinding.</em>", esc(b.installation))}${flow(heat)}<p class="energy-note dark-note">${heat ? "Een goed verwarmingsplan houdt ook rekening met geluid, vrije ruimte, vorstbeveiliging en onderhoudstoegang." : "Ondersteunde functies en meetaccessoires worden per systeem vastgesteld. Geen automatische compatibiliteit tussen alle merken."}</p></div></section>
- <section class="section shell">${head("04 / Past het bij jou?", "Je woning is<br>het <em>vertrekpunt.</em>")}<div class="energy-benefits">${b.applications.map(([t, p], i) => `<article><span class="eyebrow">0${i + 1}</span><h3>${esc(t)}</h3><p>${esc(p)}</p></article>`).join("")}</div></section>
+ <section class="section shell">${head("04 / Past het bij u?", "Uw woning is<br>het <em>vertrekpunt.</em>")}<div class="energy-benefits">${b.applications.map(([t, p], i) => `<article><span class="eyebrow">0${i + 1}</span><h3>${esc(t)}</h3><p>${esc(p)}</p></article>`).join("")}</div></section>
  ${faqs(b.faq)}${contact(b)}
  <section class="section shell related">${head("Verder kijken", "Ook het overwegen <em>waard.</em>")}<div class="related-links">${b.related
    .map((s) => {
@@ -196,7 +196,7 @@ export function renderBrand(home, b) {
    )}</div><a class="text-link" href="/energy">Terug naar alle Energy-oplossingen ${arrow}</a></section>`;
   return shell(home, {
     title: `${b.name} ${b.kicker} · Utrecht | DE BOUW PRO Energy`,
-    description: `${b.name} voor jouw woning in Utrecht en omgeving. ${b.card} Ontdek mogelijkheden, installatie en advies bij DE BOUW PRO Energy.`,
+    description: `${b.name} voor uw woning in Utrecht en omgeving. ${b.card} Ontdek mogelijkheden, installatie en advies bij DE BOUW PRO Energy.`,
     body,
     brand: b,
   });
