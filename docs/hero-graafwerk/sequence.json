@@ -1,25 +1,25 @@
 [
   {
     "stage": "photo",
-    "ms": 497,
+    "ms": 687,
     "shade": 0,
     "copy": 0
   },
   {
     "stage": "shade",
-    "ms": 720,
-    "shade": 0.495419,
-    "copy": 0.126395
+    "ms": 981,
+    "shade": 0.41922,
+    "copy": 0.0974721
   },
   {
     "stage": "copy",
-    "ms": 960,
-    "shade": 0.891024,
-    "copy": 0.859647
+    "ms": 1253,
+    "shade": 0.862607,
+    "copy": 0.656825
   },
   {
     "stage": "ready",
-    "ms": 1675,
+    "ms": 1975,
     "shade": 1,
     "copy": 1
   }

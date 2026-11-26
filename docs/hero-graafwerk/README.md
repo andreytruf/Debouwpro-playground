@@ -1,3 +1,5 @@
+Follow-up refinement, 26 November: softened the accelerated entrance after owner feedback. Shade now takes 850ms after 100ms; copy overlaps from 220ms for 950ms with a gentler acceleration curve, 6px movement and 1px focus effect. Total entrance is about 1.17 seconds. Keyboard and reduced-motion bypasses remain unchanged.
+
 # Hero entrance and Graafwerk — Playground
 
 **26 November refinement:** the owner requested a quicker, overlapping entrance. Shade now starts after 80ms and lasts 600ms; copy starts after 260ms and lasts 650ms, with a subtle 2px-to-sharp title focus. The whole sequence finishes around 910ms after image readiness rather than 1450ms. Reduced motion, no-JS and keyboard alternatives are retained. Original timing notes below describe the first iteration.
