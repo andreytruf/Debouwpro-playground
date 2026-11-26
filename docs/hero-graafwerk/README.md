@@ -1,5 +1,7 @@
 # Hero entrance and Graafwerk — Playground
 
+**26 November refinement:** the owner requested a quicker, overlapping entrance. Shade now starts after 80ms and lasts 600ms; copy starts after 260ms and lasts 650ms, with a subtle 2px-to-sharp title focus. The whole sequence finishes around 910ms after image readiness rather than 1450ms. Reduced motion, no-JS and keyboard alternatives are retained. Original timing notes below describe the first iteration.
+
 Owner preference: retain the warm Test-derived kitchen hero and icon-based service cards by default. The photo comparison remains available without persistence. No Test/Main/production, DNS, legal-master or email-configuration changes.
 
 ## Hero

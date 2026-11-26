@@ -21,25 +21,23 @@ try {
   const frames = [];
   for (const [name, wait] of [
     ["photo", 0],
-    ["shade", 350],
-    ["copy", 450],
-    ["ready", 800],
+    ["shade", 140],
+    ["copy", 180],
+    ["ready", 650],
   ]) {
     if (wait) await p.waitForTimeout(wait);
     frames.push(
-      await p
-        .locator("[data-hero-sequence]")
-        .evaluate(
-          (e, name) => ({
-            stage: name,
-            ms: Math.round(performance.now()),
-            shade: Number(getComputedStyle(e, "::after").opacity),
-            copy: Number(
-              getComputedStyle(e.querySelector(".hero-content")).opacity,
-            ),
-          }),
-          name,
-        ),
+      await p.locator("[data-hero-sequence]").evaluate(
+        (e, name) => ({
+          stage: name,
+          ms: Math.round(performance.now()),
+          shade: Number(getComputedStyle(e, "::after").opacity),
+          copy: Number(
+            getComputedStyle(e.querySelector(".hero-content")).opacity,
+          ),
+        }),
+        name,
+      ),
     );
     await p.screenshot({
       path: `${dir}/hero-${name}.jpg`,

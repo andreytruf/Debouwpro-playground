@@ -42,7 +42,7 @@ if (hero) {
       requestAnimationFrame(() => {
         if (finished) return;
         hero.classList.add("hero-sequence-playing");
-        safety = setTimeout(finish, 1800);
+        safety = setTimeout(finish, 1200);
       });
     }, finish);
     hero.addEventListener("animationend", (event) => {

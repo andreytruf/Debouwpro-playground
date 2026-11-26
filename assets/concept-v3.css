@@ -556,13 +556,16 @@
     opacity: 0;
   }
   .home-hero.hero-warm.hero-sequence-playing::after {
-    animation: hero-shade-arrive 950ms 180ms ease-out both;
+    animation: hero-shade-arrive 600ms 80ms ease-out both;
   }
   .home-hero.hero-warm.hero-sequence-playing .hero-content {
-    animation: hero-copy-arrive 750ms 700ms cubic-bezier(0.2, 0.7, 0.25, 1) both;
+    animation: hero-copy-arrive 650ms 260ms cubic-bezier(0.2, 0.7, 0.25, 1) both;
+  }
+  .home-hero.hero-warm.hero-sequence-playing h1 {
+    animation: hero-title-focus 650ms 260ms ease-out both;
   }
   .home-hero.hero-warm.hero-sequence-playing .hero-credit {
-    animation: hero-credit-arrive 550ms 900ms ease-out both;
+    animation: hero-credit-arrive 450ms 450ms ease-out both;
   }
 }
 @keyframes hero-shade-arrive {
@@ -602,4 +605,13 @@
 }
 .home-hero.hero-sequence-pending .hero-content {
   pointer-events: none;
+}
+
+@keyframes hero-title-focus {
+  from {
+    filter: blur(2px);
+  }
+  to {
+    filter: blur(0);
+  }
 }
