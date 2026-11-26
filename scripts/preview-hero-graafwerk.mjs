@@ -23,7 +23,7 @@ try {
     ["photo", 0],
     ["shade", 140],
     ["copy", 180],
-    ["ready", 650],
+    ["ready", 1300],
   ]) {
     if (wait) await p.waitForTimeout(wait);
     frames.push(

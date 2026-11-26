@@ -1,3 +1,5 @@
+Owner timing refinement, 26 November: lengthened the overlapping entrance to 1.6 seconds (shade 1150ms after 120ms; copy/focus 1320ms after 280ms). Retains gentle easing and reduced-motion/keyboard bypass.
+
 Publication verified, 26 November 2026: softened hero source e90e375 deployed to the existing Playground Worker through the connected Cloudflare API. Public CSS and JavaScript match source bytes; homepage returns HTTP 200 and noindex, nofollow. Domain inspection was read-only: debouwpro.nl zone pending, public NS still docks06.rzone.de / shades06.rzone.de, no Worker custom domains attached. No DNS or production changes.
 
 Follow-up refinement, 26 November: softened the accelerated entrance after owner feedback. Shade now takes 850ms after 100ms; copy overlaps from 220ms for 950ms with a gentler acceleration curve, 6px movement and 1px focus effect. Total entrance is about 1.17 seconds. Keyboard and reduced-motion bypasses remain unchanged.
