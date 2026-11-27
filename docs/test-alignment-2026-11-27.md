@@ -9,3 +9,5 @@ Copied website HTML, assets, Energy source, legal page source, builders, service
 Validation and publication results will be recorded after checks.
 
 Validation: static build and Wrangler dry run passed; all 37 browser tests passed. All 114 local output files exactly match the selected Test build. All 113 public files also exactly matched the live Test URL (headers file excluded). Captured desktop/mobile previews for home, Energy and woningrenovatie at 1440 and 390px in docs/test-alignment/previews. Existing browser tests cover 320/390/768/1440px, menus, route loading, service cards, gallery keyboard navigation, animation/reduced motion, form drafts, legal links and noindex.
+
+Publication verified: existing Playground Worker deployment c25a4682525942ed920ee25d31e0c94f (source 630b155). All 113 public Playground files exactly match the built baseline and the live Test files. Homepage HTTP 200; X-Robots-Tag remains noindex, nofollow. Final screenshots were captured from the live Playground after lazy images loaded. Source Test branch remained 35dc76b. No Test deployment or repository mutation occurred.
