@@ -1,3 +1,19 @@
+# DE BOUW PRO — Playground
+
+Current website baseline: Test branch `staging/playground-3e17934`, commit `35dc76b8b76fcdc551745ae72d8a331f82215f28`, synchronised on 27 November 2026 at the owner’s request. Public preview: https://debouwpro-playground.andrey-57c.workers.dev/ .
+
+The Test repository and Worker were read only. Playground keeps its own package name and Wrangler deployment target, noindex/nofollow and owner contact rules. Earlier Playground is preserved in GitHub branch `backup/pre-test-sync-2026-11-27-5c9bd13`. Historical documentation below describes previous iterations and may differ from the current Test-aligned website.
+
+## Current workflow
+
+Use Node.js 22+. Run `npm ci`, `npm run check`, `npm test`; local development uses `npm run dev` on port 8787. `npm run deploy` targets only the existing Playground Worker. There is no automatic deployment in the validation workflow.
+
+See [Test alignment](docs/test-alignment-2026-11-27.md) for source, scope and validation. Forms continue to prepare an email or WhatsApp draft; there is no direct submission endpoint. Legal documents remain CONCEPT. No production website, DNS, mail or Drive master changes are part of this sync.
+
+---
+
+## Historical Playground documentation
+
 # DE BOUW PRO — B12-inspired Website Concept V2
 
 Experimental Dutch landing page for premium complete renovations in Utrecht / De Meern. This repository is **playground only**; it does not target Debouwpro-main, Debouwpro-test or debouwpro.nl.

@@ -3,7 +3,7 @@ import { existsSync } from "node:fs";
 import { mkdir, writeFile } from "node:fs/promises";
 const base =
   process.env.PRIVACY_AUDIT_BASE ||
-  "https://debouwpro-playground.andrey-57c.workers.dev";
+  "https://debouwpro-test.andrey-57c.workers.dev";
 const b = await chromium.launch({
   executablePath:
     process.env.CHROMIUM_PATH ||

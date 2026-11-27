@@ -1,0 +1,114 @@
+/* Shared presentation, loaded after the page layout styles. */
+:root {
+  --site-paper: #f2f0ec;
+  --site-ink: #1a1a1a;
+  --site-copper: #d97841;
+  --site-sans: Arial, Helvetica, sans-serif;
+  --site-serif: Georgia, "Times New Roman", serif;
+  --site-display: clamp(3.05rem, 8.3vw, 8.3rem);
+  --site-page-title: clamp(2.7rem, 5.6vw, 5.7rem);
+  --site-section-title: clamp(2.55rem, 5.6vw, 5.7rem);
+  --site-content-title: clamp(1.5rem, 3vw, 2.15rem);
+  --site-control-padding: 0.65rem 1.15rem;
+}
+
+body {
+  font-family: var(--site-sans);
+  background-color: var(--site-paper);
+  color: var(--site-ink);
+}
+
+body .site-header {
+  background: var(--site-paper);
+  color: var(--site-ink);
+}
+
+body .site-header .navigation > a {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+body .site-header .navigation .nav-contact {
+  border: 1px solid currentColor;
+  padding: 0.65rem 1rem;
+}
+
+body .site-header .brand .brand-logo {
+  width: clamp(160px, 16vw, 198px);
+}
+
+body main h1,
+body main h2 {
+  font-family: var(--site-sans);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  line-height: 1.02;
+}
+
+body main h1 {
+  font-size: var(--site-page-title);
+  overflow-wrap: anywhere;
+}
+
+body :is(.home-hero, .energy-hero) h1 {
+  font-size: var(--site-display);
+}
+
+body main h2 {
+  font-size: var(--site-section-title);
+  overflow-wrap: anywhere;
+}
+
+body
+  :is(.service-details, .legal-content, .legal-index, .legal-document-card)
+  h2 {
+  font-size: var(--site-content-title);
+}
+
+body main :is(h1, h2) em {
+  color: inherit;
+  font: italic 400 1em var(--site-serif);
+  letter-spacing: inherit;
+}
+
+body main .eyebrow {
+  font-family: var(--site-sans);
+}
+
+body :is(.button.button, .home-button) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-height: 3.1rem;
+  padding: var(--site-control-padding);
+  border: 1px solid currentColor;
+  color: inherit;
+  background: transparent;
+  font: 700 0.9rem var(--site-sans);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body :is(.button.button-dark, .home-button.copper) {
+  border-color: var(--site-copper);
+  background: var(--site-copper);
+  color: var(--site-ink);
+}
+
+body :is(.button.button, .home-button):hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+body :is(a, button, input, textarea, select):focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}
+
+@media (max-width: 760px) {
+  body .site-header .header-inner {
+    min-height: 65px;
+  }
+}

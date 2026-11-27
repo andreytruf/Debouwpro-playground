@@ -127,9 +127,7 @@ test("the inquiry validates input and prepares a WhatsApp draft on request", asy
   const submit = form.getByRole("button", { name: "Open WhatsApp" });
   await submit.click();
   await expect(form.locator(":invalid").first()).toBeVisible();
-  const service = page.locator("[data-project]").first();
-  await service.focus();
-  await page.keyboard.press("Enter");
+  await page.goto("/?project=Complete%20woningrenovatie#contact");
   await expect(form.locator("select")).toHaveValue("Complete woningrenovatie");
   await form.getByLabel("Naam").fill("Test");
   await form.getByLabel("E-mailadres").fill("test@example.com");
@@ -149,7 +147,13 @@ test("flooring and excavation are linked from expertise", async ({
   request,
 }) => {
   await page.goto("/");
-  await expect(page.locator(".installation-media img")).toHaveCount(2);
+  const badges = page.locator(".services .service-symbol");
+  await expect(badges).toHaveCount(9);
+  expect(
+    await badges.evaluateAll((groups) =>
+      groups.map((group) => group.querySelectorAll("svg").length),
+    ),
+  ).toEqual([2, 2, 2, 3, 2, 3, 2, 3, 2]);
   await page
     .getByRole("link", { name: "Vloerverwarming en vloerafwerking" })
     .click();
@@ -166,8 +170,107 @@ test("flooring and excavation are linked from expertise", async ({
   expect(excavation.status()).toBe(200);
   expect(excavation.headers()["x-robots-tag"]).toContain("noindex");
   await page.goto("/");
+  await page.getByRole("link", { name: "Bekijk vloerafwerking" }).click();
+  await expect(page).toHaveURL(/\/vloeren\/$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+    "Vloeren & afwerking",
+  );
+  await page.goto("/");
   await page.getByRole("link", { name: "Bekijk graafwerk" }).click();
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
     "Graafwerk met een minigraver",
   );
+});
+
+test("each service card opens its destination from the card surface", async ({
+  page,
+}) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  const missingAssets = [];
+  page.on("response", (response) => {
+    if (response.status() >= 400 && response.url().includes("/assets/")) {
+      missingAssets.push(response.url());
+    }
+  });
+  const destinations = [
+    "/woningrenovatie/",
+    "/badkamerrenovatie/",
+    "/keukenrenovatie/",
+    "/installatiewerk/",
+    "/vloeren/",
+    "/energy/",
+    "/vloerverwarming/",
+    "/graafwerk/",
+    "/zakelijk-onderhoud/",
+  ];
+  for (const [index, destination] of destinations.entries()) {
+    await page.goto("/");
+    const card = page.locator(".services article").nth(index);
+    await card.click({ position: { x: 21, y: 21 } });
+    await page.waitForURL(new URL(destination, page.url()).href);
+    await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+    if (destination !== "/energy/") {
+      await expect(
+        page.getByRole("heading", { name: "Zo werken we" }),
+      ).toBeVisible();
+    }
+  }
+  expect(missingAssets).toEqual([]);
+  await page.getByRole("link", { name: "Vraag een offerte aan" }).click();
+  await expect(page.locator("#offerte select")).toHaveValue(
+    "Zakelijk & VvE-onderhoud",
+  );
+});
+
+test("hero photograph precedes shade and copy; reduced motion shows everything immediately", async ({
+  browser,
+}) => {
+  const c = await browser.newContext({
+    reducedMotion: "no-preference",
+    viewport: { width: 1440, height: 1000 },
+  });
+  const p = await c.newPage();
+  await p.goto("http://127.0.0.1:8787/");
+  await p
+    .locator("[data-hero-sequence] picture img")
+    .evaluate((i) => i.decode());
+  const first = await p
+    .locator(".hero-content")
+    .evaluate((e) => Number(getComputedStyle(e).opacity));
+  expect(first).toBeLessThan(1);
+  await expect
+    .poll(() =>
+      p
+        .locator(".hero-content")
+        .evaluate((e) => Number(getComputedStyle(e).opacity)),
+    )
+    .toBe(1);
+  await expect
+    .poll(() =>
+      p
+        .locator("[data-hero-sequence]")
+        .evaluate((e) => Number(getComputedStyle(e, "::after").opacity)),
+    )
+    .toBe(1);
+  await c.close();
+  const reduced = await browser.newContext({ reducedMotion: "reduce" });
+  const q = await reduced.newPage();
+  await q.goto("http://127.0.0.1:8787/");
+  await expect(q.locator(".hero-content")).toHaveCSS("opacity", "1");
+  await expect(q.locator(".hero-content")).toHaveCSS("animation-name", "none");
+  await expect(q.locator("[data-hero-sequence]")).not.toHaveClass(
+    /hero-sequence-pending/,
+  );
+  await reduced.close();
+});
+test("keyboard focus bypasses the hero entrance", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "no-preference" });
+  await page.goto("/");
+  const cta = page.getByRole("link", {
+    name: "Vraag een offerte aan",
+    exact: true,
+  });
+  await cta.focus();
+  await expect(cta).toBeFocused();
+  await expect(page.locator(".hero-content")).toHaveCSS("opacity", "1");
 });

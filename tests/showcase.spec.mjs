@@ -20,7 +20,7 @@ test("one corporate wordmark and copper Energy heading across the site", async (
   await page.goto("/energy");
   await expect(page.locator("#energy-title > span").first()).toHaveCSS(
     "color",
-    "rgb(189, 98, 46)",
+    "rgb(217, 120, 65)",
   );
 });
 
@@ -58,4 +58,62 @@ test("product explorers explain configurations and remain keyboard usable", asyn
   await fallback.goto("http://127.0.0.1:8787/energy/peblar");
   await expect(fallback.locator("[data-mode-panel]:visible")).toHaveCount(3);
   await context.close();
+});
+
+test("navigation and heading family are shared by all public page types", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  const styles = async () =>
+    page.evaluate(() => {
+      const heading = getComputedStyle(document.querySelector("main h1"));
+      const nav = getComputedStyle(
+        document.querySelector(".site-header .navigation > a"),
+      );
+      const logo = getComputedStyle(
+        document.querySelector(".site-header .brand-logo"),
+      );
+      const button = document.querySelector(
+        "main :is(.home-button.copper, .button.button-dark)",
+      );
+      const primary = button && getComputedStyle(button);
+      return [
+        heading.fontFamily,
+        heading.fontWeight,
+        nav.fontFamily,
+        nav.fontSize,
+        nav.fontWeight,
+        logo.width,
+        primary && [
+          primary.fontSize,
+          primary.fontWeight,
+          primary.minHeight,
+          primary.backgroundColor,
+        ],
+      ];
+    });
+
+  await page.goto("/");
+  const expected = await styles();
+  for (const route of [
+    "/energy/",
+    "/energy/tesla/",
+    "/energy/ecoflow/",
+    "/energy/goodwe/",
+    "/energy/peblar/",
+    "/energy/samsung/",
+    "/energy/whspr/",
+    "/vloerverwarming/",
+    "/graafwerk/",
+    "/algemene-voorwaarden/",
+    "/privacy/",
+    "/cookies/",
+    "/page-not-found-for-style-check/",
+  ]) {
+    await page.goto(route);
+    const observed = await styles();
+    expect(observed.slice(0, -1), route).toEqual(expected.slice(0, -1));
+    if (observed.at(-1))
+      expect(observed.at(-1), route).toEqual(expected.at(-1));
+  }
 });

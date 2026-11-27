@@ -4,11 +4,14 @@ form.querySelector("fieldset").disabled = false;
 form.querySelectorAll('button[type="submit"]').forEach((button) => {
   button.disabled = false;
 });
-document.querySelectorAll("[data-project]").forEach((link) => {
-  link.addEventListener("click", () => {
-    fields.project.value = link.dataset.project;
-  });
-});
+const requestedProject = new URLSearchParams(location.search).get("project");
+if (
+  Array.from(fields.project.options).some(
+    ({ value }) => value === requestedProject,
+  )
+) {
+  fields.project.value = requestedProject;
+}
 for (const field of [fields.naam, fields.bericht]) {
   field.addEventListener("input", () => field.setCustomValidity(""));
 }
@@ -72,8 +75,6 @@ document.querySelectorAll("[data-gallery]").forEach((link) => {
       link.parentElement.querySelectorAll("figcaption span"),
       (part) => part.textContent,
     ).join(" · ");
-    const details = viewer.querySelector("#beelddetails");
-    if (details) details.textContent = photo.alt;
     viewer.showModal();
   });
 });
@@ -82,3 +83,42 @@ viewer.addEventListener("click", (event) => {
 });
 
 viewer.querySelector("button").addEventListener("click", () => viewer.close());
+
+// Start only after the actual kitchen image has decoded. Content stays visible
+// without JS; reduced motion and keyboard focus bypass the entrance sequence.
+const hero = document.querySelector("[data-hero-sequence]");
+if (hero) {
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+  const photo = hero.querySelector("picture img");
+  if (photo && !reduced.matches && !document.hidden) {
+    let finished = false;
+    let safety;
+    const finish = () => {
+      finished = true;
+      clearTimeout(safety);
+      hero.classList.remove("hero-sequence-pending", "hero-sequence-playing");
+    };
+    hero.classList.add("hero-sequence-pending");
+    hero.addEventListener("focusin", finish, { once: true });
+    reduced.addEventListener("change", (event) => {
+      if (event.matches) finish();
+    });
+    // A failed or slow image must never leave the introduction hidden.
+    safety = setTimeout(finish, 3500);
+    photo.decode().then(() => {
+      if (finished || reduced.matches || document.hidden) return finish();
+      clearTimeout(safety);
+      requestAnimationFrame(() => {
+        if (finished) return;
+        hero.classList.add("hero-sequence-playing");
+        safety = setTimeout(finish, 2100);
+      });
+    }, finish);
+    hero.addEventListener("animationend", (event) => {
+      if (event.animationName === "hero-copy-arrive") finish();
+    });
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) finish();
+    });
+  }
+}
